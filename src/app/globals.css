@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  /** Synced by `SiteHeader` for mobile menu offset when utility bar is visible */
+  --site-preheader-h: 2.5rem;
+  --brand-red: #e63946;
+  --header-black: #0a0a0a;
+  --about-overlay: rgba(0, 0, 0, 0.72);
+  --card-overlay-bottom: rgba(0, 0, 0, 0.88);
+  --color-ink: #0f293c;
+  --color-ink-muted: #3d5566;
+  --color-ink-faint: #6b7c89;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f6f8;
+  --color-muted: #eef2f5;
+  --color-border: #dce3e8;
+  --color-accent: var(--brand-red);
+  --color-hero: var(--header-black);
+}
+
+@theme inline {
+  --font-sans: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
+  --color-brand-red: var(--brand-red);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+.landing-svg-red {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(93%) saturate(1352%)
+    hue-rotate(319deg) brightness(96%) contrast(89%);
+}
+
+/* Scroll-in: polished ease with a bit more motion */
+.reveal-track {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 0.58s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.58s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-track.reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-track {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .about-hero-enter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes about-hero-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.about-hero-enter {
+  animation: about-hero-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.services-strip {
+  background-color: #141414;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.04) 2px,
+    rgba(255, 255, 255, 0.04) 3px
+  );
+}
+
+/* Hero video: subtle motion on hold color while MP4 buffers (no spinner) */
+@keyframes hero-hold-sweep {
+  0%,
+  100% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+}
+
+.hero-video-hold-motion {
+  background: linear-gradient(
+    125deg,
+    #0b1424 0%,
+    #132338 38%,
+    #0f1729 55%,
+    #162a42 78%,
+    #0f1729 100%
+  );
+  background-size: 220% 220%;
+}
+
+.hero-video-hold-motion.hero-video-hold-loading {
+  animation: hero-hold-sweep 4.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-hold-motion.hero-video-hold-loading {
+    animation: none;
+  }
+}

@@ -1,0 +1,130 @@
+import type { Metadata } from "next";
+import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.css";
+import { SiteShell } from "@/components/layout/SiteShell";
+import { siteConfig } from "@/config/site";
+
+const sans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans-body",
+  weight: ["400", "500", "600", "700"],
+});
+
+/** Display serif for hero and key editorial headlines */
+const display = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
+  weight: ["600", "700"],
+});
+
+const siteUrl = siteConfig.url.replace(/\/$/, "");
+const defaultOgImage = siteConfig.brand.logoSrc;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteConfig.name,
+      description: siteConfig.description,
+      inLanguage: siteConfig.locale.replace("_", "-"),
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: siteConfig.name,
+      url: siteUrl,
+      logo: `${siteUrl}${siteConfig.brand.logoSrc}`,
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": `${siteUrl}/#professional-service`,
+      name: siteConfig.name,
+      description: siteConfig.description,
+      url: siteUrl,
+      provider: { "@id": `${siteUrl}/#organization` },
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+    },
+  ],
+};
+
+const metaTitle = `${siteConfig.name} | Engineering plans`;
+
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: metaTitle,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: [
+    "engineering plans",
+    "MEP engineering",
+    "permit drawings",
+    "mechanical electrical plumbing",
+    "custom home plans",
+    "commercial engineering",
+  ],
+  ...(googleSiteVerification
+    ? { verification: { google: googleSiteVerification } }
+    : {}),
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    locale: siteConfig.locale.replace("_", "-"),
+    siteName: siteConfig.name,
+    title: metaTitle,
+    description: siteConfig.description,
+    images: [
+      {
+        url: defaultOgImage,
+        alt: siteConfig.brand.logoAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: metaTitle,
+    description: siteConfig.description,
+    images: [defaultOgImage],
+  },
+  robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
+      { url: siteConfig.brand.logoSrc, type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`h-full ${sans.variable} ${display.variable}`}>
+      <body
+        className={`${sans.className} min-h-full flex flex-col bg-[var(--color-surface)] text-base leading-relaxed text-[var(--color-ink)] antialiased`}
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <SiteShell>{children}</SiteShell>
+      </body>
+    </html>
+  );
+}

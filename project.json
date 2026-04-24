@@ -1,0 +1,598 @@
+{
+    "projects": [
+        {
+            "Title": "Reed College Maintenance Hole Rehab",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "Portland Bureau of Environmental Services",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Sewer bypass design\nMaintenance hole design\nPermitting",
+            "DESCRIPTION": "Emerio was the prime consultant providing civil engineering services for this maintenance hole rehabilitation project. The maintenance hole, located in a sensitive natural area on the Reed College campus and adjacent to Crystal Springs, had eroded away resulting in water shooting out from the bottom. Several attempts at sealing the holes failed, so the decision was made to plug, line, and abandon the existing hole and replace it with a new hole outside of the natural area. Emerio’s tasks included abandoning the existing hole by filling with CSLM and lining it, designing for temporary sewer bypass, construction of the new hole downstream, and managing the complex permitting process. Construction is complete.",
+            "IMAGE": "reed-college-maintenance-hole.jpg"
+        },
+        {
+            "Title": "Capitol Highway Stormwater Improvements",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "Portland Bureau of Environmental Services",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Legal descriptions\nTopographic survey and basemapping\nRetaining walls\nStormwater facilities",
+            "DESCRIPTION": "As a subconsultant, Emerio provided survey and structural services for this joint BES and PBOT project to improve transportation and stormwater facilities along SW Capitol Hwy. Scope included topographic survey and basemapping, legal descriptions, new stormwater system improvements at multiple locations along the corridor, and retaining wall design. Project is currently under construction.",
+            "IMAGE": "capitol-highway-stormwater-improvements.jpg"
+        },
+        {
+            "Title": "Marquis Eugene Senior Living",
+            "CATEGORIES": "Residential, Survey",
+            "LOCATION": "Eugene, OR",
+            "SERVICES PROVIDED": "Grading\nStorm sewer design\nDomestic fire and water service\nParking lot\nStormwater raingardens/planters\nRetaining walls\n3D survey mapping\nBoundary and topographic survey\nConstruction staking",
+            "OWNER": "Marquis Companies",
+            "DESCRIPTION": "Emerio surveyed, designed, and managed this multi-building and multi-phased development with 76 senior housing units as well as an assisted-living and memory care center on a 12-acre vacant lot in Eugene, OR. This 4-phased project includes a 3-story, 99,000 sq ft assisted-living and memory care building; 44 independent living townhouses for seniors; 30 duplex cottage units; and a community center with a gym, pool, cafe, and other site amenities. Site improvements consisted of relocation of existing site access to 2 commercial driveways and design of private infrastructure including grading, storm, sewer, domestic fire and water service, parking lot, stormwater raingardens/planters, and retaining wall. Survey scope included full boundary and topographic survey, providing record information for the design of the site, and construction staking. Additionally, Emerio’s survey design staff provided 3D mapping for machine control used by the contractor on site.",
+            "IMAGE": "marquis-eugene-senior-living.png"
+        },
+        {
+            "Title": "Cedar Commons",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "Ankrom Moisan Architects",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Utility design\nStormwater design\nErosion control plans\nSite grading and drainage",
+            "DESCRIPTION": "Emerio provided civil engineering services for this 3-story, 60-unit apartment complex on a largely vacant 1-acre parcel. The building consists of 40 single room occupancy units and 20 studio units targeted to people exiting homelessness. The site includes a 22-space parking lot, courtyard, landscaped facilities, bike parking, and two drywells for stormwater runoff. The site also has offices for counseling, group kitchens on each floor, community space, and laundry. Central City Concern is providing intensive on-site wraparound services for the residents, including crisis prevention, mental health services, and employment support.",
+            "IMAGE": "cedar-commons.jpg"
+        },
+        {
+            "Title": "Pruner Rd/Industrial Way Traffic Control",
+            "CATEGORIES": "Survey",
+            "OWNER": "Douglas County",
+            "LOCATION": "Myrtle Creek, OR",
+            "SERVICES PROVIDED": "Topographic survey and basemap\nUtility location\nROW resolution",
+            "DESCRIPTION": "As a subconsultant, Emerio provided survey services for this intersection improvement project. Tasks included topographic survey and basemap preparation, utility location, and ROW resolution.",
+            "IMAGE": "pruner-rd-industrial-way-traffic-control.jpg"
+        },
+        {
+            "Title": "Portland Japanese Garden",
+            "CATEGORIES": "Survey",
+            "OWNER": "Portland Japanese Garden",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Boundary resolution\nTopographic and as-built surveys\nUtility location",
+            "DESCRIPTION": "Emerio is providing surveying services for this 12-acre garden in the forested hills of SW Portland, helping create a comprehensive site map that will help facilitate the planning and communication necessary to effectively support the continued growth, changes, and challenges inherent in maintaining the space.",
+            "IMAGE": "portland-japanese-garden.jpg"
+        },
+        {
+            "Title": "Cedar Hills Topo Survey",
+            "CATEGORIES": "Survey",
+            "OWNER": "Clean Water Services",
+            "LOCATION": "Beaverton, OR",
+            "SERVICES PROVIDED": "Topographic survey\nROW location\nUtility location",
+            "DESCRIPTION": "Emerio is performing surveying services for this infiltration and inflow sewer rehabilitation project for an approx. 30 acre subdivision in Beaverton. With the goal of locating existing sewer mains and sewer lateral connections and elevations, Emerio’s scope includes topographical survey and base map of project right-of-way and location of building corners, low points on buildings, and utilities.",
+            "IMAGE": "cedar-hills-topo-survey.jpg"
+        },
+        {
+            "Title": "I-205: Stafford Road to OR99E Corridor Road Widening",
+            "CATEGORIES": "Survey",
+            "OWNER": "ODOT",
+            "LOCATION": "West Linn, OR",
+            "SERVICES PROVIDED": "Survey Control Network\nTopographic survey & mapping\nDTM\nROW resolution",
+            "DESCRIPTION": "Subconsultant providing topographic and base map survey on this project to widen I-205 to three northbound and three southbound through lanes from the Stafford Road Interchange on the south to OR213 on the north.",
+            "IMAGE": "i-205-stafford-road-to-or99e-corridor-road-widening.jpg"
+        },
+        {
+            "Title": "NE Alberta St: 14th – 30th Ave",
+            "CATEGORIES": "Survey",
+            "OWNER": "PBOT",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Survey Control Network\nTopographic Survey\nBoundary Line and Parcel Surveys\nMetes and Bounds/Easement/ROW/Legal Descriptions",
+            "DESCRIPTION": "As prime consultant, Emerio provided topographic and 3D mapping survey for this on-call paving project on NE Alberta Street from the intersections of 14th Ave to 30th Ave. Safety improvements also include updating corners that do not meet current ADA standards.",
+            "IMAGE": "ne-alberta-st-14th-30th-ave.jpg"
+        },
+        {
+            "Title": "Springwater Connector",
+            "CATEGORIES": "Transportation",
+            "OWNER": "PBOT",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Analysis, planning, and concept design\nCost estimating\nStreet geometry & ROW\nPed/Bike/ADA\nStreet drainage\nTraffic control\nErosion control",
+            "DESCRIPTION": "As prime consultant, Emerio provided engineering services for this multimodal safety project. Mike led the multi-discipline to provide improved bicycle and pedestrian access, greenway improvements, and connections to the nearby Springwater Corridor trail. Safety improvements included: • Dedicated mid-block crossing • Safety enhancements compliant with ADA and AASHTO standards • Bike and pedestrian access during construction (TPAR) • Extended continuous sidewalk in designated locations • Creative stormwater solutions",
+            "IMAGE": "springwater-connector.jpg"
+        },
+        {
+            "Title": "Region 2 Bridge Screening",
+            "CATEGORIES": "Construction Management, Transportation",
+            "OWNER": "ODOT",
+            "LOCATION": "Marion and Washington Counties, OR",
+            "SERVICES PROVIDED": "Project management\nPS&E development\nStructural design for fence mounting\nStaging, traffic control, & TMP",
+            "DESCRIPTION": "Emerio was the prime consultant for this project to install protective screening on five highway overpasses in Region 2 to improve safety for motorists by preventing objects being thrown from above and to bring the bridges into compliance.",
+            "IMAGE": "region-2-bridge-screening.jpg"
+        },
+        {
+            "Title": "OR22: Joseph St. – Golf Club Rd.",
+            "CATEGORIES": "Transportation",
+            "OWNER": "ODOT",
+            "LOCATION": "Marion County, OR",
+            "SERVICES PROVIDED": "Project management\nPS&E development\nHighway design\nUtility & railroad coordination\nTraffic control plans and TPAR design\nCoordinate utilities",
+            "DESCRIPTION": "Emerio was the prime consultant for this pavement rehab project in Region 2 to improve pavement conditions, pavement ride, and durable striping along 7 miles of OR22. Emerio provided highway design, PS&E development, utility coordination, and traffic control plans, as well as managed subconsultants to handle the structures and railroad coordination.",
+            "IMAGE": "or22-joseph-st-golf-club-rd.jpg"
+        },
+        {
+            "Title": "ADA Safety Improvements",
+            "CATEGORIES": "Construction Management",
+            "OWNER": "PBOT",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Manage bid & award\nOversee contractor compliance\nManage changes, claims, & protests\nPrepare contractor payments\nMaintain documents\nCoordinate utilities\nReview & recommend changes to design plan",
+            "DESCRIPTION": "Emerio is providing construction management services for this project to bring existing ADA curb ramps across Portland into compliance. Emerio’s staff is responsible for performing constructability and traffic control reviews, managing the City’s inspectors, reviewing field work, providing field support, and resolving issues as needed. We are also addressing contract change orders, coordinating with other City departments, issuing punch list, and closing out the project by issuing payment and completion letter.",
+            "IMAGE": "ada-safety-improvements.jpg"
+        },
+        {
+            "Title": "Construction Inspection Support",
+            "CATEGORIES": "Construction Management",
+            "OWNER": "City of Eugene",
+            "LOCATION": "Eugene, OR",
+            "SERVICES PROVIDED": "Oversee contractor compliance\nManage changes\nMaintain documents\nReview and recommend changes to design plan",
+            "DESCRIPTION": "Emerio provided construction inspection support for the City of Eugene’s summer construction season. Projects included:\n\nSafe Routes to School Project - Safety upgrade project which includes construction of ADA curb ramps, installation of flashing beacons, street lighting, new traffic signal, and ACP paving. Emerio provided daily inspection, quantities verification, material quality certification, and approval of contractor’s deliverables.\n\nAmazon Park Running Trail Renovation - Trail improvement project which includes updated trail lighting within sensitive habitat areas. Emerio provided daily inspection, quantities verification, material quality certification, and approval of contractor’s deliverables.",
+            "IMAGE": "construction-inspection-support.jpg"
+        },
+        {
+            "Title": "SE Lambert Duplex",
+            "CATEGORIES": "House Design",
+            "OWNER": "Dez Development",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite layout",
+            "DESCRIPTION": "New construction of modern duplex condos in Sellwood neighborhood. Approximately 2,500 ft2 with 4 bed and 4 bath each, including separate living quarters. Photo permission granted by Keller Williams.",
+            "IMAGE": "se-lambert-duplex.jpg"
+        },
+        {
+            "Title": "OSU Parking Maintenance and Repair Design",
+            "CATEGORIES": "Construction Management, Site Civil",
+            "OWNER": "Oregon State University",
+            "LOCATION": "Corvallis, OR",
+            "SERVICES PROVIDED": "Cost estimates\nConstructability reviews\nConstruction management and inspection\nBidding assistance\nDemolition and repair plan documents",
+            "DESCRIPTION": "Emerio was the prime consultant providing design and construction support services for this project to remove and replace deficient asphalt in four parking lots on OSU's campus.",
+            "IMAGE": "osu-parking-maintenance-and-repair-design.jpg"
+        },
+        {
+            "Title": "William Walker Elementary School",
+            "CATEGORIES": "Construction Management, Site Civil",
+            "OWNER": "Beaverton School District",
+            "LOCATION": "Beaverton, OR",
+            "SERVICES PROVIDED": "Public frontage improvements\nConstruction inspection\nStormwater treatment facilities\nConstruction documents to include Plans, Specs & Estimates\nSurveying and easements",
+            "DESCRIPTION": "Emerio provided site civil design and construction inspection to support DLR Group, the lead architect, for this redevelopment project. Construction was completed in 2019 and replaced the current facility with a modern, 87,200 sq.ft., two-story building that holds 750 students.",
+            "IMAGE": "william-walker-elementary-school.jpg"
+        },
+        {
+            "Title": "Balch Creek Trash Rack Retrofit",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "Portland Bureau of Environmental Services",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Project management\nPermitting with local, state, and federal agencies\nConstruction documents to include Plans, Specs & Estimates\nUtility coordination\nTrail realignment\nFoundation, grading, and ADA accessible sidewalk design",
+            "DESCRIPTION": "As the prime consultant, Emerio is providing project management and civil design services for this in-stream restoration project that is a key feature of Portland Parks & Recreation’s Macleay Park. The existing trash racks and bays keep the majority of sediment, rock, and floating debris from entering the low-pressure storm sewer that conveys Balch Creek from Forest Park to the Willamette River.",
+            "IMAGE": "balch-creek-trash-rack-retrofit.jpg"
+        },
+        {
+            "Title": "Enhanced Transit Corridors",
+            "CATEGORIES": "Transportation",
+            "OWNER": "TriMet and Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Conceptual planning",
+            "DESCRIPTION": "TriMet and Portland Bureau of Transportation have developed the Enhanced Transit Corridors (ETC) Plan which aims to make travel by buses faster and more reliable. Several sites around the Portland-metro area have been identified for improvement, including the Burnside, Capitol Hwy, and Hillsboro corridors. Emerio is a subconsultant to Jacobs participating in the conceptual planning of these sites. . Rafael Gaeta, PE, and Ben Ullmann, PE are leading Emerio's consultant team and recently shared their thoughts on this exciting project. Read more >>",
+            "IMAGE": "enhanced-transit-corridors.jpg"
+        },
+        {
+            "Title": "Spring Garden Park",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "Portland Parks & Recreation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Site utility plan\nGrading\nConstruction documents",
+            "DESCRIPTION": "Emerio joined the project team as a subconsultant for the re-development of this approximate 4.65-acre park in SW Portland. Emerio’s role was to provide design services for a site utility plan including sanitary sewer and water services for the restroom facility, water feature and drinking fountains.",
+            "IMAGE": "spring-garden-park.jpg"
+        },
+        {
+            "Title": "Columbia Blvd Wastewater Treatment Plant Secondary Treatment Expansion (STEP)",
+            "CATEGORIES": "Site Civil, Survey",
+            "OWNER": "Portland Bureau of Environmental Services",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Site analysis and layout\nSite piping, grading, and drainage\nErosion control\nHorizontal and vertical control network\nBasemapping\nTopographic survey\nTunnel scanning",
+            "DESCRIPTION": "As a subconsultant, Emerio is providing engineering and surveying services for this project to add two secondary treatment clarifiers and repurpose the site of existing facilities for expansion to increase capacity and prevent unnecessary overburden of the treatment plant. Emerio is providing full topographic survey and tunnel scanning and civil design for both process & non-process facilities.",
+            "IMAGE": "columbia-blvd-wastewater-treatment-plant-secondary-treatment-expansion-step.jpg"
+        },
+        {
+            "Title": "PBOT Tunnel Illumination Upgrades",
+            "CATEGORIES": "Survey",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Utility coordination\nTraffic control plans\n3D scanning and survey",
+            "DESCRIPTION": "As a subconsultant, Emerio provided survey services to support the tunnel illumination upgrades for four tunnels including: Rocky Butte Tunnel, Burnside Tunnel, Cornell Tunnels, and Naito Parkway Tunnel. Survey was conducted at each tunnel to identify tunnel portal heights, high points near the center of the tunnel and elevation of the tunnel walls at the curb line. Existing utilities were also located and surveyed between the tunnel portals and electrical service locations to minimize any conflicts.",
+            "IMAGE": "pbot-tunnel-illumination-upgrades.jpg"
+        },
+        {
+            "Title": "Providence Park Settlement Monitoring",
+            "CATEGORIES": "Survey",
+            "OWNER": "City of Portland Office of Management & Finance",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Land surveying and monitoring\nSet control points\nEstablish a control network",
+            "DESCRIPTION": "Emerio is providing surveying services at Providence Park, setting monitoring and reference points in the stadium tied to City of Portland benchmarks and datum. Beginning prior to and continuing during recent construction, this monitoring holds to the strict standards of the construction industry and the City of Portland’s quality assurance programs.",
+            "IMAGE": "providence-park-settlement-monitoring.jpg"
+        },
+        {
+            "Title": "PBOT ADA Curb Ramp Replacement Program",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "ADA inventory, assessment, and design\nConstruction support",
+            "DESCRIPTION": "Emerio is a subconsultant on two projects for PBOT. These projects include the inventory, assessment, and/or design of over 1,000 ADA curb ramps over the next five years. Many of the ramps will be designed utilizing PBOT’s streamlined design methods which consist of “in-the-field layout and design” for pre-selected areas that qualify.",
+            "IMAGE": "pbot-ada-curb-ramp-replacement-program.jpg"
+        },
+        {
+            "Title": "Penske Coburg",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Coburg, OR",
+            "SERVICES PROVIDED": "Grading design\nErosion control design\nStormwater/wastewater/potable water design\nParking lot and sidewalk design\nFull street improvement",
+            "DESCRIPTION": "Emerio Design was the civil engineering consultant providing site civil design and construction engineering support for this new construction on a vacant 3.63-acre site. The facility offers full-service truck leasing, truck rental, fleet maintenance, in the 13,220 square-feet building with three truck bays, one wash bay, and a two-lane fuel island. Emerio successfully delivered onsite construction drawings and approvals for grading, erosion control, stormwater, wastewater, potable water, parking lot, sidewalks and street connection improvements.",
+            "IMAGE": "penske-coburg.jpg"
+        },
+        {
+            "Title": "Brooktree Estates",
+            "CATEGORIES": "House Design",
+            "OWNER": "Woodhill Homes",
+            "LOCATION": "Redmond, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite Layout",
+            "DESCRIPTION": "Award-winning new single family home design, featuring five unique floor plans; varying square footage and front elevations; and vaulted ceilings.",
+            "IMAGE": "brooktree-estates.jpg"
+        },
+        {
+            "Title": "Beaverton-Hillsdale Highway Safety Demonstration Project",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Project management\nStreet design\nPedestrian crossing design\nADA curb ramp design",
+            "DESCRIPTION": "Emerio was the prime consultant for this PBOT roadway design project to provide safety improvements on Beaverton-Hillsdale Highway between SW 30th and 35th Avenues. An identified high crash corridor, this section of highway has a high pedestrian crash rate and high rate of speeding. As part of PBOT's Fixing our Streets program, Emerio was responsible for design of a new marked pedestrian crossing with a median island and Rapid Flashing Beacons at 35th Avenue, a protected pedestrian/bike lane space, reduced travel lane widths, and ADA-compliant pedestrian curb ramps.",
+            "IMAGE": "beaverton-hillsdale-highway-safety-demonstration-project.jpg"
+        },
+        {
+            "Title": "SW Palentine",
+            "CATEGORIES": "House Design",
+            "OWNER": "Evergreen Homes",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "DESCRIPTION": "New construction with contemporary tree-house house design perched in the woods tucked away off I-5 in Portland. It was built as spec house for an investment company, and sold immediately, featuring clean lines and energy efficient home.",
+            "IMAGE": "sw-palentine.jpg"
+        },
+        {
+            "Title": "ADA Design & Support Services",
+            "CATEGORIES": "Transportation",
+            "OWNER": "HDR & Oregon Department of Transportation",
+            "LOCATION": "Various locations around Oregon",
+            "SERVICES PROVIDED": "Surveying\nADA training\nADA ramps inventorying",
+            "DESCRIPTION": "In support of ODOT’s mission to address compliance with the American with Disabilities Act (ADA) throughout Oregon, Emerio has been providing surveying and staff for training and inventorying services. Two of our technical staff have been trained by ODOT in ADA design standards and have been training other ODOT, consultant and contractor technical staff, as well as inventorying ADA ramps around Oregon. Once their contract is completed at the end of 2017, they will provide in-house expertise of ADA design, review, and staff training. In addition, Emerio has provided surveying at mulitple locations around the state.",
+            "IMAGE": "ada-design-support-services.jpg"
+        },
+        {
+            "Title": "Colwood Golf Course",
+            "CATEGORIES": "Site Civil, Water Resources",
+            "OWNER": "Portland Parks and Recreation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Project management\nParking lot design\nSidewalk and ADA design\nOn site stormwater management\nUtility design",
+            "DESCRIPTION": "Emerio was the prime consultant for this re-development project, providing site civil design and PS&E construction documents for civil improvements. The project scope included reconfiguration of existing parking lot, sidewalk improvements, stormwater management and a sanitary sewer extension. Parking lot improvements included reconfiguring the existing lot to current development standards and grading it to drain an acre of inflow area to a water quality facility, eventually leading to 2,300 ft2 LIDA settling and detention pond. A sewer extension was designed, decommissioning the existing septic system and tying into the public sewer line.",
+            "IMAGE": "colwood-golf-course.jpg"
+        },
+        {
+            "Title": "N. Terry",
+            "CATEGORIES": "House Design",
+            "OWNER": "Everett Custom Homes",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nLand use planning\nSurveying",
+            "DESCRIPTION": "Three houses on residential infill lots with traditional Portland design, tuck under garages and spacious front porches.",
+            "IMAGE": "n-terry.jpg"
+        },
+        {
+            "Title": "I-205: Glenn Jackson Bridge to Johnson Creek, Phase 2",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Oregon Department of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Civil design at ATM sites\nPS&E documents from Draft DAP through construction documents\nDesign exception requests\nConstruction feasibility review\nCoordination of structural components",
+            "DESCRIPTION": "As a subconsultant, Emerio is providing engineering and design services for 14 sites where Active Traffic Management (ATM) signs and structures will be added along I-205 from the Glenn Jackson Bridge to Johnson Creek Blvd. The project will also add auxiliary lanes in the northbound direction.",
+            "IMAGE": "i-205-glenn-jackson-bridge-to-johnson-creek-phase-2.jpg"
+        },
+        {
+            "Title": "Powell LIFT Operations Facility Relocation",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "TriMet",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Civil design\nConstructability reviews\nConstruction support\nParking lot design\nHydraulic analysis\nProject Management\nStormwater facility analysis and design\nStructural design of retaining wall\nWaterline design",
+            "DESCRIPTION": "As the prime consultant, Emerio provided project management and civil engineering services for a team of nine consulting engineering and architecture firms for this full-service, site improvement, and re-purposing project. The Emerio team provided the design for the parking lot and access road reconfiguration; stormwater facilities; sewer, water, power and communications connections; and a retaining wall. Due to the future expansion of the Powell Garage facility, TriMet has chosen to reconfigure the Powell Park and Ride site to accommodate its LIFT para-transit operation, as part of the phased larger Division BRT project. With the exception of 85 spaces at the existing Park and Ride site, the remainder of the property is being reconfigured for LIFT vehicle storage, employee parking, a new 7,000ft2 building, and a smaller wash building.",
+            "IMAGE": "powell-lift-operations-facility-relocation.jpg"
+        },
+        {
+            "Title": "Portland to Milwaukie Light Rail: East Segment",
+            "CATEGORIES": "Transportation",
+            "OWNER": "TriMet",
+            "LOCATION": "Portland and Milwaukie, OR",
+            "SERVICES PROVIDED": "Demolition plan & utility relocates\nRetaining wall design\nSidewalk design and pedestrian facilities\nSignage and striping plan",
+            "DESCRIPTION": "As a subconsultant, Emerio was responsible for roadside and sidewalk improvements and wall design along two sections of the East Segment of the Portland to Milwaukie Light Rail Expansion. Emerio provided designs for roadside improvements along a ¼-mile section of McLoughlin Blvd. in Milwaukie; structural design for multiple retaining walls; and sidewalk improvements on the north side of SE Powell Boulevard from the rail over pass to SE 20th Avenue.",
+            "IMAGE": "portland-to-milwaukie-light-rail-east-segment.jpg"
+        },
+        {
+            "Title": "NE 32nd Ave",
+            "CATEGORIES": "House Design",
+            "OWNER": "K&C Custom Homes",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "DESCRIPTION": "New construction on infill lot in Portland, featuring attached units and modern design with clean lines and spacious floor plan.",
+            "IMAGE": "ne-32nd-ave.jpg"
+        },
+        {
+            "Title": "NE 18th Ave",
+            "CATEGORIES": "House Design",
+            "OWNER": "Everett Custom Homes",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "DESCRIPTION": "Spacious four-square design, with tuck under garage on infill lot in Portland",
+            "IMAGE": "ne-18th-ave.jpg"
+        },
+        {
+            "Title": "Large Scale Sewer Rehabilitation",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "BES (Emerio was subconsultant to multiple prime consultants)",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Small diameter sanitary sewer design\nAutoCAD/Civil 3D support\nSurvey\nAssisted in land use and construction approvals",
+            "DESCRIPTION": "Emerio provided utility design, CAD and survey services on five separate projects within this program, with the objective to increase sewer capacity and reduce the risks of street flooding and sewage releases to homes, businesses and streets. Emerio’s design services included first assessment of pipe conditions; alternatives analysis for rehabilitation method of pipes; and then small diameter pipe design for the preferred method. In regard to CAD support, Emerio was responsible for plan and profile sheets, identifying revised sewer alignments, spot repair locations, and pipe rehabilitation/replacement. Emerio’s survey responsibilities included locating ROW areas; topographic survey used for design of new sewer lines and sewer line upgrades; conducting field investigations; verifying preferred rehabilitation methods, and utility as-built surveys. Existing conditions maps were produced in AutoCAD by adhering to the agency's standards and by requesting sample CAD files to verify compliance with drafting standards.",
+            "IMAGE": "large-scale-sewer-rehabilitation.jpg"
+        },
+        {
+            "Title": "PACR: PDX Parking Additions and Consolidated Rental Car Facility",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "Port of Portland",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Grading and erosion control\nParking lot design\nSanitary and storm sewer collection system design",
+            "DESCRIPTION": "Emerio is providing civil design services as part of the design team for this progressive design-build delivery for the new Long Term Parking and Consolidated Rental Car facility at PDX. Adjacent to the 1.6 million ft2 long term parking and rental car operations center and new customer service space, our design team is responsible to retrofit the employee parking lot.",
+            "IMAGE": "pacr-pdx-parking-additions-and-consolidated-rental-car-facility.jpg"
+        },
+        {
+            "Title": "Wheeler Basin",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "Portland Bureau of Environmental Services",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "ADA curb ramp design\nSmall diameter sanitary sewer conveyance design\nStormwater infiltration design",
+            "DESCRIPTION": "As a subconsultant, Emerio provided design and bid support for this capacity upgrades project by upsizing pipes and adding surface infiltration facilities. Emerio was responsible for conducting pre-design and alternatives analysis, and final design for stormwater, utility and ADA improvments. Emerio’s scope included \"greenstreet\" design of six raingardens within the public right of way; design of 2,000 lf extension of combination sanitary and stormwater sewer pipe; and design of five new ADA ramps.",
+            "IMAGE": "wheeler-basin.jpg"
+        },
+        {
+            "Title": "North Borthwick",
+            "CATEGORIES": "House Design",
+            "OWNER": "K&C custom homes",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "DESCRIPTION": "New construction of traditional style home with modern colors and clean lines.",
+            "IMAGE": "north-borthwick.jpg"
+        },
+        {
+            "Title": "Barcelona and LaScala Apartments",
+            "CATEGORIES": "Residential",
+            "OWNER": "Carleton Hart Architects",
+            "LOCATION": "Beaverton, OR",
+            "SERVICES PROVIDED": "Site civil design\nGrading and erosion control design\nUtility design\nSidewalk design\nSurvey",
+            "DESCRIPTION": "This approximately 54,000 sq ft property included surveying, site design, engineering, and construction management support for these two, mixed use buildings, the City of Beaverton’s first of it’s kind in affordable housing in downtown Beaverton. Each building has four floors and 5,000 square feet of commercial space on the ground floor and will provide a total of 91 living units for working residents. Emerio’s responsibility was to provide design plans for site development, grading and erosion control, and wet utilities. Cost estimating services were included for water, sewer, storm, grading and frontage improvements. Additional services included as-built drawings and construction support services, providing essential communication with the developer, primary contractor and subs, in order to meet critical deadlines and budget.",
+            "IMAGE": "barcelona-and-lascala-apartments.jpg"
+        },
+        {
+            "Title": "SE/NE 122nd Avenue and Foster Road Safety Improvements",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Sidewalk Infill\nEnhanced pedestrian crossing\nADA ramp retrofit\nStormwater management",
+            "DESCRIPTION": "As a subconsultant, Emerio developed two separate PS&E design packages from PBOT’s preliminary engineering plans. The objective along multiple sections of these heavily traveled commercial corridors was to engineer pedestrian safety improvements and to improve accessibility to transit by providing pedestrian crossings with ADA ramps and sidewalk infill. Along the SE/NE 122nd Avenue corridor, Emerio was responsible for grading, paving, striping, and signing for two Rectangular Rapid Flash Beacon (RRFB) crossings and one HAWK crossing (High Intensity Activated Crosswalk Beacon). Along SE Foster Road, a new sidewalk corridor was added, closing the gap in the existing sidewalk to improve accessibility. Stormwater improvements included catch basins and storm pipes resulting from revised geometry of the curb and gutter.",
+            "IMAGE": "se-ne-122nd-avenue-and-foster-road-safety-improvements.jpg"
+        },
+        {
+            "Title": "City Fleet Fuel Station Replacement",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "City of Portland",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Grading and erosion control\nStormwater analysis and design",
+            "DESCRIPTION": "Emerio is providing civil design services at two fueling stations owned by the City of Portland (Interstate Ave and Columbia Wastewater Treatment Plant) to upgrade the current fuel facilities to be seismically resilient.",
+            "IMAGE": "city-fleet-fuel-station-replacement.jpg"
+        },
+        {
+            "Title": "West Edge",
+            "CATEGORIES": "House Design",
+            "OWNER": "JT Roth",
+            "LOCATION": "Beaverton, OR",
+            "SERVICES PROVIDED": "Civil engineering\nHouse design\nStructural design\nLand Use Planning\nSurveying",
+            "DESCRIPTION": "20-lot subdivision of modern and contemporary 2-3 story homes, with attached garages, conveniently located in the heart of Beaverton.",
+            "IMAGE": "west-edge.jpg"
+        },
+        {
+            "Title": "Broadway Bridge Painting",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Multnomah County",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Temporary traffic control design",
+            "DESCRIPTION": "As a subconsultant, Emerio provided temporary traffic control plans for this bridge closure due to needed deck repairs and painting. The painting schedule was 70 days, making traffic flows and changing patterns for each section of the work a critical component of the project. Traffic flow was merged into two lanes during the painting project. Close coordination was required with PBOT to place signs along travel corridors east and west of the river, and ODOT as well, since signage was required on I-5 ramps.",
+            "IMAGE": "broadway-bridge-painting.jpg"
+        },
+        {
+            "Title": "King + Parks Apartments",
+            "CATEGORIES": "Residential",
+            "OWNER": "Portland Community Reinvestment Initiatives, Inc. (PCRI)",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Site civil design\nOn and off-site utility design\nSanitary sewer, water, and drainage design\nErosion control plans\nConstruction cost estimating\nUtility relocation and coordination",
+            "DESCRIPTION": "Emerio provided civil engineering services on this project led in partnership by Colas Construction and Merryman and Barnes Architects. In 2016, the Portland Housing Bureau selected Portland Community Reinvestment Initiatives, Inc. (PCRI) as the developer for this affordable housing project in close proximity to transit, shopping and social services. The vacant lot was developed into one building with a “U”-shaped internal courtyard providing housing for residents who have been displaced or at risk of displacement from N/NE Portland.",
+            "IMAGE": "king-parks-apartments.jpg"
+        },
+        {
+            "Title": "SW Sunrise Ln",
+            "CATEGORIES": "House Design",
+            "OWNER": "Scott and Leah Soles",
+            "LOCATION": "Washington County",
+            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "DESCRIPTION": "Custom home for client in suburban environment with new construction on sloping topography.",
+            "IMAGE": "sw-sunrise-ln.jpg"
+        },
+        {
+            "Title": "Division Transit Corridor",
+            "CATEGORIES": "Transportation",
+            "OWNER": "TriMet",
+            "LOCATION": "Portland and Gresham, OR",
+            "SERVICES PROVIDED": "Grading\nRoadway, sidewalk, and ADA design\nSite layout\nSurveying\nUtility design and coordination",
+            "DESCRIPTION": "As a subconsultant, Emerio is providing civil design and surveying for this enhanced 14-mile high capacity bus project extending from the north end of downtown Portland, to Gresham’s Cleveland Park and Ride via the Division Street corridor. Emerio is responsible for designing public street improvements to meet acceptable bus layover bays along multiple sections of this corridor, as well as retrofitting the Cleveland Park & Ride into a layover facility for double-articulated buses. Emerio also provided design-level topographic survey along this corridor.",
+            "IMAGE": "division-transit-corridor.jpg"
+        },
+        {
+            "Title": "kōz on Yamhill",
+            "CATEGORIES": "Residential",
+            "OWNER": "Kōz",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Sanitary sewer design\nSidewalk design\nStormwater planter",
+            "DESCRIPTION": "Emerio provided civil engineering for 30-micro-apartment units by KOZ Development, located in the historic Goose Hollow neighborhood. Our civil designers coordinated closely with multiple City of Portland bureaus, including Public Works Permitting for public sanitary sewer extension; BES for the design of private sewer lines and stormwater planter; and responded to PBOT's request to grade the public sidewalk along site frontage.",
+            "IMAGE": "koz-on-yamhill.jpg"
+        },
+        {
+            "Title": "Eagle Landing",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Happy Valley, OR",
+            "SERVICES PROVIDED": "Land use planning\nSurveying\nPreliminary site layout and design for master planning",
+            "DESCRIPTION": "Emerio provided land use planning, extensive surveying and preliminary site layout services for the land use approval process for this 17.7 acre property. Part of a larger 128-acre lifestyle community, Eagle Landing is a premier walkable urban environment in the economic heart of Portland metro’s east side with over 2.1 million square feet dedicated to a diverse mix of shopping, dining, office, entertainment, wellness, worship and home environments. The stately 96 acres surrounding the site have been thoughtfully developed to currently include a golf course, clubhouse and event facility, as well as walking paths and parks.",
+            "IMAGE": "eagle-landing.jpg"
+        },
+        {
+            "Title": "N. Denver: N. Lombard to N. Watts",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "ADA ramp upgrades\nConstructability reviews\nCrosswalk design\nIntegrated bike lanes\nRevised on-street parking\nRoadway PS&E\nSigning and striping",
+            "DESCRIPTION": "As the prime consultant, Emerio provided project management and roadway design services for this pavement rehabilitation project issued under Emerio’s current on-call contract for Street Design Services with PBOT. Mike Hohbach, Emerio’s project manager led Emerio’s design team and an MWESB certified subconsultant in developing 30%, 60%, 90% and final design for roadway PS&E construction documents.",
+            "IMAGE": "n-denver-n-lombard-to-n-watts.jpg"
+        },
+        {
+            "Title": "SE Flavel St/ NE 102nd Ave/ SE 112th Ave",
+            "CATEGORIES": "Transportation",
+            "OWNER": "Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Roadway PS&E\nCrosswalk design\nADA ramp and driveway upgrades\nSidewalk infill\nSigning and striping",
+            "DESCRIPTION": "Emerio is the prime consultant for this sidewalk infill project along three corridors for this On-Call task order which is one of the first projects to be constructed under the Fixing Our Streets program. As a result, the new sidewalk network connects 2.25 miles of streets in East Portland with sidewalks on both sides of the street and provides safer access to schools, transit and work for neighborhood residents.",
+            "IMAGE": "se-flavel-st-ne-102nd-ave-se-112th-ave.jpg"
+        },
+        {
+            "Title": "Highland Chevron",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Beaverton, OR",
+            "SERVICES PROVIDED": "ADA, parking lot, private streets and sidewalk design\nGrading and erosion control design\nHalf street improvement\nStormwater treatment\nUtility design",
+            "DESCRIPTION": "Emerio provided civil engineering services for this unique raise and rebuild project, resulting in an environmentally-friendly fueling station featuring solar energy, biodiesel, geothermal heating, electric car charging stations and a green roof. In close coordination with the planning and engineering departments of City of Beaverton, Emerio’s design team successfully solved project challenges, providing a sustainable design.",
+            "IMAGE": "highland-chevron.jpg"
+        },
+        {
+            "Title": "MLK Development",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Site Design approved by City of Portland Bureau of Development Services\nGrading design\nOn site stormwater management (infiltration planters)\nPrivate utility design\nADA design of access to building\nStriping and Signing plan",
+            "DESCRIPTION": "Emerio worked with a local architect to provide civil improvements associated with the re-development of an existing bank and construction of two additional retail buildings. Emerio performed civil engineering and land surveying services to re-design the parking lot and provide frontage improvements. After a storm drainage analysis was performed, stormwater was managed by converting a handful of parking stalls to infiltration planters. Emerio also prepared and obtained public works permits with the City for driveways, sidewalks, and ADA ramps.",
+            "IMAGE": "mlk-development.jpg"
+        },
+        {
+            "Title": "SW Ventilation and Capacity Improvements",
+            "CATEGORIES": "Water Resources",
+            "OWNER": "WSP (City of Portland Bureau of Environmental Services)",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Site civil design\nSanitary sewer design\nGrading design\nUtility coordination",
+            "DESCRIPTION": "As a subconsultant, Emerio provided civil design support on the project team to reduce sewer odors and increase the capacity of the Southwest Parallel Interceptor (SWPI) sewer system. Emerio’s task was to provide civil design, including grading and erosion control plans for the driveway and parking lot at the Ventilation Facility on the south side of SW Taylor’s Ferry Road, as well as design for the section of sewer pipeline extending from the facility to the adjacent manhole on SW Taylor’s Ferry Road.",
+            "IMAGE": "sw-ventilation-and-capacity-improvements.jpg"
+        },
+        {
+            "Title": "N. Lombard Starbucks",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Land Use Planning\nSite Design approved by City of Portland Bureau of Development Services\nGrading design\nOn site stormwater management (infiltration planters)\nPrivate utility design\nADA design of access to building\nParking lot and drive thru\nStriping and Signing plan\nODOT coordination",
+            "DESCRIPTION": "Emerio provided project management, land use planning and civil engineering services for this private re-development of an existing car wash facility into a Starbucks drive-thru. Stormwater management was accomplished by onsite infiltration planters and final construction permitting was granted by the City of Portland. Located on a major urban corridor, US 30 bypass, a major challenge was gaining approval for the striping plan from both the City of Portland’s BOT and ODOT. Grading was designed with ADA access to the building in mind and stormwater was managed on site by infiltration planters.",
+            "IMAGE": "n-lombard-starbucks.jpg"
+        },
+        {
+            "Title": "Marquis Tualatin",
+            "CATEGORIES": "Residential, Site Civil",
+            "OWNER": "Marquis Companies",
+            "LOCATION": "Tualatin, OR",
+            "SERVICES PROVIDED": "Project management\nLand use planning\nSite civil design\nGrading and erosion control\nRoadway, sidewalk, and ADA design\nUtility design and coordination",
+            "DESCRIPTION": "Emerio Design managed this project, on a 12-acre site of the demolished Tualatin Grade School and redeveloped into an 80-unit assisted living/54-bed skilled nursing senior care facility with supporting living, dining, health and community facilities for residents. Emerio handled both the civil engineering and the land use planning, which was an extensive process requiring multiple approvals from several local jurisdictions. The public improvements included a half-street widening of SW Boones Ferry Road, a waterline extension, and extensive frontage improvements. The onsite improvements included a re-designed parking lot, on site stormwater management, utilities, frontage improvements, grading, erosion control, ADA improvements.",
+            "IMAGE": "marquis-tualatin.jpg"
+        },
+        {
+            "Title": "Fernhill Park",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "Portland Parks and Recreation",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Constructability reviews\nGrading and erosion control plans\nPotable waterline design\nSanitary and storm sewer design\nSidewalk and ADA ramps",
+            "DESCRIPTION": "Emerio is providing project management for this site civil project involving design and permitting for public works improvements and on-site civil improvements. Public works improvements include sidewalk and ADA ramps, and on-site improvements include underground utilities, portable waterline, and storm water report.",
+            "IMAGE": "fernhill-park.jpg"
+        },
+        {
+            "Title": "McKenna Terrace",
+            "CATEGORIES": "Residential",
+            "OWNER": "Anlon Custom Homes",
+            "LOCATION": "Aloha, OR",
+            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nLand surveying\nStormwater management on-site\nSanitary and storm sewer conveyance design",
+            "DESCRIPTION": "Emerio provided land development services for this 23-lot subdivision, including land use planning, survey, site civil design and construction support. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
+            "IMAGE": "mckenna-terrace.jpg"
+        },
+        {
+            "Title": "Rockwood Rising",
+            "CATEGORIES": "Commercial, Residential",
+            "OWNER": "",
+            "LOCATION": "Gresham, OR",
+            "SERVICES PROVIDED": "ADA, parking lot, private streets and sidewalk design\nGrading and erosion control design\nHalf street improvement\nStormwater/wastewater/potable water design\nSurveying\nUIC permitting",
+            "DESCRIPTION": "Emerio provided civil engineering services for this 5.15 acre mixed use development which includes 3 parking lots, 3 mixed used residential and commercial buildings and a large community plaza area. This project is currently in design phases and is expected to start construction in late 2018. Emerio is the civil consultant working with architects, landscape architects and the city providing construction drawings and specifications.",
+            "IMAGE": "rockwood-rising.jpg"
+        },
+        {
+            "Title": "Peach Tree Subdivision",
+            "CATEGORIES": "Residential",
+            "OWNER": "Lennar",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Grading and erosion control\nHalf-street improvements\nSanitary and storm sewer collection systems\nStormwater master planning\nStormwater treatment facility\nStreet design\nSurveying",
+            "DESCRIPTION": "Emerio provided civil engineering and surveying for this 36-lot subdivision which has been successfully constructed. Nestled in the rolling hills near Happy Valley, grading and stormwater were major components for this subdivision. Close coordination with the City of Portland bureaus included BES for a sanitary sewer extension and PWB, for adding approximately 2000 feet of public water line and the design for a pressure reducing device located in the public right-of-way.",
+            "IMAGE": "peach-tree-subdivision.jpg"
+        },
+        {
+            "Title": "SK Northwest",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Portland, OR",
+            "SERVICES PROVIDED": "Street connections\nParking lot grading and design\nOn site stormwater management (infiltration planters)\nRetaining wall design\nTrail design",
+            "DESCRIPTION": "Emerio provided civil improvements for this site along the east bank of the Willamette River near OMSI. Storm water quality was accomplished by the incorporation of two flow through planters situated on the building’s exterior wall. The City of Portland Presumptive Approach Calculator (PAC) was used to design this vegetated facility. Site grading consisted of two parking lots, a future offsite connection, building pad and retaining walls. A leg of the popular Springwater Trail was designed by Emerio Design. This design consisted of a twelve foot wide concrete bike/pedestrian path over the project length, calling for a sectional thickness to allow emergency vehicle access.",
+            "IMAGE": "sk-northwest.jpg"
+        },
+        {
+            "Title": "Renae Court",
+            "CATEGORIES": "Residential",
+            "OWNER": "",
+            "LOCATION": "Hillsboro, OR",
+            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nLand surveying\nStormwater management on-site\nSanitary and storm sewer conveyance design",
+            "DESCRIPTION": "Emerio provided land development services for this 18-lot subdivision, including land use planning, survey, site civil design and construction admin. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
+            "IMAGE": "renae-court.jpg"
+        },
+        {
+            "Title": "River’s Edge",
+            "CATEGORIES": "Residential",
+            "OWNER": "DR Horton",
+            "LOCATION": "King City, OR",
+            "SERVICES PROVIDED": "Project management\nSite civil design\nLand use planning\nStructural design\nSurvey",
+            "DESCRIPTION": "Land development for this 80-lot, high-density subdivision in King City, OR included design for the sewer, stormwater and potable water, along with roadway and sidewalk design. Significant challenges for this property included design of the storm water swale and the 1,350 feet of soft surface trail around the wetland area adjacent to the Tualatin River. Keeping sustainability in mind, the design of the bioswale terminated before entering the wetland area and clearing of trees and shrubs for the soft surface trail was kept to a minimum.",
+            "IMAGE": "rivers-edge.jpg"
+        },
+        {
+            "Title": "Westparc at North Bethany",
+            "CATEGORIES": "Commercial",
+            "OWNER": "",
+            "LOCATION": "Washington County, OR",
+            "SERVICES PROVIDED": "Grading design\nErosion control design\nStormwater/wastewater/potable water design\nParking lot and sidewalk design\nFull street improvement",
+            "DESCRIPTION": "Emerio Design was the civil engineering consultant providing site civil design and construction engineering support for this 3-acre development. The project was successfully designed and constructed as a mixed-use residential, office and commercial development, including 149 apartment units and 11,000 square feet of commercial space. Emerio successfully delivered onsite and offsite construction drawings and specifications for grading, erosion control, stormwater, wastewater, potable water, parking lot, sidewalks and full street improvement.",
+            "IMAGE": "westparc-at-north-bethany.jpg"
+        },
+        {
+            "Title": "Tryon Creek State Park",
+            "CATEGORIES": "Site Civil",
+            "OWNER": "Oregon Department of State Parks",
+            "LOCATION": "Lake Oswego, OR",
+            "SERVICES PROVIDED": "On site stormwater management",
+            "DESCRIPTION": "Emerio was the prime consultant for this driving surface rehabilitation project. Due to the rehabilitation of impervious surfaces, a drainage treatment analysis requirement had to be met. Innovative and sustainable water quality methods were accomplished with no foreign infrastructure built in the park to treat water. Water quality treatment requirements were reached by utilizing pervious pavers, with drain rock storage underneath parking surfaces to allow for infiltration.",
+            "IMAGE": "tryon-creek-state-park.jpg"
+        }
+    ]
+}
