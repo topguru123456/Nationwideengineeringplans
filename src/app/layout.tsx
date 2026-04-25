@@ -3,6 +3,7 @@ import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { siteConfig } from "@/config/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -127,6 +128,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <SiteShell>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );
