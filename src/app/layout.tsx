@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { siteConfig } from "@/config/site";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -129,6 +130,7 @@ export default function RootLayout({
         />
         <SiteShell>{children}</SiteShell>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
