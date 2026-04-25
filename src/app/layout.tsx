@@ -56,7 +56,7 @@ const jsonLd = {
   ],
 };
 
-const metaTitle = `${siteConfig.name} | Engineering plans`;
+const metaTitle = siteConfig.name;
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 
@@ -68,12 +68,18 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
+    "Nationwide Engineering Plans",
     "engineering plans",
-    "MEP engineering",
+    "permit-ready plans",
     "permit drawings",
-    "mechanical electrical plumbing",
-    "custom home plans",
-    "commercial engineering",
+    "architectural design",
+    "structural engineering",
+    "civil engineering",
+    "MEP engineering",
+    "residential engineering plans",
+    "commercial engineering plans",
+    "house design",
+    "construction documents",
   ],
   ...(googleSiteVerification
     ? { verification: { google: googleSiteVerification } }
@@ -100,12 +106,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: [
-      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
-      { url: siteConfig.brand.logoSrc, type: "image/png", sizes: "512x512" },
-    ],
-    shortcut: "/favicon.ico",
-    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+    shortcut: "/icon.png",
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "512x512" }],
   },
 };
 

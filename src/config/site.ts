@@ -15,13 +15,13 @@ export const siteConfig = {
     showTm: true,
   },
   tagline:
-    "Architectural, structural, civil, and MEP plans—with professional stamp—for homes and commercial work nationwide.",
+    "Architectural, structural, civil, and MEP plans—with professional stamp—serving Oregon and projects nationwide.",
   /** Long-form blurb under the logo in the site footer */
   footerIntro:
     "We are a full-service firm specializing in residential design, including Civil Engineering, Structural Engineering, MEP Engineering, Construction Management, Surveying, and Land Use Planning. We are dedicated to delivering high-quality, permit-ready solutions, combining technical expertise with a strong commitment to service and attention to detail in every home we design.",
   description:
-    "Nationwide Engineering Plans: coordinated permit drawing packages spanning architectural, structural, civil, and MEP, with stamping and responsive support from concept to review.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+    "Nationwide Engineering Plans: coordinated permit drawing packages spanning architectural, structural, civil, MEP, and plan management support, serving Oregon and projects nationwide from concept through review.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.nationwideengineeringplans.com",
   locale: "en_US",
   contact: {
     email: "hello@nationwideengineeringplans.com",
@@ -36,8 +36,8 @@ export const siteConfig = {
     calendlyUrl: "https://calendly.com/jonathan-barnes-pe/discussion-meeting",
   },
   address: {
-    city: "Richmond",
-    region: "VA",
+    city: "",
+    region: "Oregon",
     country: "US",
   },
 } as const;

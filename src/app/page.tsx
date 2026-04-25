@@ -11,12 +11,11 @@ import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Home",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: `${siteConfig.name} | Engineering plans`,
+    title: siteConfig.name,
     description: siteConfig.description,
     url: "/",
   },

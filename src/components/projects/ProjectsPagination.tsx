@@ -4,7 +4,7 @@ type Props = {
   page: number;
   totalPages: number;
   onPageChange: (p: number) => void;
-  /** PermitZIP-style on red, or dark on light */
+  /** Style variant: light controls on red or white backgrounds */
   variant?: "onRed" | "onLight";
 };
 
