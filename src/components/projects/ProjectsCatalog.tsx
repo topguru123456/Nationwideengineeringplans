@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { Project } from "@/types/project";
+import { siteConfig } from "@/config/site";
 import { paginate } from "@/lib/pagination";
 import { MarketFilterChips } from "./MarketFilterChips";
 import { ProjectCard } from "./ProjectCard";
@@ -43,6 +44,9 @@ export function ProjectsCatalog({
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-600 sm:text-base">
             Filter by discipline, then open a project for location, owner, services, and description.
           </p>
+          <p className="mt-4 max-w-2xl text-xs leading-relaxed text-neutral-500 sm:text-sm">
+            {siteConfig.portfolioRepresentationNote}
+          </p>
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-6 sm:pb-28 sm:pt-10">
@@ -54,7 +58,14 @@ export function ProjectsCatalog({
             setPage(1);
           }}
         />
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+        <ProjectsPagination
+          variant="onLight"
+          placement="top"
+          page={safePage}
+          totalPages={totalPages}
+          onPageChange={setPage}
+        />
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
           {items.map((p) => (
             <ProjectCard key={p.slug} project={p} variant="panel" />
           ))}
@@ -66,6 +77,7 @@ export function ProjectsCatalog({
         ) : null}
         <ProjectsPagination
           variant="onLight"
+          placement="bottom"
           page={safePage}
           totalPages={totalPages}
           onPageChange={setPage}

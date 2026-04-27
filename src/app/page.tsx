@@ -8,6 +8,8 @@ import { HomeServicesBanner } from "@/components/home/HomeServicesBanner";
 import { HomeStatsBar } from "@/components/home/HomeStatsBar";
 import { HomeWhyUs } from "@/components/home/HomeWhyUs";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
+import { heroVideoForPath } from "@/config/hero-videos";
 import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
@@ -27,8 +29,10 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const homeVideo = heroVideoForPath("/");
   return (
     <main>
+      {homeVideo ? <VideoObjectJsonLd entry={homeVideo} /> : null}
       <HomeHero />
       <HomeStatsBar />
       <HomeAboutBand />

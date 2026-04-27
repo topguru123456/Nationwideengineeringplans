@@ -7,9 +7,6 @@ import { siteConfig } from "@/config/site";
 
 export const aboutHeroVideoSrc = "/assets/video/aboutus-hero.mp4";
 
-/** Values section — “play” opens this in a new tab */
-export const aboutValuesYoutubeUrl = "https://www.youtube.com/watch?v=PxJ3RrQebaE" as const;
-
 export const aboutPageImages = {
   hero: "/assets/images/about/hero.jpg",
   whoWeAre: "/assets/images/about/who-we-are.jpg",
@@ -25,11 +22,11 @@ export const aboutHero = {
 
 export const aboutWhoWeAre = {
   eyebrow: "Who we are",
-  headline: "Engineering plans built for real sites, real reviewers, and real construction.",
+  headline: "Survey, civil, structural, and MEP permit plans—coordinated for remote submittal.",
   body: [
-    `${siteConfig.name} brings architectural, structural, civil, and MEP documentation together so owners and design teams are not chasing fragments at permit.`,
-    "We focus on coordinated drawing sets, calculations where they matter, and clear responses through plan review—whether the job is a custom home, a multifamily wrap, or a commercial suite.",
-    "Licensed professionals stay involved from scope definition through stamping and revisions, so questions get answers from the people who signed the sheets.",
+    `${siteConfig.name} centers on the drawing disciplines plan check scrutinizes first: survey and basemaps, civil and utilities, structural framing and lateral systems, and MEP—packaged for remote permit services nationwide.`,
+    "We still coordinate architectural, energy, and specialty scope when your job needs it, but our default lane is permit-grade engineering sheets, clear narratives, and revision support through approval.",
+    "Licensed leads stay on the work from scope through stamping so RFIs and redlines come from the people responsible for the set—not from a rotating cast.",
   ],
 } as const;
 
@@ -71,7 +68,7 @@ export const aboutProcess = {
     },
     {
       title: "Step 2 — Design & documentation",
-      text: "We produce and coordinate your drawing package—architecture, structure, civil, MEP, energy, and specialty consultants as agreed—so reviewers see one story.",
+      text: "We produce and coordinate survey, civil, structural, and MEP sheets—plus architecture, energy, and specialty scope as agreed—so remote reviewers see one coordinated story.",
     },
     {
       title: "Step 3 — Permit & follow-through",

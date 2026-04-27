@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ServicesAccordions } from "@/components/services/ServicesAccordions";
 import { ServicesHeroVideo } from "@/components/services/ServicesHeroVideo";
+import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
+import { heroVideoForPath } from "@/config/hero-videos";
 import {
   servicesBottomCtas,
   servicesImageBand,
@@ -52,8 +54,10 @@ function ServicePageCta({
 }
 
 export default function ServicesPage() {
+  const servicesVideo = heroVideoForPath("/services");
   return (
     <main className="bg-white text-neutral-900">
+      {servicesVideo ? <VideoObjectJsonLd entry={servicesVideo} /> : null}
       <ServicesHeroVideo />
 
       <section className="border-b border-stone-300/60 bg-[#f4f1ea] px-4 py-16 sm:px-6 sm:py-20 md:py-24">

@@ -9,10 +9,13 @@ export type HouseDesignSeed = {
   planImage: string;
 };
 
+/** Disciplines emphasized for remote permit packages */
 const houseServices = [
-  "House design",
-  "Structural design",
-  "Permit documentation",
+  "Survey & basemap support",
+  "Civil / site coordination",
+  "Structural drawings",
+  "MEP permit sheets",
+  "Remote permit services",
 ] as const;
 
 export const houseDesignProjects: HouseDesignSeed[] = [

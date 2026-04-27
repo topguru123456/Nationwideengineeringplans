@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MARKET_FILTERS } from "@/config/markets";
+import { siteConfig } from "@/config/site";
 import type { Project } from "@/types/project";
 import { ProjectImageGallery } from "./ProjectImageGallery";
 
@@ -120,6 +121,9 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
         <h1 className="text-3xl font-light tracking-tight text-[var(--color-ink-muted)] sm:text-4xl lg:text-[2.35rem]">
           {project.title}
         </h1>
+        <p className="mt-3 max-w-3xl text-xs leading-relaxed text-[var(--color-ink-faint)] sm:text-[13px]">
+          {siteConfig.portfolioRepresentationNote}
+        </p>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-8">

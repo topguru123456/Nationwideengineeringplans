@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AboutHeroVideo } from "@/components/about/AboutHeroVideo";
+import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { Reveal } from "@/components/ui/Reveal";
+import { heroVideoForPath } from "@/config/hero-videos";
 import {
   aboutFinalCta,
   aboutPageImages,
   aboutProcess,
   aboutTeam,
   aboutValues,
-  aboutValuesYoutubeUrl,
   aboutWhoWeAre,
 } from "@/config/about-page";
 import { pageMetadata } from "@/config/page-metadata";
@@ -48,8 +49,10 @@ function SkillBar({ label, pct }: { label: string; pct: number }) {
 }
 
 export default function AboutPage() {
+  const aboutVideo = heroVideoForPath("/about");
   return (
     <main className="bg-[#faf8f5] text-neutral-900">
+      {aboutVideo ? <VideoObjectJsonLd entry={aboutVideo} /> : null}
       <AboutHeroVideo />
 
       {/* Who we are — light editorial band + red rail */}
@@ -151,19 +154,6 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={85}
               />
-              <a
-                href={aboutValuesYoutubeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex items-center justify-center bg-black/30 transition hover:bg-black/40 focus-visible:bg-black/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-                aria-label="Watch on YouTube (opens in a new tab)"
-              >
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 text-[var(--brand-red)] shadow-lg ring-4 ring-white/20 transition-transform duration-200 hover:scale-105">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </span>
-              </a>
             </div>
           </Reveal>
         </div>

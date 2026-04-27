@@ -21,31 +21,31 @@ export const homeStats = [
 ] as const;
 
 export const homeServicesBanner = {
-  title: "Full drawing packages",
+  title: "Remote permit drawing core",
   line:
-    "Architectural · Structural · Civil · MEP · PE stamp—included so you move from concept to permit without piecing disciplines together.",
+    "Survey · Civil · Structural · MEP—permit sheets and plans coordinated for remote submittal, PE-stamped where your jurisdiction requires it.",
   ctaLabel: "Schedule a call",
   ctaHref: "/contact",
 } as const;
 
 /** Shown as interactive chips above the hero headline */
 export const homeHeroDisciplines = [
-  { label: "Architecture" },
-  { label: "Structural" },
+  { label: "Survey" },
   { label: "Civil" },
+  { label: "Structural" },
   { label: "MEP" },
-  { label: "PE stamp", emphasis: true as const },
+  { label: "Remote permit", emphasis: true as const },
 ] as const;
 
 export const homeHeroCopy = {
-  headline: "Drawings that survive plan review. Field teams that actually build them.",
-  sub: "Permit-ready drawing sets from shell through systems, coordinated for your jurisdiction and PE-stamped where required.",
+  headline: "Survey, civil, structural, and MEP plans—built for permit, delivered remotely.",
+  sub: "Coordinated drawing packages for jurisdictions nationwide: basemaps, site and utility civil, framing and foundation structure, mechanical/electrical/plumbing, and submittal-ready sheet sets.",
 } as const;
 
 export const homeAboutCopy = {
   heading: "We don’t wallpaper over risk.",
   body:
-    "Tenant fit-outs, retail shells, and light multifamily need discipline—load calcs that match reality, equipment selections you can buy, and RFI answers in hours, not weeks. If your jurisdiction is picky, we’ve already met them halfway in the narrative.",
+    "Remote doesn’t mean hands-off: we align survey control with civil basemaps, keep structural selections buyable, and lock MEP loads to what plan check expects—so your permit set reads as one team, not four silos.",
   projectsLink: "View all projects",
   aboutLink: "About the practice",
 } as const;
@@ -53,14 +53,14 @@ export const homeAboutCopy = {
 export const homeWhyUsCopy = {
   heading: "Why teams keep us on speed dial",
   paragraphs: [
-    "Principals stay on your job. No bait-and-switch to interns after the proposal. You get redlines that read like a human wrote them—because one did.",
-    "We coordinate like we own the punch list: clash checks, ceiling zones, and panel schedules that don’t fight your architect’s dimensions.",
+    "Licensed leads stay on your remote permit package—survey through MEP—with redlines that read like a human wrote them, because one did.",
+    "We package for plan check: civil/storm narratives that match the survey, structural notes that match the MEP loads, and sheet IDs reviewers can follow without a scavenger hunt.",
   ],
 } as const;
 
 export const homeFinalCtaCopy = {
-  headline: "Ready for permit-ready plans?",
-  sub: "Tell us about your project—we’ll reply with timing, scope, and an honest take on next steps.",
+  headline: "Ready for remote permit drawings?",
+  sub: "Tell us your jurisdiction and which disciplines you need—we’ll reply with scope, timing, and an honest take on submittal path.",
   buttonLabel: "Start a new project",
   buttonHref: "/contact",
 } as const;

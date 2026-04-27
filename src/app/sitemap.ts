@@ -8,19 +8,18 @@ function baseUrl(): string {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = baseUrl();
-  const now = new Date();
-
+  // Omit lastModified: using build-time "now" on every deploy pollutes lastmod; only add
+  // per-URL lastmod when sourced from real content or file mtimes.
   const staticPaths: MetadataRoute.Sitemap = [
-    { url: `${base}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/projects`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/`, changeFrequency: "weekly", priority: 1 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/services`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/projects`, changeFrequency: "weekly", priority: 0.9 },
   ];
 
   const projectEntries: MetadataRoute.Sitemap = getProjectSlugs().map((slug) => ({
     url: `${base}/projects/${slug}`,
-    lastModified: now,
     changeFrequency: "yearly" as const,
     priority: 0.65,
   }));

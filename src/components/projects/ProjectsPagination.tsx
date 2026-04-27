@@ -6,6 +6,8 @@ type Props = {
   onPageChange: (p: number) => void;
   /** Style variant: light controls on red or white backgrounds */
   variant?: "onRed" | "onLight";
+  /** Distinct label when two pagers exist on one page (a11y) */
+  placement?: "top" | "bottom";
 };
 
 export function ProjectsPagination({
@@ -13,19 +15,23 @@ export function ProjectsPagination({
   totalPages,
   onPageChange,
   variant = "onRed",
+  placement = "bottom",
 }: Props) {
   if (totalPages <= 1) return null;
 
   const onRed = variant === "onRed";
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+  const ariaPlacement = placement === "top" ? " (top of list)" : " (end of list)";
 
   const btnBase =
     "flex min-h-9 min-w-9 items-center justify-center rounded-full text-sm font-bold transition disabled:opacity-35";
 
+  const marginClass = placement === "top" ? "mt-8 sm:mt-10" : "mt-12 sm:mt-14";
+
   return (
     <nav
-      className="mt-12 flex flex-wrap items-center justify-center gap-2 sm:mt-14 sm:gap-3"
-      aria-label="Project list pagination"
+      className={`${marginClass} flex flex-wrap items-center justify-center gap-2 sm:gap-3`}
+      aria-label={`Project list pagination${ariaPlacement}`}
     >
       <button
         type="button"

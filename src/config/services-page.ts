@@ -12,9 +12,9 @@ export const servicesPageImages = {
 export const servicesHeroVideoSrc = "/assets/video/services-hero.mp4";
 
 export const servicesHero = {
-  title: "Architectural design, engineering & plan management",
+  title: "Survey, civil, structural & MEP—permit plans, delivered remotely",
   subtitle:
-    "Full-service drawing packages and permit support—expand each category for a clear scope list, or contact us for a package tailored to your job.",
+    "Our core is permit submittal: basemaps and civil sheets, structural framing and calcs, MEP design and coordination—packaged for your AHJ. Expand each section for deliverables, or contact us for a tailored remote scope.",
 } as const;
 
 export const servicesAccordionHeadings = {
@@ -24,9 +24,9 @@ export const servicesAccordionHeadings = {
 
 export const servicesAccordionIntro = {
   fullScope:
-    "End-to-end drawing packages for your project type. Open a section for narrative scope and a checklist you can align with your contract and AHJ.",
+    "Remote permit packages shaped around survey, civil, structural, and MEP—plus coordination where your job still needs architectural or energy scope. Open a section for narrative and a checklist aligned to your contract and AHJ.",
   specialty:
-    "Targeted support when you need depth in one discipline—civil, structural, MEP, plan management, or construction-phase help—alongside or after the main set.",
+    "Targeted depth in survey, civil, structural, or MEP when you do not need a full multidisciplinary rebuild—plan management, redlines, or construction-phase support alongside your existing set.",
 } as const;
 
 /** Left column — descriptions & deliverables from reference / mock.html */
