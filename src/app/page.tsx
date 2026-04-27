@@ -8,16 +8,21 @@ import { HomeServicesBanner } from "@/components/home/HomeServicesBanner";
 import { HomeStatsBar } from "@/components/home/HomeStatsBar";
 import { HomeWhyUs } from "@/components/home/HomeWhyUs";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
+  description: pageMetadata.home.description,
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: siteConfig.name,
-    description: siteConfig.description,
+    description: pageMetadata.home.description,
     url: "/",
+  },
+  twitter: {
+    description: pageMetadata.home.description,
   },
 };
 

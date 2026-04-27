@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/contact/ContactSection";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: `Reach ${siteConfig.name} — email, phone, or schedule a call.`,
+  title: pageMetadata.contact.title,
+  description: pageMetadata.contact.description,
   alternates: { canonical: "/contact" },
   openGraph: {
     title: `Contact | ${siteConfig.name}`,
-    description: `Reach ${siteConfig.name} — email, phone, or schedule a call.`,
+    description: pageMetadata.contact.description,
     url: "/contact",
+  },
+  twitter: {
+    description: pageMetadata.contact.description,
   },
 };
 

@@ -4,6 +4,13 @@ import { MARKET_FILTERS } from "@/config/markets";
 import type { Project } from "@/types/project";
 import { ProjectImageGallery } from "./ProjectImageGallery";
 
+function heroLead(text: string, max = 240) {
+  const t = text.replace(/\s+/g, " ").trim();
+  const m = t.match(/^(.+?[.!?])(\s|$)/);
+  const s = m ? m[1]! : t;
+  return s.length > max ? `${s.slice(0, max - 1).trim()}…` : s;
+}
+
 function CheckIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -79,7 +86,7 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
               Projects
             </p>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
-              Explore our projects. Reach out if you would like to discuss work with our team.
+              {heroLead(project.description)}
             </p>
           </div>
           <nav

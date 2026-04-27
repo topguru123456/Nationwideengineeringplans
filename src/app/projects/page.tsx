@@ -5,17 +5,21 @@ import {
   ProjectsCatalog,
   ProjectsPageFallback,
 } from "@/components/projects/ProjectsCatalog";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: `Representative projects from ${siteConfig.name}.`,
+  title: pageMetadata.projects.title,
+  description: pageMetadata.projects.description,
   alternates: { canonical: "/projects" },
   openGraph: {
     title: `Projects | ${siteConfig.name}`,
-    description: `Representative projects from ${siteConfig.name}.`,
+    description: pageMetadata.projects.description,
     url: "/projects",
+  },
+  twitter: {
+    description: pageMetadata.projects.description,
   },
 };
 

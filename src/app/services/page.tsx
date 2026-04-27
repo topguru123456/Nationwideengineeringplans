@@ -8,16 +8,20 @@ import {
   servicesImageBand,
   servicesPageImages,
 } from "@/config/services-page";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Our Services",
-  description: `${siteConfig.name} — architectural, structural, civil, and MEP design with plan management and PE stamping for residential and commercial projects.`,
+  title: pageMetadata.services.title,
+  description: pageMetadata.services.description,
   alternates: { canonical: "/services" },
   openGraph: {
     title: `Our Services | ${siteConfig.name}`,
-    description: `Architectural design, engineering, and plan management from ${siteConfig.name}.`,
+    description: pageMetadata.services.description,
     url: "/services",
+  },
+  twitter: {
+    description: pageMetadata.services.description,
   },
 };
 

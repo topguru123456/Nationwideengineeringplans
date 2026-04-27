@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ProjectDetailLayout } from "@/components/projects/ProjectDetailLayout";
 import { siteConfig } from "@/config/site";
 import { getProjectBySlug, getProjectSlugs } from "@/data/projects";
+import { metaDescriptionForProject } from "@/lib/seo-project";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -14,13 +15,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Project" };
+  const description = metaDescriptionForProject(project);
+  const ogTitle = `${project.title} | ${siteConfig.name}`;
   return {
     title: project.title,
-    description: project.excerpt,
+    description,
     alternates: { canonical: `/projects/${slug}` },
     openGraph: {
-      title: `${project.title} | ${siteConfig.name}`,
-      description: project.excerpt,
+      title: ogTitle,
+      description,
       url: `/projects/${slug}`,
       images: [
         {
@@ -29,6 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           height: project.coverImage.height,
         },
       ],
+    },
+    twitter: {
+      title: ogTitle,
+      description,
     },
   };
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
+import { headerNav, siteConfig } from "@/config/site";
 
 const iconMuted = "text-neutral-500";
 
@@ -64,6 +64,20 @@ export function SiteFooter() {
               <p className="mt-5 max-w-xl text-[12px] font-semibold leading-relaxed tracking-tight text-neutral-800 sm:text-[13px]">
                 {footerIntro}
               </p>
+              <nav
+                aria-label="Site sections"
+                className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1e3a5f] sm:text-[11px] sm:tracking-[0.14em]"
+              >
+                {headerNav.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="transition hover:text-[var(--brand-red)]"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
             </div>
 
             <div className="grid gap-10 sm:grid-cols-2 sm:gap-8 lg:col-span-6 lg:items-start lg:gap-12">

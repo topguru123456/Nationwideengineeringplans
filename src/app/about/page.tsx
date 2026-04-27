@@ -12,16 +12,20 @@ import {
   aboutValuesYoutubeUrl,
   aboutWhoWeAre,
 } from "@/config/about-page";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: `Who we are, how we work, and how ${siteConfig.name} delivers coordinated permit plans nationwide.`,
+  title: pageMetadata.about.title,
+  description: pageMetadata.about.description,
   alternates: { canonical: "/about" },
   openGraph: {
     title: `About Us | ${siteConfig.name}`,
-    description: `Meet the practice behind ${siteConfig.name} — multidisciplinary drawing packages and plan review support.`,
+    description: pageMetadata.about.description,
     url: "/about",
+  },
+  twitter: {
+    description: pageMetadata.about.description,
   },
 };
 

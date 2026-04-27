@@ -16,9 +16,14 @@ export const siteConfig = {
   },
   tagline:
     "Architectural, structural, civil, and MEP plans—with professional stamp—serving Oregon and projects nationwide.",
-  /** Long-form blurb under the logo in the site footer */
+  /**
+   * Footer copy only — not used in meta tags. Wording is intentionally distinct
+   * from page titles/descriptions to avoid near-duplicate snippets.
+   */
   footerIntro:
-    "We are a full-service firm specializing in residential design, including Civil Engineering, Structural Engineering, MEP Engineering, Construction Management, Surveying, and Land Use Planning. We are dedicated to delivering high-quality, permit-ready solutions, combining technical expertise with a strong commitment to service and attention to detail in every home we design.",
+    "Integrated civil, structural, MEP, surveying, and land-use planning for residential and commercial builds—coordinated sheets, permit narratives, and responsive coordination from first submittal through approved construction documents.",
+  /** Optional sameAs URLs for Organization JSON-LD (Google Business, LinkedIn, etc.) */
+  sameAs: [] as string[],
   description:
     "Nationwide Engineering Plans: coordinated permit drawing packages spanning architectural, structural, civil, MEP, and plan management support, serving Oregon and projects nationwide from concept through review.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.nationwideengineeringplans.com",

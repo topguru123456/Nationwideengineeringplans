@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/layout/SiteShell";
+import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -24,6 +25,18 @@ const display = Fraunces({
 const siteUrl = siteConfig.url.replace(/\/$/, "");
 const defaultOgImage = siteConfig.brand.logoSrc;
 
+const orgNode: Record<string, unknown> = {
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  name: siteConfig.name,
+  description: siteConfig.description,
+  url: siteUrl,
+  logo: `${siteUrl}${siteConfig.brand.logoSrc}`,
+};
+if (siteConfig.sameAs.length > 0) {
+  orgNode.sameAs = [...siteConfig.sameAs];
+}
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -36,18 +49,13 @@ const jsonLd = {
       inLanguage: siteConfig.locale.replace("_", "-"),
       publisher: { "@id": `${siteUrl}/#organization` },
     },
-    {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      name: siteConfig.name,
-      url: siteUrl,
-      logo: `${siteUrl}${siteConfig.brand.logoSrc}`,
-    },
+    orgNode,
     {
       "@type": "ProfessionalService",
       "@id": `${siteUrl}/#professional-service`,
       name: siteConfig.name,
       description: siteConfig.description,
+      slogan: siteConfig.tagline,
       url: siteUrl,
       provider: { "@id": `${siteUrl}/#organization` },
       areaServed: {
@@ -68,7 +76,7 @@ export const metadata: Metadata = {
     default: metaTitle,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description: pageMetadata.home.description,
   keywords: [
     "Nationwide Engineering Plans",
     "engineering plans",
@@ -92,7 +100,7 @@ export const metadata: Metadata = {
     locale: siteConfig.locale.replace("_", "-"),
     siteName: siteConfig.name,
     title: metaTitle,
-    description: siteConfig.description,
+    description: pageMetadata.home.description,
     images: [
       {
         url: defaultOgImage,
@@ -103,7 +111,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: metaTitle,
-    description: siteConfig.description,
+    description: pageMetadata.home.description,
     images: [defaultOgImage],
   },
   robots: { index: true, follow: true },
