@@ -41,10 +41,20 @@ export const siteConfig = {
     calendlyUrl: "https://calendly.com/jonathan-barnes-pe/discussion-meeting",
   },
   address: {
-    city: "",
-    region: "Oregon",
+    street: "3482 SW US Veterans Hospital Rd",
+    city: "Portland",
+    region: "OR",
+    postalCode: "97239",
     country: "US",
   },
+  /**
+   * Footer map (no API key): OpenStreetMap embed. Clear `openStreetMapEmbedUrl` to hide the map.
+   * Centered on `address` (marker + bbox). Re-paste from openstreetmap.org → Share → HTML if you move.
+   */
+  mapLocationLabel: "3482 SW US Veterans Hospital Rd, Portland, OR 97239",
+  /** bbox = minLon,minLat,maxLon,maxLat; marker = lat,lon */
+  openStreetMapEmbedUrl:
+    "https://www.openstreetmap.org/export/embed.html?bbox=-122.691%2C45.4935%2C-122.677%2C45.5005&layer=mapnik&marker=45.49674%2C-122.68392" as const,
   /**
    * Shown on project detail: portfolio entries may mix representative narrative with
    * real scope—confirm with the firm before relying on a listing for RFP/contract.
