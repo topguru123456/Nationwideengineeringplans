@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { pageMetadata } from "@/config/page-metadata";
@@ -7,20 +6,9 @@ import { siteConfig } from "@/config/site";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const sans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sans-body",
-  weight: ["400", "500", "600", "700"],
-});
-
-/** Display serif for hero and key editorial headlines */
-const display = Fraunces({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-display",
-  weight: ["600", "700"],
-});
+/** Runtime Google Fonts CSS — avoids `next/font/google` build-time fetch (offline CI / blocked networks). */
+const googleFontsHref =
+  "https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap";
 
 const siteUrl = siteConfig.url.replace(/\/$/, "");
 const defaultOgImage = siteConfig.brand.logoSrc;
@@ -79,14 +67,13 @@ export const metadata: Metadata = {
   description: pageMetadata.home.description,
   keywords: [
     "Nationwide Engineering Plans",
-    "remote permit drawings",
-    "remote engineering plans",
-    "survey for permit",
+    "permit drawings",
+    "permit-ready plans",
     "civil permit plans",
     "structural permit drawings",
     "MEP permit plans",
     "permit submittal support",
-    "permit-ready plans",
+    "engineering plans",
     "residential engineering plans",
     "commercial engineering plans",
     "construction documents",
@@ -128,10 +115,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`h-full ${sans.variable} ${display.variable}`}>
-      <body
-        className={`${sans.className} min-h-full flex flex-col bg-[var(--color-surface)] text-base leading-relaxed text-[var(--color-ink)] antialiased`}
-      >
+    <html lang="en" className="h-full">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href={googleFontsHref} rel="stylesheet" />
+      </head>
+      <body className="font-sans min-h-full flex flex-col bg-[var(--color-surface)] text-base leading-relaxed text-[var(--color-ink)] antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

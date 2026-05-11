@@ -95,9 +95,6 @@ export function SiteFooter() {
                   className="h-[5rem] w-auto sm:h-[5.5rem]"
                 />
               </Link>
-              <p className="mt-5 max-w-xl text-[12px] font-semibold leading-relaxed tracking-tight text-neutral-800 sm:text-[13px]">
-                {footerIntro}
-              </p>
               <nav
                 aria-label="Site sections"
                 className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1e3a5f] sm:text-[11px] sm:tracking-[0.14em]"

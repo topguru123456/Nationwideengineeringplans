@@ -96,22 +96,29 @@ export function HomeHero() {
           </div>
         </HeroStep>
 
-        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={90} className="mt-8">
+        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={90} className="mt-6">
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/75 sm:text-xs">
+            {homeHeroCopy.eyebrow}
+          </p>
           <h1
             id="home-hero-heading"
-            className="font-display max-w-[20ch] text-balance text-[2.125rem] font-semibold leading-[1.12] tracking-[-0.02em] drop-shadow-[0_4px_32px_rgba(0,0,0,0.75)] sm:max-w-[22ch] sm:text-[2.75rem] sm:leading-[1.1] md:text-5xl lg:max-w-[24ch] lg:text-[3.25rem] xl:text-[3.5rem]"
+            className="font-display mt-3 max-w-[min(100%,34rem)] text-balance text-[1.65rem] font-semibold leading-snug tracking-[-0.02em] drop-shadow-[0_4px_32px_rgba(0,0,0,0.75)] sm:mt-3.5 sm:max-w-2xl sm:text-[2rem] sm:leading-snug md:text-[2.25rem]"
           >
             {homeHeroCopy.headline}
           </h1>
         </HeroStep>
 
-        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={180} className="mt-6">
-          <p className="max-w-lg text-base leading-relaxed text-white/95 drop-shadow-[0_2px_20px_rgba(0,0,0,0.65)] sm:max-w-xl sm:text-[17px] md:text-lg">
-            {homeHeroCopy.sub}
-          </p>
+        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={180} className="mt-5 w-full sm:mt-6">
+          <ul className="mx-auto flex max-w-md flex-col gap-3 text-center sm:max-w-lg">
+            {homeHeroCopy.supportPoints.map((line) => (
+              <li key={line} className="text-[16px] font-medium leading-snug text-white/95 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)] sm:text-[17px]">
+                {line}
+              </li>
+            ))}
+          </ul>
         </HeroStep>
 
-        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={260} className="mt-11">
+        <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={260} className="mt-7 sm:mt-8">
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/projects"

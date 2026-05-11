@@ -21,31 +21,37 @@ export const homeStats = [
 ] as const;
 
 export const homeServicesBanner = {
-  title: "Remote permit drawing core",
+  title: "Permit-ready drawing sets",
   line:
-    "Survey · Civil · Structural · MEP—permit sheets and plans coordinated for remote submittal, PE-stamped where your jurisdiction requires it.",
+    "Civil, structural, and MEP: coordinated sheets and narratives for your building department, PE-stamped where required.",
   ctaLabel: "Schedule a call",
   ctaHref: "/contact",
 } as const;
 
 /** Shown as interactive chips above the hero headline */
 export const homeHeroDisciplines = [
-  { label: "Survey" },
   { label: "Civil" },
   { label: "Structural" },
   { label: "MEP" },
-  { label: "Remote permit", emphasis: true as const },
+  { label: "50 states", emphasis: true as const },
 ] as const;
 
 export const homeHeroCopy = {
-  headline: "Survey, civil, structural, and MEP plans—built for permit, delivered remotely.",
-  sub: "Coordinated drawing packages for jurisdictions nationwide: basemaps, site and utility civil, framing and foundation structure, mechanical/electrical/plumbing, and submittal-ready sheet sets.",
+  eyebrow: "Nationwide Engineering Plans",
+  headline:
+    "Civil, structural, and MEP plans for permit review, built to match how your jurisdiction works",
+  supportPoints: [
+    "Licensed in all 50 states",
+    "Residential and light commercial: civil, structural, and MEP in one coordinated set",
+  ],
 } as const;
 
 export const homeAboutCopy = {
-  heading: "We don’t wallpaper over risk.",
-  body:
-    "Remote doesn’t mean hands-off: we align survey control with civil basemaps, keep structural selections buyable, and lock MEP loads to what plan check expects—so your permit set reads as one team, not four silos.",
+  heading: "Experienced engineering team, nationwide and permit-ready",
+  bodyParagraphs: [
+    "Behind every package is a multidisciplinary crew: engineers and designers who know residential and light commercial plan review and what an approved set looks like on the street.",
+    "We focus on code compliance, constructability, and clear responses to reviewers. Projects span all fifty states; the constant is coordinated work tailored to each building department, not a generic template.",
+  ],
   projectsLink: "View all projects",
   aboutLink: "About the practice",
 } as const;
@@ -53,14 +59,14 @@ export const homeAboutCopy = {
 export const homeWhyUsCopy = {
   heading: "Why teams keep us on speed dial",
   paragraphs: [
-    "Licensed leads stay on your remote permit package—survey through MEP—with redlines that read like a human wrote them, because one did.",
-    "We package for plan check: civil/storm narratives that match the survey, structural notes that match the MEP loads, and sheet IDs reviewers can follow without a scavenger hunt.",
+    "Licensed leads stay on your package from civil through MEP. Redlines come from the engineers who signed the sheets, not a handoff queue.",
+    "We package for plan check: civil and storm narratives aligned with your basemap, structural notes aligned with MEP loads, and sheet numbering reviewers can follow.",
   ],
 } as const;
 
 export const homeFinalCtaCopy = {
-  headline: "Ready for remote permit drawings?",
-  sub: "Tell us your jurisdiction and which disciplines you need—we’ll reply with scope, timing, and an honest take on submittal path.",
+  headline: "Ready for permit-ready drawings?",
+  sub: "Tell us your jurisdiction and what disciplines you need. We reply with scope, timing, and a straight answer on next steps.",
   buttonLabel: "Start a new project",
   buttonHref: "/contact",
 } as const;

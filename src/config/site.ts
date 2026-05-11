@@ -15,17 +15,17 @@ export const siteConfig = {
     showTm: true,
   },
   tagline:
-    "Remote survey, civil, structural, and MEP permit drawings and plans—delivered for jurisdictions nationwide, coordinated from Oregon.",
+    "Civil, structural, and MEP permit drawings and plans—delivered nationwide with Oregon-based coordination and jurisdiction-aware submittals.",
   /**
    * Footer copy only — not used in meta tags. Wording is intentionally distinct
    * from page titles/descriptions to avoid near-duplicate snippets.
    */
   footerIntro:
-    "Survey, civil, structural, and MEP sheets packaged for permit submittal—developed remotely with coordinated basemaps, calculations, narratives, and revision support through plan review.",
+    "Civil, structural, and MEP sheets packaged for permit submittal—coordinated basemaps, calculations, narratives, and revision support through plan review.",
   /** Optional sameAs URLs for Organization JSON-LD (Google Business, LinkedIn, etc.) */
   sameAs: [] as string[],
   description:
-    "Nationwide Engineering Plans: remote survey, civil, structural, and MEP drawing sets for permit services nationwide—coordinated plans, code-aware details, and responsive submittal support from Oregon.",
+    "Nationwide Engineering Plans: civil, structural, and MEP drawing sets for permit services nationwide—coordinated plans, code-aware details, and responsive submittal support from Oregon.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.nationwideengineeringplans.com",
   locale: "en_US",
   contact: {
@@ -65,8 +65,8 @@ export const siteConfig = {
 
 export const headerNav = [
   { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Our Services" },
-  { href: "/about", label: "About Us" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;

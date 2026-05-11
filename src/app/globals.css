@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 :root {
+  /** Body / display stacks — pair with Google Fonts `<link>` in `layout.tsx` (not `next/font/google`). */
+  --font-sans-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
   /** Synced by `SiteHeader` for mobile menu offset when utility bar is visible */
   --site-preheader-h: 2.5rem;
   --brand-red: #e63946;

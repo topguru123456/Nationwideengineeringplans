@@ -79,7 +79,7 @@ export default function AboutPage() {
               <h2 className="font-display mt-3 text-3xl font-semibold leading-tight tracking-tight text-neutral-900 sm:text-4xl">
                 {aboutWhoWeAre.headline}
               </h2>
-              <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-600 sm:text-lg">
+              <div className="mt-6 max-w-prose space-y-5 text-base leading-[1.7] text-neutral-600 sm:text-lg">
                 {aboutWhoWeAre.body.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}

@@ -5,7 +5,6 @@ export const MARKET_FILTERS = [
   "House Design",
   "Residential",
   "Site Civil",
-  "Survey",
   "Transportation",
   "Water Resources",
 ] as const;

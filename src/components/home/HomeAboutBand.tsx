@@ -42,9 +42,11 @@ export function HomeAboutBand() {
           <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
             {homeAboutCopy.heading}
           </h2>
-          <p className="mt-6 text-lg leading-[1.75] text-neutral-600">
-            {homeAboutCopy.body}
-          </p>
+          <div className="mt-6 space-y-5 text-lg leading-[1.75] text-neutral-600">
+            {homeAboutCopy.bodyParagraphs.map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
             <Link
               href="/projects"

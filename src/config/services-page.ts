@@ -12,9 +12,9 @@ export const servicesPageImages = {
 export const servicesHeroVideoSrc = "/assets/video/services-hero.mp4";
 
 export const servicesHero = {
-  title: "Survey, civil, structural & MEP—permit plans, delivered remotely",
+  title: "Civil, structural & MEP—permit plans, nationwide",
   subtitle:
-    "Our core is permit submittal: basemaps and civil sheets, structural framing and calcs, MEP design and coordination—packaged for your AHJ. Expand each section for deliverables, or contact us for a tailored remote scope.",
+    "Our core is permit submittal: basemaps and civil sheets, structural framing and calcs, MEP design and coordination—packaged for your AHJ. Expand each section for deliverables, or contact us for a scope that fits your job.",
 } as const;
 
 export const servicesAccordionHeadings = {
@@ -24,9 +24,9 @@ export const servicesAccordionHeadings = {
 
 export const servicesAccordionIntro = {
   fullScope:
-    "Remote permit packages shaped around survey, civil, structural, and MEP—plus coordination where your job still needs architectural or energy scope. Open a section for narrative and a checklist aligned to your contract and AHJ.",
+    "Permit packages built around civil, structural, and MEP—plus coordination where your job still needs architectural or energy scope. Open a section for narrative and a checklist aligned to your contract and AHJ.",
   specialty:
-    "Targeted depth in survey, civil, structural, or MEP when you do not need a full multidisciplinary rebuild—plan management, redlines, or construction-phase support alongside your existing set.",
+    "Targeted depth in civil, structural, or MEP when you do not need a full multidisciplinary rebuild—plan management, redlines, or construction-phase support alongside your existing set.",
 } as const;
 
 /** Left column — descriptions & deliverables from reference / mock.html */
@@ -39,7 +39,7 @@ export const servicesFullScopeItems = [
     deliverables: [
       "Architectural plans",
       "Structural plans",
-      "Topographic survey",
+      "Topographic basemap documentation",
       "Grading plans",
       "Title 24",
       "Solar design and coordination",
@@ -106,7 +106,7 @@ export const servicesFullScopeItems = [
     deliverables: [
       "Architectural plans",
       "Structural plans",
-      "Topographic survey",
+      "Topographic basemap documentation",
       "Grading plans",
       "Mechanical, electrical, and plumbing plans",
       "Title 24",
@@ -125,7 +125,7 @@ export const servicesFullScopeItems = [
     deliverables: [
       "Architectural plans",
       "Structural plans",
-      "Topographic map survey",
+      "Topographic basemap documentation",
       "Grading plans",
       "Mechanical, electrical, and plumbing plans",
       "Title 24",
@@ -153,9 +153,9 @@ export const servicesSpecialtyItems = [
   },
   {
     id: "civil",
-    title: "Civil surveying and engineering",
+    title: "Civil and site engineering",
     deliverables: [
-      "Topographic map survey",
+      "Topographic basemap documentation",
       "Construction staking",
       "Grading plans",
       "Irrigation & erosion control plan",

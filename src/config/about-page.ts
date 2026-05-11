@@ -22,11 +22,11 @@ export const aboutHero = {
 
 export const aboutWhoWeAre = {
   eyebrow: "Who we are",
-  headline: "Survey, civil, structural, and MEP permit plans—coordinated for remote submittal.",
+  headline: "Civil, structural, and MEP permit plans—fully coordinated for streamlined submittal.",
   body: [
-    `${siteConfig.name} centers on the drawing disciplines plan check scrutinizes first: survey and basemaps, civil and utilities, structural framing and lateral systems, and MEP—packaged for remote permit services nationwide.`,
-    "We still coordinate architectural, energy, and specialty scope when your job needs it, but our default lane is permit-grade engineering sheets, clear narratives, and revision support through approval.",
-    "Licensed leads stay on the work from scope through stamping so RFIs and redlines come from the people responsible for the set—not from a rotating cast.",
+    `${siteConfig.name} focuses on the core disciplines most critical to plan check approval: site and utility civil design, structural framing and lateral systems, and MEP. Each project is delivered as a coordinated, permit-ready drawing package aligned with local jurisdiction requirements.`,
+    "We coordinate architectural, energy, and specialty scopes when required, but our primary focus is delivering high-quality engineering sheets, clear narratives, and responsive revision support through final approval.",
+    "Licensed engineers remain directly involved from initial scope through final stamping, ensuring that RFIs, comments, and revisions are handled by the professionals responsible for the design—not passed between teams.",
   ],
 } as const;
 
@@ -68,7 +68,7 @@ export const aboutProcess = {
     },
     {
       title: "Step 2 — Design & documentation",
-      text: "We produce and coordinate survey, civil, structural, and MEP sheets—plus architecture, energy, and specialty scope as agreed—so remote reviewers see one coordinated story.",
+      text: "We produce and coordinate civil, structural, and MEP sheets—plus architecture, energy, and specialty scope as agreed—so reviewers see one coordinated story.",
     },
     {
       title: "Step 3 — Permit & follow-through",

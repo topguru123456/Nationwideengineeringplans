@@ -182,6 +182,7 @@ export async function POST(request: Request) {
     const confirmResult = await resend.emails.send({
       from,
       to: [email],
+      replyTo: to,
       subject: "We received your inquiry",
       text:
         "Thanks for contacting Nationwide Engineering Plans. We received your inquiry and will get back to you shortly.",

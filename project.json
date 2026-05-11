@@ -14,17 +14,17 @@
             "CATEGORIES": "Water Resources",
             "OWNER": "Portland Bureau of Environmental Services",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Legal descriptions\nTopographic survey and basemapping\nRetaining walls\nStormwater facilities",
-            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided survey and structural services for this joint BES and PBOT project to improve transportation and stormwater facilities along SW Capitol Hwy. Scope included topographic survey and basemapping, legal descriptions, new stormwater system improvements at multiple locations along the corridor, and retaining wall design. Project is currently under construction.",
+            "SERVICES PROVIDED": "Legal descriptions\nTopographic basemap and basemapping\nRetaining walls\nStormwater facilities",
+            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided mapping and structural services for this joint BES and PBOT project to improve transportation and stormwater facilities along SW Capitol Hwy. Scope included Topographic basemap and basemapping, legal descriptions, new stormwater system improvements at multiple locations along the corridor, and retaining wall design. Project is currently under construction.",
             "IMAGE": "capitol-highway-stormwater-improvements.jpg"
         },
         {
             "Title": "Marquis Eugene Senior Living",
-            "CATEGORIES": "Residential, Survey",
+            "CATEGORIES": "Residential, Site Civil",
             "LOCATION": "Eugene, OR",
-            "SERVICES PROVIDED": "Grading\nStorm sewer design\nDomestic fire and water service\nParking lot\nStormwater raingardens/planters\nRetaining walls\n3D survey mapping\nBoundary and topographic survey\nConstruction staking",
+            "SERVICES PROVIDED": "Grading\nStorm sewer design\nDomestic fire and water service\nParking lot\nStormwater raingardens/planters\nRetaining walls\n3D mapping\nBoundary and Topographic basemap\nConstruction staking",
             "OWNER": "Marquis Companies",
-            "DESCRIPTION": "Nationwide Engineering Plans surveyed, designed, and managed this multi-building and multi-phased development with 76 senior housing units as well as an assisted-living and memory care center on a 12-acre vacant lot in Eugene, OR. This 4-phased project includes a 3-story, 99,000 sq ft assisted-living and memory care building; 44 independent living townhouses for seniors; 30 duplex cottage units; and a community center with a gym, pool, cafe, and other site amenities. Site improvements consisted of relocation of existing site access to 2 commercial driveways and design of private infrastructure including grading, storm, sewer, domestic fire and water service, parking lot, stormwater raingardens/planters, and retaining wall. Survey scope included full boundary and topographic survey, providing record information for the design of the site, and construction staking. Additionally, Our survey design staff provided 3D mapping for machine control used by the contractor on site.",
+            "DESCRIPTION": "Nationwide Engineering Plans documented, designed, and managed this multi-building and multi-phased development with 76 senior housing units as well as an assisted-living and memory care center on a 12-acre vacant lot in Eugene, OR. This 4-phased project includes a 3-story, 99,000 sq ft assisted-living and memory care building; 44 independent living townhouses for seniors; 30 duplex cottage units; and a community center with a gym, pool, cafe, and other site amenities. Site improvements consisted of relocation of existing site access to 2 commercial driveways and design of private infrastructure including grading, storm, sewer, domestic fire and water service, parking lot, stormwater raingardens/planters, and retaining wall. Field documentation included full boundary and Topographic basemap, providing record information for the design of the site, and construction staking. Additionally, Our geomatics staff provided 3D mapping for machine control used by the contractor on site.",
             "IMAGE": "marquis-eugene-senior-living.png"
         },
         {
@@ -38,47 +38,47 @@
         },
         {
             "Title": "Pruner Rd/Industrial Way Traffic Control",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "Douglas County",
             "LOCATION": "Myrtle Creek, OR",
-            "SERVICES PROVIDED": "Topographic survey and basemap\nUtility location\nROW resolution",
-            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided survey services for this intersection improvement project. Tasks included topographic survey and basemap preparation, utility location, and ROW resolution.",
+            "SERVICES PROVIDED": "Topographic basemap documentation\nUtility location\nROW resolution",
+            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided mapping and documentation for this intersection improvement project. Tasks included Topographic basemap documentation preparation, utility location, and ROW resolution.",
             "IMAGE": "pruner-rd-industrial-way-traffic-control.jpg"
         },
         {
             "Title": "Portland Japanese Garden",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "Portland Japanese Garden",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Boundary resolution\nTopographic and as-built surveys\nUtility location",
-            "DESCRIPTION": "Nationwide Engineering Plans is providing surveying services for this 12-acre garden in the forested hills of SW Portland, helping create a comprehensive site map that will help facilitate the planning and communication necessary to effectively support the continued growth, changes, and challenges inherent in maintaining the space.",
+            "SERVICES PROVIDED": "Boundary resolution\nTopographic and as-built documentation\nUtility location",
+            "DESCRIPTION": "Nationwide Engineering Plans is providing field documentation services for this 12-acre garden in the forested hills of SW Portland, helping create a comprehensive site map that will help facilitate the planning and communication necessary to effectively support the continued growth, changes, and challenges inherent in maintaining the space.",
             "IMAGE": "portland-japanese-garden.jpg"
         },
         {
-            "Title": "Cedar Hills Topo Survey",
-            "CATEGORIES": "Survey",
+            "Title": "Cedar Hills Topo documentation",
+            "CATEGORIES": "Site Civil",
             "OWNER": "Clean Water Services",
             "LOCATION": "Beaverton, OR",
-            "SERVICES PROVIDED": "Topographic survey\nROW location\nUtility location",
-            "DESCRIPTION": "Nationwide Engineering Plans is performing surveying services for this infiltration and inflow sewer rehabilitation project for an approx. 30 acre subdivision in Beaverton. With the goal of locating existing sewer mains and sewer lateral connections and elevations, The scope includes topographical survey and base map of project right-of-way and location of building corners, low points on buildings, and utilities.",
+            "SERVICES PROVIDED": "Topographic basemap\nROW location\nUtility location",
+            "DESCRIPTION": "Nationwide Engineering Plans is performing field documentation services for this infiltration and inflow sewer rehabilitation project for an approx. 30 acre subdivision in Beaverton. With the goal of locating existing sewer mains and sewer lateral connections and elevations, The scope includes Topographic basemap and base map of project right-of-way and location of building corners, low points on buildings, and utilities.",
             "IMAGE": "cedar-hills-topo-survey.jpg"
         },
         {
             "Title": "I-205: Stafford Road to OR99E Corridor Road Widening",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "ODOT",
             "LOCATION": "West Linn, OR",
-            "SERVICES PROVIDED": "Survey Control Network\nTopographic survey & mapping\nDTM\nROW resolution",
-            "DESCRIPTION": "Subconsultant providing topographic and base map survey on this project to widen I-205 to three northbound and three southbound through lanes from the Stafford Road Interchange on the south to OR213 on the north.",
+            "SERVICES PROVIDED": "Control network\nTopographic basemap & mapping\nDTM\nROW resolution",
+            "DESCRIPTION": "Subconsultant providing topographic and basemap documentation on this project to widen I-205 to three northbound and three southbound through lanes from the Stafford Road Interchange on the south to OR213 on the north.",
             "IMAGE": "i-205-stafford-road-to-or99e-corridor-road-widening.jpg"
         },
         {
             "Title": "NE Alberta St: 14th – 30th Ave",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "PBOT",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Survey Control Network\nTopographic Survey\nBoundary Line and Parcel Surveys\nMetes and Bounds/Easement/ROW/Legal Descriptions",
-            "DESCRIPTION": "As prime consultant, Nationwide Engineering Plans provided topographic and 3D mapping survey for this on-call paving project on NE Alberta Street from the intersections of 14th Ave to 30th Ave. Safety improvements also include updating corners that do not meet current ADA standards.",
+            "SERVICES PROVIDED": "Control network\nTopographic basemap\nBoundary line and parcel documentation\nMetes and Bounds/Easement/ROW/Legal Descriptions",
+            "DESCRIPTION": "As prime consultant, Nationwide Engineering Plans provided topographic and 3D mapping documentation for this on-call paving project on NE Alberta Street from the intersections of 14th Ave to 30th Ave. Safety improvements also include updating corners that do not meet current ADA standards.",
             "IMAGE": "ne-alberta-st-14th-30th-ave.jpg"
         },
         {
@@ -149,7 +149,7 @@
             "CATEGORIES": "Construction Management, Site Civil",
             "OWNER": "Beaverton School District",
             "LOCATION": "Beaverton, OR",
-            "SERVICES PROVIDED": "Public frontage improvements\nConstruction inspection\nStormwater treatment facilities\nConstruction documents to include Plans, Specs & Estimates\nSurveying and easements",
+            "SERVICES PROVIDED": "Public frontage improvements\nConstruction inspection\nStormwater treatment facilities\nConstruction documents to include Plans, Specs & Estimates\nEasement documentation",
             "DESCRIPTION": "Nationwide Engineering Plans provided site civil design and construction inspection to support DLR Group, the lead architect, for this redevelopment project. Construction was completed in 2019 and replaced the current facility with a modern, 87,200 sq.ft., two-story building that holds 750 students.",
             "IMAGE": "william-walker-elementary-school.jpg"
         },
@@ -182,29 +182,29 @@
         },
         {
             "Title": "Columbia Blvd Wastewater Treatment Plant Secondary Treatment Expansion (STEP)",
-            "CATEGORIES": "Site Civil, Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "Portland Bureau of Environmental Services",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Site analysis and layout\nSite piping, grading, and drainage\nErosion control\nHorizontal and vertical control network\nBasemapping\nTopographic survey\nTunnel scanning",
-            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans is providing engineering and surveying services for this project to add two secondary treatment clarifiers and repurpose the site of existing facilities for expansion to increase capacity and prevent unnecessary overburden of the treatment plant. Nationwide Engineering Plans is providing full topographic survey and tunnel scanning and civil design for both process & non-process facilities.",
+            "SERVICES PROVIDED": "Site analysis and layout\nSite piping, grading, and drainage\nErosion control\nHorizontal and vertical control network\nBasemapping\nTopographic basemap\nTunnel scanning",
+            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans is providing engineering and field documentation services for this project to add two secondary treatment clarifiers and repurpose the site of existing facilities for expansion to increase capacity and prevent unnecessary overburden of the treatment plant. Nationwide Engineering Plans is providing full Topographic basemap and tunnel scanning and civil design for both process & non-process facilities.",
             "IMAGE": "columbia-blvd-wastewater-treatment-plant-secondary-treatment-expansion-step.jpg"
         },
         {
             "Title": "PBOT Tunnel Illumination Upgrades",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "Portland Bureau of Transportation",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Utility coordination\nTraffic control plans\n3D scanning and survey",
-            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided survey services to support the tunnel illumination upgrades for four tunnels including: Rocky Butte Tunnel, Burnside Tunnel, Cornell Tunnels, and Naito Parkway Tunnel. Survey was conducted at each tunnel to identify tunnel portal heights, high points near the center of the tunnel and elevation of the tunnel walls at the curb line. Existing utilities were also located and surveyed between the tunnel portals and electrical service locations to minimize any conflicts.",
+            "SERVICES PROVIDED": "Utility coordination\nTraffic control plans\n3D scanning and documentation",
+            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans provided mapping and documentation to support the tunnel illumination upgrades for four tunnels including: Rocky Butte Tunnel, Burnside Tunnel, Cornell Tunnels, and Naito Parkway Tunnel. Field documentation was conducted at each tunnel to identify tunnel portal heights, high points near the center of the tunnel and elevation of the tunnel walls at the curb line. Existing utilities were also located and documented between the tunnel portals and electrical service locations to minimize any conflicts.",
             "IMAGE": "pbot-tunnel-illumination-upgrades.jpg"
         },
         {
             "Title": "Providence Park Settlement Monitoring",
-            "CATEGORIES": "Survey",
+            "CATEGORIES": "Site Civil",
             "OWNER": "City of Portland Office of Management & Finance",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Land surveying and monitoring\nSet control points\nEstablish a control network",
-            "DESCRIPTION": "Nationwide Engineering Plans is providing surveying services at Providence Park, setting monitoring and reference points in the stadium tied to City of Portland benchmarks and datum. Beginning prior to and continuing during recent construction, this monitoring holds to the strict standards of the construction industry and the City of Portland’s quality assurance programs.",
+            "SERVICES PROVIDED": "Geodetic monitoring and control\nSet control points\nEstablish a control network",
+            "DESCRIPTION": "Nationwide Engineering Plans is providing field documentation services at Providence Park, setting monitoring and reference points in the stadium tied to City of Portland benchmarks and datum. Beginning prior to and continuing during recent construction, this monitoring holds to the strict standards of the construction industry and the City of Portland’s quality assurance programs.",
             "IMAGE": "providence-park-settlement-monitoring.jpg"
         },
         {
@@ -248,7 +248,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "Evergreen Homes",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite documentation",
             "DESCRIPTION": "New construction with contemporary tree-house house design perched in the woods tucked away off I-5 in Portland. It was built as spec house for an investment company, and sold immediately, featuring clean lines and energy efficient home.",
             "IMAGE": "sw-palentine.jpg"
         },
@@ -257,8 +257,8 @@
             "CATEGORIES": "Transportation",
             "OWNER": "HDR & Oregon Department of Transportation",
             "LOCATION": "Various locations around Oregon",
-            "SERVICES PROVIDED": "Surveying\nADA training\nADA ramps inventorying",
-            "DESCRIPTION": "In support of ODOT’s mission to address compliance with the American with Disabilities Act (ADA) throughout Oregon, Nationwide Engineering Plans has been providing surveying and staff for training and inventorying services. Two of our technical staff have been trained by ODOT in ADA design standards and have been training other ODOT, consultant and contractor technical staff, as well as inventorying ADA ramps around Oregon. Once their contract is completed at the end of 2017, they will provide in-house expertise of ADA design, review, and staff training. In addition, Nationwide Engineering Plans has provided surveying at mulitple locations around the state.",
+            "SERVICES PROVIDED": "Site documentation\nADA training\nADA ramps inventorying",
+            "DESCRIPTION": "In support of ODOT’s mission to address compliance with the American with Disabilities Act (ADA) throughout Oregon, Nationwide Engineering Plans has been providing field documentation and staff for training and inventorying services. Two of our technical staff have been trained by ODOT in ADA design standards and have been training other ODOT, consultant and contractor technical staff, as well as inventorying ADA ramps around Oregon. Once their contract is completed at the end of 2017, they will provide in-house expertise of ADA design, review, and staff training. In addition, Nationwide Engineering Plans has provided field work at multiple locations around the state.",
             "IMAGE": "ada-design-support-services.jpg"
         },
         {
@@ -275,7 +275,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "Everett Custom Homes",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "House design\nStructural design\nLand use planning\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nLand use planning\nSite documentation",
             "DESCRIPTION": "Three houses on residential infill lots with traditional Portland design, tuck under garages and spacious front porches.",
             "IMAGE": "n-terry.jpg"
         },
@@ -311,7 +311,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "K&C Custom Homes",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite documentation",
             "DESCRIPTION": "New construction on infill lot in Portland, featuring attached units and modern design with clean lines and spacious floor plan.",
             "IMAGE": "ne-32nd-ave.jpg"
         },
@@ -320,7 +320,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "Everett Custom Homes",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite documentation",
             "DESCRIPTION": "Spacious four-square design, with tuck under garage on infill lot in Portland",
             "IMAGE": "ne-18th-ave.jpg"
         },
@@ -329,8 +329,8 @@
             "CATEGORIES": "Water Resources",
             "OWNER": "BES (Nationwide Engineering Plans was subconsultant to multiple prime consultants)",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Small diameter sanitary sewer design\nAutoCAD/Civil 3D support\nSurvey\nAssisted in land use and construction approvals",
-            "DESCRIPTION": "Nationwide Engineering Plans provided utility design, CAD and survey services on five separate projects within this program, with the objective to increase sewer capacity and reduce the risks of street flooding and sewage releases to homes, businesses and streets. Our design services included first assessment of pipe conditions; alternatives analysis for rehabilitation method of pipes; and then small diameter pipe design for the preferred method. In regard to CAD support, Nationwide Engineering Plans was responsible for plan and profile sheets, identifying revised sewer alignments, spot repair locations, and pipe rehabilitation/replacement. Our survey responsibilities included locating ROW areas; topographic survey used for design of new sewer lines and sewer line upgrades; conducting field investigations; verifying preferred rehabilitation methods, and utility as-built surveys. Existing conditions maps were produced in AutoCAD by adhering to the agency's standards and by requesting sample CAD files to verify compliance with drafting standards.",
+            "SERVICES PROVIDED": "Small diameter sanitary sewer design\nAutoCAD/Civil 3D support\nField documentation\nAssisted in land use and construction approvals",
+            "DESCRIPTION": "Nationwide Engineering Plans provided utility design, CAD and field documentation services on five separate projects within this program, with the objective to increase sewer capacity and reduce the risks of street flooding and sewage releases to homes, businesses and streets. Our design services included first assessment of pipe conditions; alternatives analysis for rehabilitation method of pipes; and then small diameter pipe design for the preferred method. In regard to CAD support, Nationwide Engineering Plans was responsible for plan and profile sheets, identifying revised sewer alignments, spot repair locations, and pipe rehabilitation/replacement. Our field documentation included locating ROW areas; Topographic basemap used for design of new sewer lines and sewer line upgrades; conducting field investigations; verifying preferred rehabilitation methods, and utility as-built documentation. Existing conditions maps were produced in AutoCAD by adhering to the agency's standards and by requesting sample CAD files to verify compliance with drafting standards.",
             "IMAGE": "large-scale-sewer-rehabilitation.jpg"
         },
         {
@@ -356,7 +356,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "K&C custom homes",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite documentation",
             "DESCRIPTION": "New construction of traditional style home with modern colors and clean lines.",
             "IMAGE": "north-borthwick.jpg"
         },
@@ -365,8 +365,8 @@
             "CATEGORIES": "Residential",
             "OWNER": "Carleton Hart Architects",
             "LOCATION": "Beaverton, OR",
-            "SERVICES PROVIDED": "Site civil design\nGrading and erosion control design\nUtility design\nSidewalk design\nSurvey",
-            "DESCRIPTION": "This approximately 54,000 sq ft property included surveying, site design, engineering, and construction management support for these two, mixed use buildings, the City of Beaverton’s first of it’s kind in affordable housing in downtown Beaverton. Each building has four floors and 5,000 square feet of commercial space on the ground floor and will provide a total of 91 living units for working residents. Our responsibility was to provide design plans for site development, grading and erosion control, and wet utilities. Cost estimating services were included for water, sewer, storm, grading and frontage improvements. Additional services included as-built drawings and construction support services, providing essential communication with the developer, primary contractor and subs, in order to meet critical deadlines and budget.",
+            "SERVICES PROVIDED": "Site civil design\nGrading and erosion control design\nUtility design\nSidewalk design\ndocumentation",
+            "DESCRIPTION": "This approximately 54,000 sq ft property included site documentation, site design, engineering, and construction management support for these two, mixed use buildings, the City of Beaverton’s first of it’s kind in affordable housing in downtown Beaverton. Each building has four floors and 5,000 square feet of commercial space on the ground floor and will provide a total of 91 living units for working residents. Our responsibility was to provide design plans for site development, grading and erosion control, and wet utilities. Cost estimating services were included for water, sewer, storm, grading and frontage improvements. Additional services included as-built drawings and construction support services, providing essential communication with the developer, primary contractor and subs, in order to meet critical deadlines and budget.",
             "IMAGE": "barcelona-and-lascala-apartments.jpg"
         },
         {
@@ -392,7 +392,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "JT Roth",
             "LOCATION": "Beaverton, OR",
-            "SERVICES PROVIDED": "Civil engineering\nHouse design\nStructural design\nLand Use Planning\nSurveying",
+            "SERVICES PROVIDED": "Civil engineering\nHouse design\nStructural design\nLand Use Planning\nSite documentation",
             "DESCRIPTION": "20-lot subdivision of modern and contemporary 2-3 story homes, with attached garages, conveniently located in the heart of Beaverton.",
             "IMAGE": "west-edge.jpg"
         },
@@ -419,7 +419,7 @@
             "CATEGORIES": "House Design",
             "OWNER": "Scott and Leah Soles",
             "LOCATION": "Washington County",
-            "SERVICES PROVIDED": "House design\nStructural design\nSurveying",
+            "SERVICES PROVIDED": "House design\nStructural design\nSite documentation",
             "DESCRIPTION": "Custom home for client in suburban environment with new construction on sloping topography.",
             "IMAGE": "sw-sunrise-ln.jpg"
         },
@@ -428,8 +428,8 @@
             "CATEGORIES": "Transportation",
             "OWNER": "TriMet",
             "LOCATION": "Portland and Gresham, OR",
-            "SERVICES PROVIDED": "Grading\nRoadway, sidewalk, and ADA design\nSite layout\nSurveying\nUtility design and coordination",
-            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans is providing civil design and surveying for this enhanced 14-mile high capacity bus project extending from the north end of downtown Portland, to Gresham’s Cleveland Park and Ride via the Division Street corridor. Nationwide Engineering Plans is responsible for designing public street improvements to meet acceptable bus layover bays along multiple sections of this corridor, as well as retrofitting the Cleveland Park & Ride into a layover facility for double-articulated buses. Nationwide Engineering Plans also provided design-level topographic survey along this corridor.",
+            "SERVICES PROVIDED": "Grading\nRoadway, sidewalk, and ADA design\nSite layout\nSite documentation\nUtility design and coordination",
+            "DESCRIPTION": "As a subconsultant, Nationwide Engineering Plans is providing civil design and field documentation for this enhanced 14-mile high capacity bus project extending from the north end of downtown Portland, to Gresham’s Cleveland Park and Ride via the Division Street corridor. Nationwide Engineering Plans is responsible for designing public street improvements to meet acceptable bus layover bays along multiple sections of this corridor, as well as retrofitting the Cleveland Park & Ride into a layover facility for double-articulated buses. Nationwide Engineering Plans also provided design-level Topographic basemap along this corridor.",
             "IMAGE": "division-transit-corridor.jpg"
         },
         {
@@ -446,8 +446,8 @@
             "CATEGORIES": "Commercial",
             "OWNER": "",
             "LOCATION": "Happy Valley, OR",
-            "SERVICES PROVIDED": "Land use planning\nSurveying\nPreliminary site layout and design for master planning",
-            "DESCRIPTION": "Nationwide Engineering Plans provided land use planning, extensive surveying and preliminary site layout services for the land use approval process for this 17.7 acre property. Part of a larger 128-acre lifestyle community, Eagle Landing is a premier walkable urban environment in the economic heart of Portland metro’s east side with over 2.1 million square feet dedicated to a diverse mix of shopping, dining, office, entertainment, wellness, worship and home environments. The stately 96 acres surrounding the site have been thoughtfully developed to currently include a golf course, clubhouse and event facility, as well as walking paths and parks.",
+            "SERVICES PROVIDED": "Land use planning\nSite documentation\nPreliminary site layout and design for master planning",
+            "DESCRIPTION": "Nationwide Engineering Plans provided land use planning, extensive site measurement and preliminary site layout services for the land use approval process for this 17.7 acre property. Part of a larger 128-acre lifestyle community, Eagle Landing is a premier walkable urban environment in the economic heart of Portland metro’s east side with over 2.1 million square feet dedicated to a diverse mix of shopping, dining, office, entertainment, wellness, worship and home environments. The stately 96 acres surrounding the site have been thoughtfully developed to currently include a golf course, clubhouse and event facility, as well as walking paths and parks.",
             "IMAGE": "eagle-landing.jpg"
         },
         {
@@ -483,7 +483,7 @@
             "OWNER": "",
             "LOCATION": "Portland, OR",
             "SERVICES PROVIDED": "Site Design approved by City of Portland Bureau of Development Services\nGrading design\nOn site stormwater management (infiltration planters)\nPrivate utility design\nADA design of access to building\nStriping and Signing plan",
-            "DESCRIPTION": "Nationwide Engineering Plans worked with a local architect to provide civil improvements associated with the re-development of an existing bank and construction of two additional retail buildings. Nationwide Engineering Plans performed civil engineering and land surveying services to re-design the parking lot and provide frontage improvements. After a storm drainage analysis was performed, stormwater was managed by converting a handful of parking stalls to infiltration planters. Nationwide Engineering Plans also prepared and obtained public works permits with the City for driveways, sidewalks, and ADA ramps.",
+            "DESCRIPTION": "Nationwide Engineering Plans worked with a local architect to provide civil improvements associated with the re-development of an existing bank and construction of two additional retail buildings. Nationwide Engineering Plans performed civil engineering and Site measurement services to re-design the parking lot and provide frontage improvements. After a storm drainage analysis was performed, stormwater was managed by converting a handful of parking stalls to infiltration planters. Nationwide Engineering Plans also prepared and obtained public works permits with the City for driveways, sidewalks, and ADA ramps.",
             "IMAGE": "mlk-development.jpg"
         },
         {
@@ -527,8 +527,8 @@
             "CATEGORIES": "Residential",
             "OWNER": "Anlon Custom Homes",
             "LOCATION": "Aloha, OR",
-            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nLand surveying\nStormwater management on-site\nSanitary and storm sewer conveyance design",
-            "DESCRIPTION": "Nationwide Engineering Plans provided land development services for this 23-lot subdivision, including land use planning, survey, site civil design and construction support. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
+            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nSite measurement\nStormwater management on-site\nSanitary and storm sewer conveyance design",
+            "DESCRIPTION": "Nationwide Engineering Plans provided land development services for this 23-lot subdivision, including land use planning, documentation, site civil design and construction support. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
             "IMAGE": "mckenna-terrace.jpg"
         },
         {
@@ -536,7 +536,7 @@
             "CATEGORIES": "Commercial, Residential",
             "OWNER": "",
             "LOCATION": "Gresham, OR",
-            "SERVICES PROVIDED": "ADA, parking lot, private streets and sidewalk design\nGrading and erosion control design\nHalf street improvement\nStormwater/wastewater/potable water design\nSurveying\nUIC permitting",
+            "SERVICES PROVIDED": "ADA, parking lot, private streets and sidewalk design\nGrading and erosion control design\nHalf street improvement\nStormwater/wastewater/potable water design\nSite documentation\nUIC permitting",
             "DESCRIPTION": "Nationwide Engineering Plans provided civil engineering services for this 5.15 acre mixed use development which includes 3 parking lots, 3 mixed used residential and commercial buildings and a large community plaza area. This project is currently in design phases and is expected to start construction in late 2018. Nationwide Engineering Plans is the civil consultant working with architects, landscape architects and the city providing construction drawings and specifications.",
             "IMAGE": "rockwood-rising.jpg"
         },
@@ -545,8 +545,8 @@
             "CATEGORIES": "Residential",
             "OWNER": "Lennar",
             "LOCATION": "Portland, OR",
-            "SERVICES PROVIDED": "Grading and erosion control\nHalf-street improvements\nSanitary and storm sewer collection systems\nStormwater master planning\nStormwater treatment facility\nStreet design\nSurveying",
-            "DESCRIPTION": "Nationwide Engineering Plans provided civil engineering and surveying for this 36-lot subdivision which has been successfully constructed. Nestled in the rolling hills near Happy Valley, grading and stormwater were major components for this subdivision. Close coordination with the City of Portland bureaus included BES for a sanitary sewer extension and PWB, for adding approximately 2000 feet of public water line and the design for a pressure reducing device located in the public right-of-way.",
+            "SERVICES PROVIDED": "Grading and erosion control\nHalf-street improvements\nSanitary and storm sewer collection systems\nStormwater master planning\nStormwater treatment facility\nStreet design\nSite documentation",
+            "DESCRIPTION": "Nationwide Engineering Plans provided civil engineering and site documentation for this 36-lot subdivision which has been successfully constructed. Nestled in the rolling hills near Happy Valley, grading and stormwater were major components for this subdivision. Close coordination with the City of Portland bureaus included BES for a sanitary sewer extension and PWB, for adding approximately 2000 feet of public water line and the design for a pressure reducing device located in the public right-of-way.",
             "IMAGE": "peach-tree-subdivision.jpg"
         },
         {
@@ -563,8 +563,8 @@
             "CATEGORIES": "Residential",
             "OWNER": "",
             "LOCATION": "Hillsboro, OR",
-            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nLand surveying\nStormwater management on-site\nSanitary and storm sewer conveyance design",
-            "DESCRIPTION": "Nationwide Engineering Plans provided land development services for this 18-lot subdivision, including land use planning, survey, site civil design and construction admin. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
+            "SERVICES PROVIDED": "ADA, roadway, and sidewalk design\nGrading and erosion control design\nLand use planning\nSite measurement\nStormwater management on-site\nSanitary and storm sewer conveyance design",
+            "DESCRIPTION": "Nationwide Engineering Plans provided land development services for this 18-lot subdivision, including land use planning, documentation, site civil design and construction admin. For the site civil design, we provided the site layout and designed the underground utilities, roadway and on-site stormwater treatment facility.",
             "IMAGE": "renae-court.jpg"
         },
         {
@@ -572,7 +572,7 @@
             "CATEGORIES": "Residential",
             "OWNER": "DR Horton",
             "LOCATION": "King City, OR",
-            "SERVICES PROVIDED": "Project management\nSite civil design\nLand use planning\nStructural design\nSurvey",
+            "SERVICES PROVIDED": "Project management\nSite civil design\nLand use planning\nStructural design\ndocumentation",
             "DESCRIPTION": "Land development for this 80-lot, high-density subdivision in King City, OR included design for the sewer, stormwater and potable water, along with roadway and sidewalk design. Significant challenges for this property included design of the storm water swale and the 1,350 feet of soft surface trail around the wetland area adjacent to the Tualatin River. Keeping sustainability in mind, the design of the bioswale terminated before entering the wetland area and clearing of trees and shrubs for the soft surface trail was kept to a minimum.",
             "IMAGE": "rivers-edge.jpg"
         },
