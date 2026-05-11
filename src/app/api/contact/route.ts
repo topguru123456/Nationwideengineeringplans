@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import {
+  contactConfirmationHtml,
+  contactConfirmationPlainText,
+  contactConfirmationSubject,
+} from "@/lib/contact-confirmation-email";
 
 type ContactPayload = {
   name?: string;
@@ -183,9 +188,9 @@ export async function POST(request: Request) {
       from,
       to: [email],
       replyTo: to,
-      subject: "We received your inquiry",
-      text:
-        "Thanks for contacting Nationwide Engineering Plans. We received your inquiry and will get back to you shortly.",
+      subject: contactConfirmationSubject(),
+      text: contactConfirmationPlainText(name),
+      html: contactConfirmationHtml(name),
     });
     if ((confirmResult as { error?: unknown }).error) {
       throw new Error(
