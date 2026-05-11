@@ -33,7 +33,7 @@ export function contactConfirmationSubject(): string {
 
 export function contactConfirmationPlainText(fullName: string): string {
   const first = firstNameFromFullName(fullName);
-  const { name, url, contact } = siteConfig;
+  const { name, contact } = siteConfig;
   const site = emailPublicBaseUrl();
   const wa = `https://wa.me/${contact.whatsappDigits}`;
   const tel = `tel:+${contact.phoneDigits}`;
@@ -45,7 +45,7 @@ export function contactConfirmationPlainText(fullName: string): string {
     "",
     "What happens next:",
     `- We typically reply by email. If you shared a phone number and a call is easier, we may reach out that way.`,
-    `- Need to add details? Reply to this email and your note will go straight to our inbox.`,
+    `- Need to add photos, files, or more detail? Email ${contact.email} — that is our main inbox and the clearest place to send updates.`,
     "",
     "If your request is urgent, you can also reach us directly:",
     "",
@@ -110,7 +110,9 @@ export function contactConfirmationHtml(fullName: string): string {
                 <tr>
                   <td style="vertical-align:top;padding:0 10px 0 0;font-size:22px;line-height:1.2;color:${BRAND_RED};">•</td>
                   <td style="font-size:15px;line-height:1.55;color:${MUTED};">
-                    Need to add details? Reply to this email—your note goes straight to our team.
+                    Need to add photos, files, or more detail? Email us at
+                    <a href="mailto:${mail}" style="color:#1565c0;text-decoration:underline;">${mail}</a>
+                    — that is our main inbox.
                   </td>
                 </tr>
               </table>
