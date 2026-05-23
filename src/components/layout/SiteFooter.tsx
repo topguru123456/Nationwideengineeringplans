@@ -42,7 +42,7 @@ function IconWhatsApp({ className }: { className?: string }) {
 const COPYRIGHT_YEAR = 2026;
 
 export function SiteFooter() {
-  const { contact, name, brand, footerIntro, mapLocationLabel, openStreetMapEmbedUrl } = siteConfig;
+  const { contact, name, brand, mapLocationLabel, openStreetMapEmbedUrl } = siteConfig;
   const tel = `tel:+${contact.phoneDigits}`;
   const wa = `https://wa.me/${contact.whatsappDigits}`;
 

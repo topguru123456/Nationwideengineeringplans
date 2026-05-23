@@ -22,7 +22,12 @@ export const siteConfig = {
    */
   footerIntro:
     "Civil, structural, and MEP sheets packaged for permit submittal—coordinated basemaps, calculations, narratives, and revision support through plan review.",
-  /** Optional sameAs URLs for Organization JSON-LD (Google Business, LinkedIn, etc.) */
+  /**
+   * Google Business Profile public URL (Share / Maps link). Added to JSON-LD `sameAs` when set.
+   * Example: https://maps.app.goo.gl/... or your Maps place URL from Google Business.
+   */
+  googleBusinessProfileUrl: "https://maps.app.goo.gl/zbPCLMe2BFHDYF9s7 " as string,
+  /** Optional sameAs URLs for Organization JSON-LD (LinkedIn, etc.) */
   sameAs: [] as string[],
   description:
     "Nationwide Engineering Plans: civil, structural, and MEP drawing sets for permit services nationwide—coordinated plans, code-aware details, and responsive submittal support from Oregon.",
@@ -47,12 +52,9 @@ export const siteConfig = {
     postalCode: "97239",
     country: "US",
   },
-  /**
-   * Footer map (no API key): OpenStreetMap embed. Clear `openStreetMapEmbedUrl` to hide the map.
-   * Centered on `address` (marker + bbox). Re-paste from openstreetmap.org → Share → HTML if you move.
-   */
+  /** Footer map heading / caption. Clear `openStreetMapEmbedUrl` to hide the map. */
   mapLocationLabel: "3482 SW US Veterans Hospital Rd, Portland, OR 97239",
-  /** bbox = minLon,minLat,maxLon,maxLat; marker = lat,lon */
+  /** OpenStreetMap embed — centered on `address`. Re-paste from openstreetmap.org → Share → HTML if you move. */
   openStreetMapEmbedUrl:
     "https://www.openstreetmap.org/export/embed.html?bbox=-122.691%2C45.4935%2C-122.677%2C45.5005&layer=mapnik&marker=45.49674%2C-122.68392" as const,
   /**

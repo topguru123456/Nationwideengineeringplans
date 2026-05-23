@@ -13,6 +13,23 @@ const googleFontsHref =
 const siteUrl = siteConfig.url.replace(/\/$/, "");
 const defaultOgImage = siteConfig.brand.logoSrc;
 
+const { address } = siteConfig;
+const postalAddress = {
+  "@type": "PostalAddress",
+  streetAddress: address.street,
+  addressLocality: address.city,
+  addressRegion: address.region,
+  postalCode: address.postalCode,
+  addressCountry: address.country,
+};
+
+const sameAsUrls = [
+  ...siteConfig.sameAs,
+  ...(siteConfig.googleBusinessProfileUrl.trim()
+    ? [siteConfig.googleBusinessProfileUrl.trim()]
+    : []),
+];
+
 const orgNode: Record<string, unknown> = {
   "@type": "Organization",
   "@id": `${siteUrl}/#organization`,
@@ -20,9 +37,10 @@ const orgNode: Record<string, unknown> = {
   description: siteConfig.description,
   url: siteUrl,
   logo: `${siteUrl}${siteConfig.brand.logoSrc}`,
+  address: postalAddress,
 };
-if (siteConfig.sameAs.length > 0) {
-  orgNode.sameAs = [...siteConfig.sameAs];
+if (sameAsUrls.length > 0) {
+  orgNode.sameAs = sameAsUrls;
 }
 
 const jsonLd = {
@@ -46,10 +64,24 @@ const jsonLd = {
       slogan: siteConfig.tagline,
       url: siteUrl,
       provider: { "@id": `${siteUrl}/#organization` },
+      address: postalAddress,
+      ...(sameAsUrls.length > 0 ? { sameAs: sameAsUrls } : {}),
       areaServed: {
         "@type": "Country",
         name: "United States",
       },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${siteUrl}/#local-business`,
+      name: siteConfig.name,
+      description: siteConfig.description,
+      url: siteUrl,
+      image: `${siteUrl}${siteConfig.brand.logoSrc}`,
+      telephone: `+${siteConfig.contact.phoneDigits}`,
+      email: siteConfig.contact.email,
+      address: postalAddress,
+      ...(sameAsUrls.length > 0 ? { sameAs: sameAsUrls } : {}),
     },
   ],
 };
