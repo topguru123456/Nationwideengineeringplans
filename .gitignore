@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local tooling (portfolio sync, scrapers — not deployed)
 /scripts/
+
+# cursor IDE (plans, local config)
+/.cursor/

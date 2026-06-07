@@ -33,7 +33,25 @@ const extraAllowedDevHosts =
 
 const isProd = process.env.NODE_ENV === "production";
 
+const CANONICAL_HOST = "www.nationwideengineeringplans.com";
+
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "nationwideengineeringplans.com" }],
+        destination: `https://${CANONICAL_HOST}/:path*`,
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "nationwideengineeringplans.vercel.app" }],
+        destination: `https://${CANONICAL_HOST}/:path*`,
+        permanent: true,
+      },
+    ];
+  },
   turbopack: {
     root: appDir,
   },

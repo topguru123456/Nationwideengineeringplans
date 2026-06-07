@@ -120,19 +120,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: pageMetadata.home.description,
-  keywords: [
-    "Nationwide Engineering Plans",
-    "permit drawings",
-    "permit-ready plans",
-    "civil permit plans",
-    "structural permit drawings",
-    "MEP permit plans",
-    "permit submittal support",
-    "engineering plans",
-    "residential engineering plans",
-    "commercial engineering plans",
-    "construction documents",
-  ],
   ...(googleSiteVerification
     ? { verification: { google: googleSiteVerification } }
     : {}),

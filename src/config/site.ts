@@ -28,12 +28,16 @@ export const siteConfig = {
    * Google Business Profile public URL (Share / Maps link). Added to JSON-LD `sameAs` when set.
    * Example: https://maps.app.goo.gl/... or your Maps place URL from Google Business.
    */
-  googleBusinessProfileUrl: "https://maps.app.goo.gl/zbPCLMe2BFHDYF9s7 " as string,
+  googleBusinessProfileUrl: "https://maps.app.goo.gl/zbPCLMe2BFHDYF9s7" as string,
   /** Optional sameAs URLs for Organization JSON-LD (LinkedIn, etc.) */
   sameAs: [] as string[],
   description:
     "Nationwide Engineering Plans: civil, structural, and MEP drawing sets for permit services nationwide—coordinated plans, code-aware details, and responsive submittal support from Oregon.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.nationwideengineeringplans.com",
+  /** Production: set NEXT_PUBLIC_SITE_URL=https://www.nationwideengineeringplans.com in Vercel */
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.nationwideengineeringplans.com").replace(
+    /\/$/,
+    "",
+  ),
   locale: "en_US",
   contact: {
     email: "hello@nationwideengineeringplans.com",
