@@ -1,4 +1,5 @@
 import type { Project } from "@/types/project";
+import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { MarketFilterNav } from "./MarketFilterNav";
 import { ProjectCard } from "./ProjectCard";
@@ -23,7 +24,22 @@ export function ProjectsCatalog({
             Engineering &amp; Permit Plan Projects
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-600 sm:text-base">
-            Filter by discipline, then open a project for location, owner, services, and description.
+            Filter by discipline, then open a project for location, owner, services, and description. Need
+            plans for a new job? Explore our{" "}
+            <Link
+              href="/services"
+              className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"
+            >
+              civil, structural, and MEP services
+            </Link>
+            , or{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"
+            >
+              contact us to scope a project
+            </Link>
+            .
           </p>
           <p className="mt-4 max-w-2xl text-xs leading-relaxed text-neutral-500 sm:text-sm">
             {siteConfig.portfolioRepresentationNote}

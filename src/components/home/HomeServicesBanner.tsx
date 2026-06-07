@@ -3,7 +3,7 @@ import { homeServicesBanner } from "@/config/home-landing";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function HomeServicesBanner() {
-  const { title, line, ctaLabel, ctaHref } = homeServicesBanner;
+  const { title, ctaLabel, ctaHref } = homeServicesBanner;
   return (
     <section
       className="services-strip border-y border-black/20 py-16 text-center text-white shadow-[0_0_0_1px_rgba(0,0,0,0.15)] sm:py-20"
@@ -17,10 +17,19 @@ export function HomeServicesBanner() {
           >
             {title}
           </h2>
-          <p className="mt-6 text-lg font-medium leading-snug text-white sm:text-xl">{line}</p>
+          <p className="mt-6 text-lg font-medium leading-snug text-white sm:text-xl">
+            Civil, structural, and MEP:{" "}
+            <Link
+              href="/services"
+              className="underline underline-offset-4 transition hover:text-white/95"
+            >
+              see our full permit plan services
+            </Link>
+            {" "}— coordinated sheets and narratives for your building department, PE-stamped where required.
+          </p>
           <Link
             href="/services"
-            className="mt-6 inline-block text-sm font-medium text-white/80 underline-offset-4 transition hover:text-white"
+            className="mt-4 inline-block text-sm font-medium text-white/80 underline-offset-4 transition hover:text-white"
           >
             Full services overview
           </Link>

@@ -144,11 +144,6 @@ export const metadata: Metadata = {
     images: [defaultOgImage],
   },
   robots: { index: true, follow: true },
-  icons: {
-    icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
-    shortcut: "/icon.png",
-    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "512x512" }],
-  },
 };
 
 export default function RootLayout({

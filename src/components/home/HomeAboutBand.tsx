@@ -60,6 +60,12 @@ export function HomeAboutBand() {
             >
               {homeAboutCopy.aboutLink}
             </Link>
+            <Link
+              href="/services"
+              className="text-base font-medium text-neutral-600 underline-offset-4 hover:text-neutral-900 hover:underline"
+            >
+              Permit plan services
+            </Link>
           </div>
         </Reveal>
       </div>

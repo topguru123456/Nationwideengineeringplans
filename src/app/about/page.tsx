@@ -238,6 +238,28 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="border-b border-stone-200 bg-white px-4 py-10 sm:px-6">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-base leading-relaxed text-neutral-600 sm:text-lg">
+            Explore our{" "}
+            <Link
+              href="/services"
+              className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"
+            >
+              civil, structural, and MEP services
+            </Link>
+            , or{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"
+            >
+              get in touch to scope a project
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="relative min-h-[320px] w-full sm:min-h-[380px]">
         <Image

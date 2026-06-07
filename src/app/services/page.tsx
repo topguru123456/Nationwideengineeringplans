@@ -70,6 +70,16 @@ export default function ServicesPage() {
             heading="Representative projects"
             projects={servicesFeaturedProjects}
           />
+          <p className="mt-8 text-sm leading-relaxed text-neutral-600 sm:text-[15px]">
+            Ready to start?{" "}
+            <Link
+              href="/contact"
+              className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"
+            >
+              Contact us to scope civil, structural, or MEP work
+            </Link>
+            {" "}for your jurisdiction.
+          </p>
         </div>
       </section>
 

@@ -9,7 +9,14 @@ export function HomeContactTeaser() {
             Ready to talk scope?
           </h2>
           <p className="mt-2 text-base text-neutral-600 sm:text-lg">
-            Send a short note—we reply with next steps, not an auto-reply.
+            Send a short note and{" "}
+            <Link
+              href="/contact"
+              className="font-semibold underline underline-offset-4 hover:text-neutral-900"
+            >
+              contact our Oregon and New York offices
+            </Link>
+            {" "}— we reply with next steps, not an auto-reply.
           </p>
         </div>
         <Link
