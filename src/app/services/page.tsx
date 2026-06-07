@@ -80,7 +80,8 @@ export default function ServicesPage() {
           fill
           className="object-cover object-center"
           sizes="100vw"
-          quality={88}
+          quality={75}
+          aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/65" />
         <div className="relative z-10 mx-auto flex min-h-[340px] max-w-3xl flex-col items-center justify-center px-4 py-16 text-center text-white sm:min-h-[400px] sm:py-20 md:min-h-[460px]">

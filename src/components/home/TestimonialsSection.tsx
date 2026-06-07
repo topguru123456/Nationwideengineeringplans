@@ -158,7 +158,7 @@ export function TestimonialsSection() {
             >
               <div className="flex h-full min-h-[280px] flex-col rounded-2xl bg-[#2d4a6f]/95 p-6 shadow-lg ring-1 ring-white/10 sm:min-h-[300px] sm:p-7">
                 <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-white/20">
-                  <Image src={r.avatarSrc} alt="" fill className="object-cover" sizes="56px" />
+                  <Image src={r.avatarSrc} alt={`${r.name}, client testimonial`} fill className="object-cover" sizes="56px" />
                 </div>
                 <StarRowMuted />
                 <p className="mt-5 flex-1 text-left text-[15px] leading-relaxed text-white/95 sm:text-base">

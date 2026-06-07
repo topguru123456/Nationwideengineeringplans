@@ -20,7 +20,7 @@ export function HomeWhyUs() {
             src={homeLandingImages.whyUs}
             alt="Engineer and homeowner reviewing custom home construction plans"
             fill
-            quality={85}
+            quality={75}
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />

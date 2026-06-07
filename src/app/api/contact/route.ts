@@ -20,6 +20,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[0-9+\-().\s]{7,20}$/;
 const WINDOW_MS = 60 * 1000;
 const MAX_REQUESTS = 5;
+const MAX_MESSAGE_LENGTH = 4000;
 const ALERT_COOLDOWN_MS = 15 * 60 * 1000;
 
 const ipHits = new Map<string, number[]>();
@@ -96,6 +97,9 @@ function validate(payload: ContactPayload): Record<string, string> {
   if (!projectType) errors.projectType = "Project type is required.";
   if (phone && !PHONE_RE.test(phone)) errors.phone = "Phone format looks invalid.";
   if (message && message.length < 10) errors.message = "Message must be at least 10 characters if provided.";
+  if (message.length > MAX_MESSAGE_LENGTH) {
+    errors.message = `Message must be ${MAX_MESSAGE_LENGTH.toLocaleString()} characters or fewer.`;
+  }
   return errors;
 }
 

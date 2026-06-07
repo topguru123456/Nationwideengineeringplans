@@ -70,3 +70,16 @@ export const homeFinalCtaCopy = {
   buttonLabel: "Start a new project",
   buttonHref: "/contact",
 } as const;
+
+/** Curated homepage portfolio — avoids loading the full catalog in client JS. */
+export const homeFeaturedProjectSlugs = [
+  "springwater-connector",
+  "marquis-tualatin",
+  "koz-on-yamhill",
+  "barcelona-and-lascala-apartments",
+  "penske-coburg",
+  "modern-contemporary-residence-3-433-sq-ft",
+  "pbot-ada-curb-ramp-replacement-program",
+  "enhanced-transit-corridors",
+  "frisco-mixed-use-development",
+] as const;

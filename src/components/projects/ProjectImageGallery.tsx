@@ -46,6 +46,7 @@ export function ProjectImageGallery({ project }: { project: Project }) {
                 src={image.src}
                 alt={image.alt}
                 fill
+                quality={75}
                 className="object-cover transition duration-300 ease-out group-hover:scale-[1.04]"
                 sizes={hasPlan ? "(max-width: 640px) 100vw, 50vw" : "(max-width: 1024px) 100vw, 66vw"}
               />
@@ -82,7 +83,7 @@ export function ProjectImageGallery({ project }: { project: Project }) {
             </svg>
           </button>
           <div className="relative h-[80vh] w-full max-w-6xl" onClick={(e) => e.stopPropagation()}>
-            <Image src={active.src} alt={active.alt} fill className="object-contain" sizes="100vw" />
+            <Image src={active.src} alt={active.alt} fill quality={75} className="object-contain" sizes="100vw" />
           </div>
         </div>
       ) : null}

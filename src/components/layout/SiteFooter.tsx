@@ -43,46 +43,12 @@ function IconWhatsApp({ className }: { className?: string }) {
 const COPYRIGHT_YEAR = 2026;
 
 export function SiteFooter() {
-  const { contact, name, brand, mapLocationLabel, openStreetMapEmbedUrl } = siteConfig;
+  const { contact, name, brand } = siteConfig;
   const officePhones = [contact.phones.hq, contact.phones.ny] as const;
   const wa = `https://wa.me/${contact.whatsappDigits}`;
 
   return (
     <footer className="text-neutral-900">
-      {openStreetMapEmbedUrl ? (
-        <div className="border-t border-neutral-200 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
-            <h2 className="text-center text-xs font-bold uppercase tracking-[0.16em] text-[#1e3a5f] sm:text-left">
-              Location
-            </h2>
-            <p className="mt-2 text-center text-sm text-neutral-600 sm:text-left">{mapLocationLabel}</p>
-            <div className="mt-4 overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100 shadow-sm">
-              <div className="relative aspect-[2/1] w-full min-h-[200px] max-h-[320px] sm:aspect-[21/9]">
-                <iframe
-                  title="Map: office and service area"
-                  src={openStreetMapEmbedUrl}
-                  className="absolute inset-0 h-full w-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-            </div>
-            <p className="mt-2 text-center text-[11px] text-neutral-400 sm:text-left">
-              Map:{" "}
-              <a
-                className="font-medium text-neutral-500 underline-offset-2 hover:underline"
-                href="https://www.openstreetmap.org/copyright"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                © OpenStreetMap
-              </a>{" "}
-              contributors
-            </p>
-          </div>
-        </div>
-      ) : null}
-
       <div className="border-t border-neutral-200 bg-[#f0f3f6] px-4 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-start lg:gap-10">

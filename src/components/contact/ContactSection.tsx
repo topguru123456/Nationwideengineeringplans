@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { OfficeMapEmbed } from "@/components/contact/OfficeMapEmbed";
 import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { siteConfig } from "@/config/site";
 
 const wa = `https://wa.me/${siteConfig.contact.whatsappDigits}`;
 const officePhones = [siteConfig.contact.phones.hq, siteConfig.contact.phones.ny] as const;
+const MAX_MESSAGE_LENGTH = 4000;
 
 type FormErrors = Record<string, string>;
 
@@ -37,6 +39,9 @@ export function ContactSection() {
     if (!phoneOk) next.phone = "Phone format looks invalid.";
     if (message.trim() && message.trim().length < 10) {
       next.message = "Add a bit more detail (at least 10 characters) or leave it blank.";
+    }
+    if (message.trim().length > MAX_MESSAGE_LENGTH) {
+      next.message = `Message must be ${MAX_MESSAGE_LENGTH.toLocaleString()} characters or fewer.`;
     }
     setErrors(next);
     return Object.keys(next).length === 0;
@@ -201,6 +206,7 @@ export function ContactSection() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows={6}
+                maxLength={MAX_MESSAGE_LENGTH}
                 className="rounded-lg border border-[var(--color-border)] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[var(--brand-red)] focus:ring-2 focus:ring-[var(--brand-red)]/20"
                 placeholder="Tell us your scope, timeline, and any files you already have."
               />
@@ -291,6 +297,16 @@ export function ContactSection() {
             </div>
           </div>
         </aside>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:pb-20">
+        <h2 className="text-lg font-semibold tracking-tight text-[var(--header-black)]">Office location</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--color-ink-muted)] sm:text-[15px]">
+          Oregon headquarters — nationwide permit plan coordination from Portland, OR.
+        </p>
+        <div className="mt-5">
+          <OfficeMapEmbed />
+        </div>
       </section>
     </div>
   );

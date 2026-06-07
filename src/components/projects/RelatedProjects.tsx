@@ -20,6 +20,7 @@ export function RelatedProjects({ projects }: { projects: Project[] }) {
                     src={p.coverImage.src}
                     alt={p.coverImage.alt}
                     fill
+                    quality={75}
                     className="object-cover transition duration-500 group-hover/card:scale-[1.04]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />

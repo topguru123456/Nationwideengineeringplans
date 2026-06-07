@@ -18,7 +18,7 @@ export function HomeAboutBand() {
                   src={homeLandingImages.aboutA}
                   alt="Residential construction team reviewing field conditions and planning notes"
                   fill
-                  quality={85}
+                  quality={75}
                   className="object-cover"
                   sizes="(max-width: 1024px) 72vw, 340px"
                 />
@@ -30,7 +30,7 @@ export function HomeAboutBand() {
                   src={homeLandingImages.aboutB}
                   alt="Permit-ready technical plans and site coordination documents"
                   fill
-                  quality={85}
+                  quality={75}
                   className="object-cover"
                   sizes="(max-width: 1024px) 72vw, 340px"
                 />

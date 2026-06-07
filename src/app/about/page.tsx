@@ -16,6 +16,7 @@ import {
   aboutWhoWeAre,
 } from "@/config/about-page";
 import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
+import { OfficeMapEmbed } from "@/components/contact/OfficeMapEmbed";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 import { pageOpenGraph } from "@/lib/open-graph";
@@ -72,7 +73,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={85}
+                quality={75}
               />
             </div>
           </Reveal>
@@ -150,6 +151,12 @@ export default function AboutPage() {
                 {aboutCredentials.ctaLabel}
               </a>
             </div>
+            <div className="mt-10">
+              <h3 className="text-sm font-semibold tracking-tight text-neutral-900">Office location</h3>
+              <div className="mt-4">
+                <OfficeMapEmbed />
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -203,7 +210,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={85}
+                quality={75}
               />
             </div>
           </Reveal>
@@ -218,7 +225,8 @@ export default function AboutPage() {
           fill
           className="object-cover object-[center_30%]"
           sizes="100vw"
-          quality={85}
+          quality={75}
+          aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/92 via-[#0f2744]/75 to-black/25" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
@@ -252,7 +260,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={85}
+                quality={75}
               />
             </div>
           </Reveal>
@@ -288,7 +296,8 @@ export default function AboutPage() {
           fill
           className="object-cover"
           sizes="100vw"
-          quality={85}
+          quality={75}
+          aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-[#1a0506]/45" />
         <div className="relative z-10 mx-auto flex min-h-[320px] max-w-3xl flex-col items-center justify-center px-4 py-16 text-center sm:min-h-[380px] sm:py-20">

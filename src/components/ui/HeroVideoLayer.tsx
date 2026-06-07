@@ -31,27 +31,22 @@ function HeroReadableScrim() {
 }
 
 /**
- * Hero background: solid hold color with a soft drifting wash while the file buffers,
- * then video fades in when frames are ready. No video `poster` — avoids poster→video swap.
+ * Hero background: fallback image paints first (LCP), then video fades in when
+ * frames are ready. Uses preload="metadata" to limit mobile bandwidth.
  */
 export function HeroVideoLayer({
   videoSrc,
   fallbackImageSrc,
   fallbackSizes,
-  imageQuality = 85,
+  imageQuality = 82,
   reduceMotion,
 }: HeroVideoLayerProps) {
   const [videoVisible, setVideoVisible] = useState(false);
   const [loadFailed, setLoadFailed] = useState(false);
 
   useEffect(() => {
-    if (reduceMotion) {
-      setVideoVisible(false);
-      setLoadFailed(false);
-    } else {
-      setVideoVisible(false);
-      setLoadFailed(false);
-    }
+    setVideoVisible(false);
+    setLoadFailed(false);
   }, [reduceMotion, videoSrc]);
 
   const revealVideo = useCallback(() => {
@@ -61,49 +56,46 @@ export function HeroVideoLayer({
   const showVideoTrack = !reduceMotion && !loadFailed;
   const holdActive = showVideoTrack && !videoVisible;
 
-  if (reduceMotion || loadFailed) {
-    return (
-      <div className="absolute inset-0">
-        <Image
-          src={fallbackImageSrc}
-          alt=""
-          fill
-          priority
-          className="object-cover object-center"
-          sizes={fallbackSizes}
-          quality={imageQuality}
-        />
-        <HeroReadableScrim />
-      </div>
-    );
-  }
-
   return (
     <div className="absolute inset-0" aria-busy={holdActive}>
-      <div className="absolute inset-0 bg-[#0f1729]" aria-hidden />
-      <div
-        className={`pointer-events-none absolute inset-0 z-0 hero-video-hold-motion transition-opacity duration-[700ms] ease-out ${
-          holdActive ? `hero-video-hold-loading opacity-100` : `opacity-0`
-        }`}
+      <Image
+        src={fallbackImageSrc}
+        alt=""
+        fill
+        priority
+        className="object-cover object-center"
+        sizes={fallbackSizes}
+        quality={imageQuality}
         aria-hidden
       />
-      <video
-        key={videoSrc}
-        className={`absolute inset-0 z-[1] h-full w-full object-cover object-center transition-opacity duration-[780ms] ease-out ${
-          videoVisible ? "opacity-100" : "opacity-0"
-        }`}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        onLoadedData={revealVideo}
-        onCanPlay={revealVideo}
-        onError={() => setLoadFailed(true)}
-        aria-label=""
-      >
-        <source src={videoSrc} type="video/mp4" />
-      </video>
+      {showVideoTrack ? (
+        <>
+          <div className="absolute inset-0 bg-[#0f1729]" aria-hidden />
+          <div
+            className={`pointer-events-none absolute inset-0 z-0 hero-video-hold-motion transition-opacity duration-[700ms] ease-out ${
+              holdActive ? `hero-video-hold-loading opacity-100` : `opacity-0`
+            }`}
+            aria-hidden
+          />
+          <video
+            key={videoSrc}
+            className={`absolute inset-0 z-[1] h-full w-full object-cover object-center transition-opacity duration-[780ms] ease-out ${
+              videoVisible ? "opacity-100" : "opacity-0"
+            }`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            onLoadedData={revealVideo}
+            onCanPlay={revealVideo}
+            onError={() => setLoadFailed(true)}
+            aria-hidden
+          >
+            <source src={videoSrc} type="video/mp4" />
+          </video>
+        </>
+      ) : null}
       <HeroReadableScrim />
     </div>
   );
