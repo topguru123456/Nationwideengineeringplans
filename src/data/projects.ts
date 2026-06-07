@@ -2,6 +2,7 @@ import raw from "../../project.json";
 import { slugify } from "@/lib/slugify";
 import type { Project } from "@/types/project";
 import { houseDesignProjects } from "./houseDesignProjects";
+import { PROJECT_SEO_BY_TITLE } from "./project-seo-overrides";
 
 const PROJECT_IMAGE_BASE = "/assets/images/projects";
 
@@ -71,22 +72,32 @@ function buildProjects(): Project[] {
     const location = row.LOCATION.trim();
     const services = parseServices(row["SERVICES PROVIDED"]);
     const description = row.DESCRIPTION.trim();
+    const seo = PROJECT_SEO_BY_TITLE[title];
     const imageFile = row.IMAGE.trim();
     const src = `${PROJECT_IMAGE_BASE}/${imageFile}`;
     const planSrc = row.PLAN_IMAGE?.trim()
       ? `${PROJECT_IMAGE_BASE}/${row.PLAN_IMAGE.trim()}`
       : undefined;
 
+    const body = seo?.scopeNarrative
+      ? [seo.scopeNarrative, ...bodyFromDescription(description).slice(1)]
+      : bodyFromDescription(description);
+
     return {
       slug,
       title,
-      excerpt: excerptFrom(description),
+      excerpt: excerptFrom(seo?.scopeNarrative ?? description),
       location,
       markets: categories,
       owner,
       services,
       description,
-      body: bodyFromDescription(description),
+      body,
+      metaDescription: seo?.metaDescription,
+      scopeNarrative: seo?.scopeNarrative,
+      challenge: seo?.challenge,
+      solution: seo?.solution,
+      jurisdiction: seo?.jurisdiction,
       coverImage: {
         src,
         alt: title,

@@ -73,7 +73,7 @@
             "IMAGE": "i-205-stafford-road-to-or99e-corridor-road-widening.jpg"
         },
         {
-            "Title": "NE Alberta St: 14th – 30th Ave",
+            "Title": "Urban Street Paving & Safety Project",
             "CATEGORIES": "Site Civil",
             "OWNER": "Municipal transportation agency",
             "LOCATION": "Seattle, WA",
@@ -84,10 +84,10 @@
         {
             "Title": "Springwater Connector",
             "CATEGORIES": "Transportation",
-            "OWNER": "City of Austin public works",
-            "LOCATION": "Austin, TX",
+            "OWNER": "City of Portland Bureau of Transportation",
+            "LOCATION": "Portland, OR",
             "SERVICES PROVIDED": "Analysis, planning, and concept design\nCost estimating\nStreet geometry & ROW\nPed/Bike/ADA\nStreet drainage\nTraffic control\nErosion control",
-            "DESCRIPTION": "As prime consultant, Nationwide Engineering Plans provided engineering services for this multimodal safety project in Austin, TX. The team delivered improved bicycle and pedestrian access, greenway connections, and safer crossings along the corridor. Improvements included a dedicated mid-block crossing, ADA- and AASHTO-compliant safety enhancements, maintained bike and pedestrian access during construction, continuous sidewalk segments where feasible, and creative stormwater solutions.",
+            "DESCRIPTION": "As prime consultant, Nationwide Engineering Plans provided engineering services for the Springwater Connector multimodal safety project in Portland, OR. The team delivered improved bicycle and pedestrian access, greenway connections, and safer crossings along the corridor. Improvements included a dedicated mid-block crossing, ADA- and AASHTO-compliant safety enhancements, maintained bike and pedestrian access during construction, continuous sidewalk segments where feasible, and creative stormwater solutions.",
             "IMAGE": "springwater-connector.jpg"
         },
         {
@@ -235,7 +235,7 @@
             "IMAGE": "brooktree-estates.jpg"
         },
         {
-            "Title": "Beaverton-Hillsdale Highway Safety Demonstration Project",
+            "Title": "High-Crash Arterial Safety Demonstration",
             "CATEGORIES": "Transportation",
             "OWNER": "Municipal transportation agency",
             "LOCATION": "Vancouver, WA",
@@ -289,7 +289,7 @@
             "IMAGE": "i-205-glenn-jackson-bridge-to-johnson-creek-phase-2.jpg"
         },
         {
-            "Title": "Powell LIFT Operations Facility Relocation",
+            "Title": "Paratransit Operations Facility Relocation",
             "CATEGORIES": "Site Civil",
             "OWNER": "Regional transit authority",
             "LOCATION": "Chicago, IL",
@@ -370,7 +370,7 @@
             "IMAGE": "barcelona-and-lascala-apartments.jpg"
         },
         {
-            "Title": "SE/NE 122nd Avenue and Foster Road Safety Improvements",
+            "Title": "Foster Road Corridor Safety Improvements",
             "CATEGORIES": "Transportation",
             "OWNER": "Municipal transportation agency",
             "LOCATION": "Atlanta, GA",
@@ -424,7 +424,7 @@
             "IMAGE": "sw-sunrise-ln.jpg"
         },
         {
-            "Title": "Division Transit Corridor",
+            "Title": "High-Capacity Bus Corridor",
             "CATEGORIES": "Transportation",
             "OWNER": "Regional transit authority",
             "LOCATION": "Seattle, WA",
@@ -451,7 +451,7 @@
             "IMAGE": "eagle-landing.jpg"
         },
         {
-            "Title": "N. Denver: N. Lombard to N. Watts",
+            "Title": "Denver Corridor Pavement & Safety",
             "CATEGORIES": "Transportation",
             "OWNER": "Municipal transportation agency",
             "LOCATION": "Denver, CO",
@@ -496,7 +496,7 @@
             "IMAGE": "sw-ventilation-and-capacity-improvements.jpg"
         },
         {
-            "Title": "N. Lombard Starbucks",
+            "Title": "Orlando Starbucks Drive-Through",
             "CATEGORIES": "Commercial",
             "OWNER": "",
             "LOCATION": "Orlando, FL",
@@ -532,7 +532,7 @@
             "IMAGE": "mckenna-terrace.jpg"
         },
         {
-            "Title": "Rockwood Rising",
+            "Title": "Brooklyn Mixed-Use Development",
             "CATEGORIES": "Commercial, Residential",
             "OWNER": "",
             "LOCATION": "Brooklyn, NY",
@@ -577,7 +577,7 @@
             "IMAGE": "rivers-edge.jpg"
         },
         {
-            "Title": "Westparc at North Bethany",
+            "Title": "Frisco Mixed-Use Development",
             "CATEGORIES": "Commercial",
             "OWNER": "",
             "LOCATION": "Frisco, TX",

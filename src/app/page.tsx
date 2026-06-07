@@ -10,22 +10,24 @@ import { HomeWhyUs } from "@/components/home/HomeWhyUs";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { heroVideoForPath } from "@/config/hero-videos";
-import { pageMetadata } from "@/config/page-metadata";
-import { siteConfig } from "@/config/site";
+import { pageMetadata, pageOgImages } from "@/config/page-metadata";
+import { pageOpenGraph } from "@/lib/open-graph";
+
+const og = pageOpenGraph({
+  title: pageMetadata.home.title,
+  description: pageMetadata.home.description,
+  path: "/",
+  image: pageOgImages.home,
+  imageAlt: "Nationwide Engineering Plans — civil, structural, and MEP permit plans",
+});
 
 export const metadata: Metadata = {
+  title: pageMetadata.home.title,
   description: pageMetadata.home.description,
   alternates: {
     canonical: "/",
   },
-  openGraph: {
-    title: siteConfig.name,
-    description: pageMetadata.home.description,
-    url: "/",
-  },
-  twitter: {
-    description: pageMetadata.home.description,
-  },
+  ...og,
 };
 
 export default function HomePage() {

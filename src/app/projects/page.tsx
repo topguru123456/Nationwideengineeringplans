@@ -5,27 +5,28 @@ import {
   ProjectsCatalog,
   ProjectsPageFallback,
 } from "@/components/projects/ProjectsCatalog";
-import { pageMetadata } from "@/config/page-metadata";
-import { siteConfig } from "@/config/site";
+import { pageMetadata, pageOgImages } from "@/config/page-metadata";
 import { projects } from "@/data/projects";
+import { pageOpenGraph } from "@/lib/open-graph";
 import { paginate, parsePageParam } from "@/lib/pagination";
 import {
   filterProjectsByCategory,
   PROJECTS_PAGE_SIZE,
 } from "@/lib/projects-catalog";
 
+const og = pageOpenGraph({
+  title: pageMetadata.projects.title,
+  description: pageMetadata.projects.description,
+  path: "/projects",
+  image: pageOgImages.projects,
+  imageAlt: "Representative engineering and permit plan projects nationwide",
+});
+
 export const metadata: Metadata = {
   title: pageMetadata.projects.title,
   description: pageMetadata.projects.description,
   alternates: { canonical: "/projects" },
-  openGraph: {
-    title: `Projects | ${siteConfig.name}`,
-    description: pageMetadata.projects.description,
-    url: "/projects",
-  },
-  twitter: {
-    description: pageMetadata.projects.description,
-  },
+  ...og,
 };
 
 type Props = {

@@ -4,6 +4,7 @@ import { MARKET_FILTERS } from "@/config/markets";
 import { getRelatedProjects } from "@/data/projects";
 import type { Project } from "@/types/project";
 import { serviceLinkForMarket } from "@/lib/projects-catalog";
+import { BreadcrumbListJsonLd } from "@/components/seo/BreadcrumbListJsonLd";
 import { ProjectImageGallery } from "./ProjectImageGallery";
 import { ProjectDetailActions } from "./ProjectDetailActions";
 import { RelatedProjects } from "./RelatedProjects";
@@ -75,6 +76,7 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
 
   return (
     <article className="bg-[var(--color-surface)]">
+      <BreadcrumbListJsonLd items={crumbs} />
       <header className="relative min-h-[220px] w-full sm:min-h-[280px] lg:min-h-[320px]">
         <Image
           src={project.coverImage.src}
@@ -92,7 +94,7 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
               Projects
             </p>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
-              {heroLead(project.description)}
+              {heroLead(project.scopeNarrative ?? project.description)}
             </p>
           </div>
           <nav
@@ -146,6 +148,11 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
               </SidebarBlock>
               <SidebarBlock label="Location">
                 <p className="italic text-[var(--color-ink-muted)]">{project.location}</p>
+                {project.jurisdiction ? (
+                  <p className="mt-1 text-sm text-[var(--color-ink-faint)]">
+                    Jurisdiction: {project.jurisdiction}
+                  </p>
+                ) : null}
               </SidebarBlock>
               <SidebarBlock label="Services provided">
                 <ul className="space-y-2.5">
@@ -170,6 +177,30 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
               <p key={i}>{para}</p>
             ))}
           </div>
+          {project.challenge || project.solution ? (
+            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+              {project.challenge ? (
+                <div>
+                  <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--color-ink-faint)]">
+                    Challenge
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.7] text-[var(--color-ink-muted)]">
+                    {project.challenge}
+                  </p>
+                </div>
+              ) : null}
+              {project.solution ? (
+                <div>
+                  <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--color-ink-faint)]">
+                    Solution
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.7] text-[var(--color-ink-muted)]">
+                    {project.solution}
+                  </p>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
         </div>
 
         <RelatedProjects projects={related} />

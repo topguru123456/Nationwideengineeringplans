@@ -12,21 +12,22 @@ import {
   servicesPageImages,
 } from "@/config/services-page";
 import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
-import { pageMetadata } from "@/config/page-metadata";
-import { siteConfig } from "@/config/site";
+import { pageMetadata, pageOgImages } from "@/config/page-metadata";
+import { pageOpenGraph } from "@/lib/open-graph";
+
+const og = pageOpenGraph({
+  title: pageMetadata.services.title,
+  description: pageMetadata.services.description,
+  path: "/services",
+  image: pageOgImages.services,
+  imageAlt: "Residential engineering and permit plan services",
+});
 
 export const metadata: Metadata = {
   title: pageMetadata.services.title,
   description: pageMetadata.services.description,
   alternates: { canonical: "/services" },
-  openGraph: {
-    title: `Our Services | ${siteConfig.name}`,
-    description: pageMetadata.services.description,
-    url: "/services",
-  },
-  twitter: {
-    description: pageMetadata.services.description,
-  },
+  ...og,
 };
 
 type CtaStyle = "primary" | "light" | "outline";

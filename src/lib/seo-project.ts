@@ -17,6 +17,9 @@ function clip(s: string, max: number): string {
  * so snippets differ even when body paragraphs share tone from similar jobs.
  */
 export function metaDescriptionForProject(project: Project): string {
+  if (project.metaDescription) {
+    return clip(project.metaDescription, MAX);
+  }
   const markets = project.markets.length ? project.markets.slice(0, 3).join(", ") : "Engineering";
   const head = `${project.title} — ${project.location}. ${markets}.`;
   const headNorm = normalizeSpaces(head);
