@@ -84,27 +84,6 @@ export const aboutFeaturedProjects = [
   { slug: "marquis-tualatin", label: "Marquis Tualatin — senior living" },
 ] as const;
 
-export const aboutCredentials = {
-  eyebrow: "Licensed practice",
-  headline: "Professional engineers who stamp what they design",
-  body:
-    "Nationwide Engineering Plans is led by licensed professional engineers with active registrations across all 50 states. Our Oregon headquarters coordinates multidisciplinary permit packages; our New York office supports East Coast residential and commercial submittals.",
-  items: [
-    { label: "Primary contact", value: "Jonathan Barnes, PE" },
-    { label: "Licensed in", value: "All 50 US states" },
-    {
-      label: "Oregon headquarters",
-      value: `${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.region}`,
-    },
-    {
-      label: "New York office",
-      value: `${siteConfig.contact.phones.ny.displayDotted} — ${siteConfig.contact.phones.ny.region}`,
-    },
-  ],
-  ctaLabel: "Schedule with a PE",
-  ctaHref: siteConfig.contact.calendlyUrl,
-} as const;
-
 export const aboutFinalCta = {
   eyebrow: "Ready for coordinated plans?",
   headline: "Let’s align scope, schedule, and the right disciplines for your next project.",

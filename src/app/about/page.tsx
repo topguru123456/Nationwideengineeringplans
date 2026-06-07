@@ -6,7 +6,6 @@ import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { Reveal } from "@/components/ui/Reveal";
 import { heroVideoForPath } from "@/config/hero-videos";
 import {
-  aboutCredentials,
   aboutFinalCta,
   aboutFeaturedProjects,
   aboutPageImages,
@@ -16,7 +15,6 @@ import {
   aboutWhoWeAre,
 } from "@/config/about-page";
 import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
-import { OfficeMapEmbed } from "@/components/contact/OfficeMapEmbed";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 import { pageOpenGraph } from "@/lib/open-graph";
@@ -108,54 +106,6 @@ export default function AboutPage() {
                 heading="Representative projects"
                 projects={aboutFeaturedProjects}
               />
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Licensed practice — E-E-A-T credentials (text only) */}
-      <section className="border-b border-stone-200/80 bg-[#f8f6f2] py-14 sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <Reveal delayMs={0}>
-            <p className={`text-xs font-bold uppercase tracking-[0.2em] ${red} sm:text-sm`}>
-              {aboutCredentials.eyebrow}
-            </p>
-            <h2 className="font-display mt-3 max-w-2xl text-2xl font-semibold leading-tight tracking-tight text-neutral-900 sm:text-3xl">
-              {aboutCredentials.headline}
-            </h2>
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-neutral-600 sm:text-lg">
-              {aboutCredentials.body}
-            </p>
-            <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {aboutCredentials.items.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-xl border border-stone-200/90 bg-white px-5 py-4 shadow-sm"
-                >
-                  <dt className="text-[11px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
-                    {item.label}
-                  </dt>
-                  <dd className="mt-2 text-sm font-medium leading-snug text-neutral-900 sm:text-base">
-                    {item.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <div className="mt-8">
-              <a
-                href={aboutCredentials.ctaHref}
-                className="inline-flex min-h-11 items-center justify-center bg-[var(--brand-red)] px-8 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {aboutCredentials.ctaLabel}
-              </a>
-            </div>
-            <div className="mt-10">
-              <h3 className="text-sm font-semibold tracking-tight text-neutral-900">Office location</h3>
-              <div className="mt-4">
-                <OfficeMapEmbed />
-              </div>
             </div>
           </Reveal>
         </div>
