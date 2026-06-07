@@ -23,7 +23,7 @@ LOCATIONS = [
     "Nashville, TN",
     "Raleigh, NC",
     "Orlando, FL",
-    "Jersey City, NJ",
+    "Queens, NY",
     "Brooklyn, NY",
 ]
 
