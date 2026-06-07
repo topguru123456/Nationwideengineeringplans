@@ -31,20 +31,14 @@ function StatCounter({
   reducedMotion: boolean;
   staggerMs: number;
 }) {
-  const [value, setValue] = useState(0);
+  const [animated, setAnimated] = useState(target);
   const rafRef = useRef(0);
 
   useEffect(() => {
-    if (!started) {
-      setValue(0);
-      return;
-    }
-    if (reducedMotion) {
-      setValue(target);
-      return;
-    }
+    if (!started || reducedMotion) return;
+
     let cancelled = false;
-    setValue(0);
+    setAnimated(0);
     const timer = window.setTimeout(() => {
       let startTime: number | null = null;
       const step = (now: number) => {
@@ -52,11 +46,12 @@ function StatCounter({
         if (startTime === null) startTime = now;
         const t = Math.min((now - startTime) / COUNT_MS, 1);
         const eased = 1 - (1 - t) ** 3;
-        setValue(Math.round(eased * target));
+        setAnimated(Math.round(eased * target));
         if (t < 1) rafRef.current = requestAnimationFrame(step);
       };
       rafRef.current = requestAnimationFrame(step);
     }, staggerMs);
+
     return () => {
       cancelled = true;
       clearTimeout(timer);
@@ -64,10 +59,12 @@ function StatCounter({
     };
   }, [started, reducedMotion, target, staggerMs]);
 
+  const display = !started || reducedMotion ? target : animated;
   const live = started && !reducedMotion;
+
   return (
     <span className="tabular-nums tracking-tight" aria-live={live ? "polite" : "off"}>
-      {value}
+      {display}
       {suffix}
     </span>
   );

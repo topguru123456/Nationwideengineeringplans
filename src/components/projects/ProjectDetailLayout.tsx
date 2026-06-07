@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MARKET_FILTERS } from "@/config/markets";
-import { siteConfig } from "@/config/site";
+import { getRelatedProjects } from "@/data/projects";
 import type { Project } from "@/types/project";
+import { serviceLinkForMarket } from "@/lib/projects-catalog";
 import { ProjectImageGallery } from "./ProjectImageGallery";
+import { ProjectDetailActions } from "./ProjectDetailActions";
+import { RelatedProjects } from "./RelatedProjects";
 
 function heroLead(text: string, max = 240) {
   const t = text.replace(/\s+/g, " ").trim();
@@ -61,6 +64,8 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
     (MARKET_FILTERS as readonly string[]).includes(primaryCategory)
       ? `/projects?category=${encodeURIComponent(primaryCategory)}`
       : "/projects";
+  const serviceLink = serviceLinkForMarket(primaryCategory);
+  const related = getRelatedProjects(project, 3);
   const crumbs = [
     { label: "Home", href: "/" },
     { label: "Projects", href: "/projects" },
@@ -121,9 +126,6 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
         <h1 className="text-3xl font-light tracking-tight text-[var(--color-ink-muted)] sm:text-4xl lg:text-[2.35rem]">
           {project.title}
         </h1>
-        <p className="mt-3 max-w-3xl text-xs leading-relaxed text-[var(--color-ink-faint)] sm:text-[13px]">
-          {siteConfig.portfolioRepresentationNote}
-        </p>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-8">
@@ -170,18 +172,13 @@ export function ProjectDetailLayout({ project }: { project: Project }) {
           </div>
         </div>
 
-        <p className="mt-12 text-sm text-[var(--color-ink-muted)]">
-          <Link
-            href="/projects"
-            className="font-semibold text-[var(--color-accent)] hover:underline"
-          >
-            ← All projects
-          </Link>
-          {" · "}
-          <Link href="/contact" className="font-semibold text-[var(--color-accent)] hover:underline">
-            Contact
-          </Link>
-        </p>
+        <RelatedProjects projects={related} />
+
+        <ProjectDetailActions
+          categoryHref={categoryHref}
+          primaryCategory={primaryCategory}
+          serviceLink={serviceLink}
+        />
       </div>
     </article>
   );

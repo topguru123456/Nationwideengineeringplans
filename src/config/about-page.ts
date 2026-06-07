@@ -77,6 +77,13 @@ export const aboutProcess = {
   ],
 } as const;
 
+/** Representative work linked from the about page */
+export const aboutFeaturedProjects = [
+  { slug: "springwater-connector", label: "Springwater Connector — Austin, TX" },
+  { slug: "koz-on-yamhill", label: "kōz on Yamhill — New York, NY" },
+  { slug: "marquis-tualatin", label: "Marquis Tualatin — senior living" },
+] as const;
+
 export const aboutFinalCta = {
   eyebrow: "Ready for coordinated plans?",
   headline: "Let’s align scope, schedule, and the right disciplines for your next project.",

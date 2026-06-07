@@ -8,6 +8,11 @@ import {
 import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 import { projects } from "@/data/projects";
+import { paginate, parsePageParam } from "@/lib/pagination";
+import {
+  filterProjectsByCategory,
+  PROJECTS_PAGE_SIZE,
+} from "@/lib/projects-catalog";
 
 export const metadata: Metadata = {
   title: pageMetadata.projects.title,
@@ -23,21 +28,32 @@ export const metadata: Metadata = {
   },
 };
 
-type Props = { searchParams: Promise<{ category?: string }> };
+type Props = {
+  searchParams: Promise<{ category?: string; page?: string }>;
+};
 
 export default async function ProjectsPage({ searchParams }: Props) {
-  const { category } = await searchParams;
-  const initialMarket =
-    category && (MARKET_FILTERS as readonly string[]).includes(category)
-      ? category
+  const { category: rawCategory, page: rawPage } = await searchParams;
+  const category =
+    rawCategory && (MARKET_FILTERS as readonly string[]).includes(rawCategory)
+      ? rawCategory
       : null;
+  const page = parsePageParam(rawPage);
+
+  const filtered = filterProjectsByCategory(projects, category);
+  const { items, totalPages, page: safePage } = paginate(
+    filtered,
+    page,
+    PROJECTS_PAGE_SIZE,
+  );
 
   return (
     <Suspense fallback={<ProjectsPageFallback />}>
       <ProjectsCatalog
-        key={initialMarket ?? "all"}
-        projects={projects}
-        initialMarket={initialMarket}
+        items={items}
+        page={safePage}
+        totalPages={totalPages}
+        category={category}
       />
     </Suspense>
   );

@@ -7,9 +7,11 @@ import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { heroVideoForPath } from "@/config/hero-videos";
 import {
   servicesBottomCtas,
+  servicesFeaturedProjects,
   servicesImageBand,
   servicesPageImages,
 } from "@/config/services-page";
+import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
 import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
@@ -62,6 +64,12 @@ export default function ServicesPage() {
 
       <section className="border-b border-stone-300/60 bg-[#f4f1ea] px-4 py-16 sm:px-6 sm:py-20 md:py-24">
         <ServicesAccordions />
+        <div className="mx-auto mt-12 max-w-6xl border-t border-stone-300/60 pt-10">
+          <FeaturedProjectLinks
+            heading="Representative projects"
+            projects={servicesFeaturedProjects}
+          />
+        </div>
       </section>
 
       <section className="relative min-h-[340px] w-full overflow-hidden sm:min-h-[400px] md:min-h-[460px]">

@@ -7,12 +7,14 @@ import { Reveal } from "@/components/ui/Reveal";
 import { heroVideoForPath } from "@/config/hero-videos";
 import {
   aboutFinalCta,
+  aboutFeaturedProjects,
   aboutPageImages,
   aboutProcess,
   aboutTeam,
   aboutValues,
   aboutWhoWeAre,
 } from "@/config/about-page";
+import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
 import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
 
@@ -98,6 +100,10 @@ export default function AboutPage() {
                   View projects
                 </Link>
               </div>
+              <FeaturedProjectLinks
+                heading="Representative projects"
+                projects={aboutFeaturedProjects}
+              />
             </div>
           </Reveal>
         </div>

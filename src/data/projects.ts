@@ -114,3 +114,50 @@ export function getProjectSlugs(): string[] {
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
 }
+
+function locationState(location: string): string | null {
+  const parts = location.split(",");
+  if (parts.length < 2) return null;
+  return parts[parts.length - 1]!.trim();
+}
+
+/** Related projects: same primary category, then same state, excluding self. */
+export function getRelatedProjects(project: Project, limit = 3): Project[] {
+  const primary = project.markets[0];
+  const state = locationState(project.location);
+  const others = projects.filter((p) => p.slug !== project.slug);
+
+  const scored = others
+    .map((p) => {
+      let score = 0;
+      if (
+        project.location !== "Multiple jurisdictions, US" &&
+        p.location === project.location
+      ) {
+        score += 5;
+      } else if (state && locationState(p.location) === state) {
+        score += 2;
+      }
+      if (primary && p.markets.includes(primary)) score += 3;
+      return { p, score };
+    })
+    .sort((a, b) => b.score - a.score || a.p.title.localeCompare(b.p.title));
+
+  const picked: Project[] = [];
+  const seen = new Set<string>();
+  for (const { p, score } of scored) {
+    if (picked.length >= limit) break;
+    if (score > 0 && !seen.has(p.slug)) {
+      picked.push(p);
+      seen.add(p.slug);
+    }
+  }
+  for (const { p } of scored) {
+    if (picked.length >= limit) break;
+    if (!seen.has(p.slug)) {
+      picked.push(p);
+      seen.add(p.slug);
+    }
+  }
+  return picked.slice(0, limit);
+}

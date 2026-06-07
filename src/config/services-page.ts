@@ -210,6 +210,22 @@ export const servicesImageBand = {
   buttonLabel: "Start a new project",
 } as const;
 
+/** Representative portfolio entries linked from the services page */
+export const servicesFeaturedProjects = [
+  {
+    slug: "modern-contemporary-residence-3-433-sq-ft",
+    label: "Modern contemporary residence — Austin, TX",
+  },
+  {
+    slug: "barcelona-and-lascala-apartments",
+    label: "Barcelona and LaScala Apartments — Brooklyn, NY",
+  },
+  {
+    slug: "penske-coburg",
+    label: "Penske Coburg — commercial site civil",
+  },
+] as const;
+
 export const servicesBottomCtas = [
   {
     title: "Ready to start your next project?",
