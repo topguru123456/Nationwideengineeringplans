@@ -39,8 +39,8 @@ function DeliverableRow({ children }: { children: string }) {
 export function ServicesAccordions() {
   const fullId = useId();
   const specId = useId();
-  const [fullOpen, setFullOpen] = useState<number>(0);
-  const [specOpen, setSpecOpen] = useState<number>(1);
+  const [fullOpen, setFullOpen] = useState<number>(-1);
+  const [specOpen, setSpecOpen] = useState<number>(-1);
 
   return (
     <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
