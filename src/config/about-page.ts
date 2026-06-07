@@ -83,5 +83,5 @@ export const aboutFinalCta = {
   primaryLabel: "Send us a message",
   primaryHref: "/contact",
   secondaryLabel: "Call us",
-  secondaryTel: `tel:+${siteConfig.contact.phoneDigits}`,
+  secondaryTel: `tel:+${siteConfig.contact.phones.hq.digits}`,
 } as const;

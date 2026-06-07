@@ -1,4 +1,6 @@
 /** Central branding */
+import type { OfficePhone } from "@/lib/officePhones";
+
 export const siteConfig = {
   name: "Nationwide Engineering Plans",
   brand: {
@@ -35,11 +37,22 @@ export const siteConfig = {
   locale: "en_US",
   contact: {
     email: "hello@nationwideengineeringplans.com",
-    phoneDisplay: "(503) 983-7001",
-    /** Compact display for utility bar */
-    phoneDisplayDotted: "503.983.7001",
-    /** US E.164 without + for tel: links */
-    phoneDigits: "15039837001",
+    phones: {
+      hq: {
+        label: "Oregon headquarters",
+        region: "Portland, OR",
+        display: "(503) 983-7001",
+        displayDotted: "503.983.7001",
+        digits: "15039837001",
+      },
+      ny: {
+        label: "New York office",
+        region: "New York, NY",
+        display: "(718) 395-8984",
+        displayDotted: "718.395.8984",
+        digits: "17183958984",
+      },
+    } satisfies Record<"hq" | "ny", OfficePhone>,
     whatsappLabel: "WhatsApp",
     whatsappDisplay: "(503) 344-8867",
     whatsappDigits: "15033448867",
@@ -62,7 +75,7 @@ export const siteConfig = {
    * real scope—confirm with the firm before relying on a listing for RFP/contract.
    */
   portfolioRepresentationNote:
-    "Narrative and images may be representative, illustrative, or include anonymized details. Confirm current capabilities and project references with us directly for contract or permit decisions.",
+    "Portfolio entries illustrate representative scope and may combine anonymized or adapted project details. Locations reflect markets we serve nationwide—not every listing maps to a single physical site. Confirm references and current capabilities with us before contract or permit decisions.",
 } as const;
 
 export const headerNav = [

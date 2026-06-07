@@ -21,7 +21,7 @@ const houseServices = [
 export const houseDesignProjects: HouseDesignSeed[] = [
   {
     title: "European Collection Residence — 7,489 sq.ft.",
-    location: "California",
+    location: "Los Angeles, CA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -32,7 +32,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Mediterranean Collection Residence — 4,248 sq.ft.",
-    location: "California",
+    location: "San Diego, CA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -43,7 +43,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Spanish Residence — 4,450 sq.ft.",
-    location: "California",
+    location: "Newport Beach, CA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -54,7 +54,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Contemporary Residence — 3,433 sq.ft.",
-    location: "California",
+    location: "Austin, TX",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -65,7 +65,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Contemporary Residence — 5,469 sq.ft.",
-    location: "California",
+    location: "Dallas, TX",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -76,7 +76,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Contemporary Home Concept — 4,478 sq.ft.",
-    location: "California",
+    location: "Scottsdale, AZ",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -87,7 +87,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Farmhouse Duplex Concept",
-    location: "California",
+    location: "Portland, OR",
     markets: ["House Design", "Residential"],
     owner: "Private development client",
     services: [...houseServices],
@@ -99,7 +99,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Farmhouse Residence — 3,000 sq.ft.",
-    location: "California",
+    location: "Denver, CO",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -110,7 +110,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Napa Valley Farmhouse — 4,284 sq.ft.",
-    location: "California",
+    location: "Napa, CA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -123,7 +123,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Scandinavian Farmhouse — 4,876 sq.ft.",
-    location: "California",
+    location: "Seattle, WA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -134,7 +134,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Prairie Residence — 3,426 sq.ft.",
-    location: "California",
+    location: "Chicago, IL",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -145,7 +145,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Prairie Residence — 3,489 sq.ft.",
-    location: "California",
+    location: "Atlanta, GA",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -156,7 +156,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Prairie Residence — 5,560 sq.ft.",
-    location: "California",
+    location: "Houston, TX",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -167,7 +167,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Traditional Farmhouse Residence — 1,500 sq.ft.",
-    location: "California",
+    location: "Charlotte, NC",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -178,7 +178,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Traditional Farmhouse Residence — 2,651 sq.ft.",
-    location: "California",
+    location: "Tampa, FL",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -189,7 +189,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Traditional Farmhouse Residence — 2,759 sq.ft.",
-    location: "California",
+    location: "Nashville, TN",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -200,7 +200,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Traditional Farmhouse Residence — 2,800 sq.ft.",
-    location: "California",
+    location: "Raleigh, NC",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -211,7 +211,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Traditional Farmhouse Residence — 3,931 sq.ft.",
-    location: "California",
+    location: "Orlando, FL",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -222,7 +222,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Transitional Residence — 2,999 sq.ft.",
-    location: "California",
+    location: "Jersey City, NJ",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],
@@ -233,7 +233,7 @@ export const houseDesignProjects: HouseDesignSeed[] = [
   },
   {
     title: "Modern Transitional Residence — 3,875 sq.ft.",
-    location: "California",
+    location: "Brooklyn, NY",
     markets: ["House Design", "Residential"],
     owner: "Private residential client",
     services: [...houseServices],

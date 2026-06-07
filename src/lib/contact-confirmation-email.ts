@@ -34,9 +34,9 @@ export function contactConfirmationSubject(): string {
 export function contactConfirmationPlainText(fullName: string): string {
   const first = firstNameFromFullName(fullName);
   const { name, contact } = siteConfig;
+  const { hq, ny } = contact.phones;
   const site = emailPublicBaseUrl();
   const wa = `https://wa.me/${contact.whatsappDigits}`;
-  const tel = `tel:+${contact.phoneDigits}`;
 
   return [
     `Hi ${first},`,
@@ -52,7 +52,8 @@ export function contactConfirmationPlainText(fullName: string): string {
     name,
     `Website: ${site}`,
     `Email: ${contact.email}`,
-    `Cell: ${contact.phoneDisplay} (${tel})`,
+    `${hq.label} (${hq.region}): ${hq.display} (tel:+${hq.digits})`,
+    `${ny.label} (${ny.region}): ${ny.display} (tel:+${ny.digits})`,
     `${contact.whatsappLabel}: ${contact.whatsappDisplay} (${wa})`,
     "",
     "—",
@@ -63,12 +64,15 @@ export function contactConfirmationPlainText(fullName: string): string {
 export function contactConfirmationHtml(fullName: string): string {
   const first = escapeHtml(firstNameFromFullName(fullName));
   const { name, brand, contact } = siteConfig;
+  const { hq, ny } = contact.phones;
   const base = emailPublicBaseUrl();
   const logoUrl = `${base}${brand.logoSrc}`;
   const siteLabel = escapeHtml(base.replace(/^https?:\/\//, ""));
   const mail = escapeHtml(contact.email);
-  const telDisplay = escapeHtml(contact.phoneDisplay);
-  const telHref = `tel:+${contact.phoneDigits}`;
+  const hqDisplay = escapeHtml(hq.display);
+  const hqHref = `tel:+${hq.digits}`;
+  const nyDisplay = escapeHtml(ny.display);
+  const nyHref = `tel:+${ny.digits}`;
   const waHref = `https://wa.me/${contact.whatsappDigits}`;
   const waDisplay = escapeHtml(contact.whatsappDisplay);
 
@@ -141,8 +145,14 @@ export function contactConfirmationHtml(fullName: string): string {
                       <a href="mailto:${mail}" style="color:#1565c0;text-decoration:underline;">${mail}</a>
                     </p>
                     <p style="margin:0 0 6px 0;font-size:14px;line-height:1.6;color:${MUTED};">
-                      <span style="color:${BRAND_NAVY};font-weight:600;">Cell:</span>
-                      <a href="${escapeHtml(telHref)}" style="color:${MUTED};text-decoration:none;">${telDisplay}</a>
+                      <span style="color:${BRAND_NAVY};font-weight:600;">${escapeHtml(hq.label)}:</span>
+                      <span style="color:${MUTED};"> ${escapeHtml(hq.region)} — </span>
+                      <a href="${escapeHtml(hqHref)}" style="color:${MUTED};text-decoration:none;">${hqDisplay}</a>
+                    </p>
+                    <p style="margin:0 0 6px 0;font-size:14px;line-height:1.6;color:${MUTED};">
+                      <span style="color:${BRAND_NAVY};font-weight:600;">${escapeHtml(ny.label)}:</span>
+                      <span style="color:${MUTED};"> ${escapeHtml(ny.region)} — </span>
+                      <a href="${escapeHtml(nyHref)}" style="color:${MUTED};text-decoration:none;">${nyDisplay}</a>
                     </p>
                     <p style="margin:0;font-size:14px;line-height:1.6;color:${MUTED};">
                       <span style="color:${BRAND_NAVY};font-weight:600;">${escapeHtml(contact.whatsappLabel)}:</span>

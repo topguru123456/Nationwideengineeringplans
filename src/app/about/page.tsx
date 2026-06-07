@@ -257,7 +257,7 @@ export default function AboutPage() {
                 href={aboutFinalCta.secondaryTel}
                 className="inline-flex min-h-11 items-center justify-center bg-[var(--brand-red)] px-8 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110"
               >
-                {aboutFinalCta.secondaryLabel} — {siteConfig.contact.phoneDisplay}
+                {aboutFinalCta.secondaryLabel} — {siteConfig.contact.phones.hq.display}
               </a>
             </div>
           </Reveal>

@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { siteConfig } from "@/config/site";
 
 const wa = `https://wa.me/${siteConfig.contact.whatsappDigits}`;
-const tel = `tel:+${siteConfig.contact.phoneDigits}`;
+const officePhones = [siteConfig.contact.phones.hq, siteConfig.contact.phones.ny] as const;
 
 type FormErrors = Record<string, string>;
 
@@ -215,10 +216,8 @@ export function ContactSection() {
                 {submitState === "submitting" ? "Sending..." : "Send inquiry"}
               </button>
               <p className="text-xs text-[var(--color-ink-faint)] sm:text-sm">
-                Prefer direct contact? Call{" "}
-                <a href={tel} className="font-semibold text-[var(--color-ink)] hover:text-[var(--brand-red)]">
-                  {contact.phoneDisplay}
-                </a>
+                Prefer direct contact?{" "}
+                <OfficePhoneLinks phones={officePhones} variant="inline" />
               </p>
             </div>
             {submitMessage ? (
@@ -249,9 +248,7 @@ export function ContactSection() {
                 <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">
                   Phone
                 </span>
-                <a className="font-semibold text-[var(--color-ink)] hover:text-[var(--brand-red)]" href={tel}>
-                  {contact.phoneDisplay}
-                </a>
+                <OfficePhoneLinks phones={officePhones} variant="stacked" className="mt-2" />
               </li>
               <li>
                 <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">

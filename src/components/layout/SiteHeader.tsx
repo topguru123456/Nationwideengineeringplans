@@ -4,24 +4,12 @@ import Link from "next/link";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 import { LogoWordmark } from "@/components/brand/LogoWordmark";
+import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { headerNav, siteConfig } from "@/config/site";
 
 const HEADER_BAR = "min-h-20";
 const SCROLL_HIDE_AFTER = 56;
 const SCROLL_SHOW_BEFORE = 20;
-
-function IconPhoneTiny({ className }: { className?: string }) {
-  return (
-    <svg className={className} width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
-      <path
-        d="M6.5 3h3l1.5 4.5-2 1.5c1.2 2.4 3.6 4.8 6 6l1.5-2L21 14v3a2 2 0 01-2.2 2A17 17 0 013 5.2 2 2 0 015 3z"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 function IconMailTiny({ className }: { className?: string }) {
   return (
@@ -40,7 +28,7 @@ function IconMailTiny({ className }: { className?: string }) {
 export function SiteHeader() {
   const tagline = siteConfig.brand.headerTagline?.trim();
   const { contact } = siteConfig;
-  const tel = `tel:+${contact.phoneDigits}`;
+  const officePhones = [contact.phones.hq, contact.phones.ny] as const;
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -118,14 +106,8 @@ export function SiteHeader() {
       >
         <div className="min-h-0 overflow-hidden">
           <div className="border-b border-white/[0.1]">
-            <div className="mx-auto flex min-h-[2.5rem] max-w-7xl flex-wrap items-center justify-center gap-x-5 gap-y-1 px-4 py-1.5 sm:justify-end sm:gap-6 sm:px-6 sm:py-2">
-              <a
-                href={tel}
-                className="inline-flex items-center justify-center gap-2 text-[12px] font-semibold tracking-wide text-white/95 transition hover:text-white sm:justify-end sm:text-[13px]"
-              >
-                <IconPhoneTiny className="shrink-0 text-white/55" />
-                <span className="tabular-nums">{contact.phoneDisplayDotted}</span>
-              </a>
+            <div className="mx-auto flex min-h-[2.5rem] max-w-7xl flex-wrap items-center justify-center gap-x-5 gap-y-1.5 px-4 py-1.5 sm:justify-end sm:gap-x-6 sm:px-6 sm:py-2">
+              <OfficePhoneLinks phones={officePhones} variant="header" />
               <span className="hidden h-4 w-px shrink-0 bg-white/20 sm:block" aria-hidden />
               <a
                 href={`mailto:${contact.email}`}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { headerNav, siteConfig } from "@/config/site";
 
 const iconMuted = "text-neutral-500";
@@ -43,7 +44,7 @@ const COPYRIGHT_YEAR = 2026;
 
 export function SiteFooter() {
   const { contact, name, brand, mapLocationLabel, openStreetMapEmbedUrl } = siteConfig;
-  const tel = `tel:+${contact.phoneDigits}`;
+  const officePhones = [contact.phones.hq, contact.phones.ny] as const;
   const wa = `https://wa.me/${contact.whatsappDigits}`;
 
   return (
@@ -147,10 +148,15 @@ export function SiteFooter() {
                     </a>
                   </li>
                   <li>
-                    <a href={tel} className="flex items-start gap-2.5 text-neutral-800 transition hover:text-neutral-950">
+                    <div className="flex items-start gap-2.5 text-neutral-800">
                       <IconPhone className={`mt-0.5 shrink-0 ${iconMuted}`} />
-                      <span className="font-semibold">{contact.phoneDisplay}</span>
-                    </a>
+                      <OfficePhoneLinks
+                        phones={officePhones}
+                        variant="stacked"
+                        className="!mt-0 space-y-2.5"
+                        linkClassName="text-neutral-800 hover:text-neutral-950"
+                      />
+                    </div>
                   </li>
                   <li>
                     <a

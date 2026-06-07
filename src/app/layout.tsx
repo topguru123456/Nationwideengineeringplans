@@ -14,6 +14,27 @@ const siteUrl = siteConfig.url.replace(/\/$/, "");
 const defaultOgImage = siteConfig.brand.logoSrc;
 
 const { address } = siteConfig;
+const { phones: officePhones, email: contactEmail } = siteConfig.contact;
+
+const schemaContactPoints = [
+  {
+    "@type": "ContactPoint",
+    telephone: `+${officePhones.hq.digits}`,
+    contactType: "customer service",
+    areaServed: "US",
+    availableLanguage: "English",
+    description: `${officePhones.hq.label} (${officePhones.hq.region})`,
+  },
+  {
+    "@type": "ContactPoint",
+    telephone: `+${officePhones.ny.digits}`,
+    contactType: "customer service",
+    areaServed: "US",
+    availableLanguage: "English",
+    description: `${officePhones.ny.label} (${officePhones.ny.region})`,
+  },
+];
+
 const postalAddress = {
   "@type": "PostalAddress",
   streetAddress: address.street,
@@ -42,6 +63,7 @@ const orgNode: Record<string, unknown> = {
 if (sameAsUrls.length > 0) {
   orgNode.sameAs = sameAsUrls;
 }
+orgNode.contactPoint = schemaContactPoints;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -78,9 +100,10 @@ const jsonLd = {
       description: siteConfig.description,
       url: siteUrl,
       image: `${siteUrl}${siteConfig.brand.logoSrc}`,
-      telephone: `+${siteConfig.contact.phoneDigits}`,
-      email: siteConfig.contact.email,
+      telephone: `+${officePhones.hq.digits}`,
+      email: contactEmail,
       address: postalAddress,
+      contactPoint: schemaContactPoints,
       ...(sameAsUrls.length > 0 ? { sameAs: sameAsUrls } : {}),
     },
   ],
