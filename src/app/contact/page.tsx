@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/contact/ContactSection";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
-import { pageOpenGraph } from "@/lib/open-graph";
+import { buildPageMetadata } from "@/lib/page-seo";
 
-const og = pageOpenGraph({
+export const metadata: Metadata = buildPageMetadata({
   title: pageMetadata.contact.title,
   description: pageMetadata.contact.description,
   path: "/contact",
   image: pageOgImages.contact,
   imageAlt: "Engineering project workflow from planning through permit approval",
 });
-
-export const metadata: Metadata = {
-  title: pageMetadata.contact.title,
-  description: pageMetadata.contact.description,
-  alternates: { canonical: "/contact" },
-  ...og,
-};
 
 export default function ContactPage() {
   return (

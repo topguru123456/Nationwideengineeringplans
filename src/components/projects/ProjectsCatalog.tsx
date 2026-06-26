@@ -1,6 +1,7 @@
 import type { Project } from "@/types/project";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { pageMetadata } from "@/config/page-metadata";
 import { MarketFilterNav } from "./MarketFilterNav";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectsPaginationLinks } from "./ProjectsPaginationLinks";
@@ -16,16 +17,18 @@ export function ProjectsCatalog({
   totalPages: number;
   category: string | null;
 }) {
+  const heading = category ? `${category} Projects` : pageMetadata.projects.h1;
+
   return (
     <main className="min-h-screen bg-neutral-50 text-[var(--color-ink)]">
       <div className="border-b border-neutral-200 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12">
           <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-            Engineering &amp; Permit Plan Projects
+            {heading}
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-600 sm:text-base">
-            Filter by discipline, then open a project for location, owner, services, and description. Need
-            plans for a new job? Explore our{" "}
+            {pageMetadata.projects.intro}
+            Need plans for a new job? Explore our{" "}
             <Link
               href="/services"
               className="font-semibold text-[var(--brand-red)] underline-offset-4 hover:underline"

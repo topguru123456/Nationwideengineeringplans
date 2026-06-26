@@ -8,6 +8,7 @@ import {
   homeHeroVideoSrc,
   homeLandingImages,
 } from "@/config/home-landing";
+import { pageMetadata } from "@/config/page-metadata";
 import { HeroVideoLayer } from "@/components/ui/HeroVideoLayer";
 
 function HeroStep({
@@ -97,15 +98,15 @@ export function HomeHero() {
         </HeroStep>
 
         <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={90} className="mt-6">
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/75 sm:text-xs">
-            {homeHeroCopy.eyebrow}
-          </p>
           <h1
             id="home-hero-heading"
-            className="font-display mt-3 max-w-[min(100%,34rem)] text-balance text-[1.65rem] font-semibold leading-snug tracking-[-0.02em] drop-shadow-[0_4px_32px_rgba(0,0,0,0.75)] sm:mt-3.5 sm:max-w-2xl sm:text-[2rem] sm:leading-snug md:text-[2.25rem]"
+            className="font-display max-w-[min(100%,34rem)] text-balance text-[1.85rem] font-semibold leading-snug tracking-[-0.02em] drop-shadow-[0_4px_32px_rgba(0,0,0,0.75)] sm:max-w-2xl sm:text-[2.15rem] sm:leading-snug md:text-[2.4rem]"
           >
-            {homeHeroCopy.headline}
+            {pageMetadata.home.h1}
           </h1>
+          <p className="mx-auto mt-4 max-w-[min(100%,34rem)] text-balance text-[16px] font-medium leading-snug text-white/95 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)] sm:max-w-2xl sm:text-[17px] md:text-lg">
+            {pageMetadata.home.intro}
+          </p>
         </HeroStep>
 
         <HeroStep enter={enter} reduceMotion={reduceMotion} delayMs={180} className="mt-5 w-full sm:mt-6">

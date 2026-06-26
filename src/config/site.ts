@@ -40,7 +40,7 @@ export const siteConfig = {
   ),
   locale: "en_US",
   contact: {
-    email: "hello@nationwideengineeringplans.com",
+    email: "jonathan@nationwideengineeringplans.com",
     phones: {
       hq: {
         label: "Oregon headquarters",

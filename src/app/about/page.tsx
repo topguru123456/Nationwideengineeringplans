@@ -17,22 +17,15 @@ import {
 import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
-import { pageOpenGraph } from "@/lib/open-graph";
+import { buildPageMetadata } from "@/lib/page-seo";
 
-const og = pageOpenGraph({
+export const metadata: Metadata = buildPageMetadata({
   title: pageMetadata.about.title,
   description: pageMetadata.about.description,
   path: "/about",
   image: pageOgImages.about,
   imageAlt: "Engineering team coordinating permit and construction drawing sets",
 });
-
-export const metadata: Metadata = {
-  title: pageMetadata.about.title,
-  description: pageMetadata.about.description,
-  alternates: { canonical: "/about" },
-  ...og,
-};
 
 /** Brand-forward accents — not a forest-green template */
 const red = "text-[var(--brand-red)]";

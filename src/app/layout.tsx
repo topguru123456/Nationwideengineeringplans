@@ -3,6 +3,7 @@ import "./globals.css";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { pageMetadata } from "@/config/page-metadata";
 import { siteConfig } from "@/config/site";
+import { fullDocumentTitle } from "@/lib/page-seo";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -109,7 +110,7 @@ const jsonLd = {
   ],
 };
 
-const metaTitle = siteConfig.name;
+const metaTitle = fullDocumentTitle(pageMetadata.home.title);
 
 const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 

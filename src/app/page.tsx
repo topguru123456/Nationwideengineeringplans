@@ -11,24 +11,15 @@ import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { heroVideoForPath } from "@/config/hero-videos";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
-import { pageOpenGraph } from "@/lib/open-graph";
+import { buildPageMetadata } from "@/lib/page-seo";
 
-const og = pageOpenGraph({
+export const metadata: Metadata = buildPageMetadata({
   title: pageMetadata.home.title,
   description: pageMetadata.home.description,
   path: "/",
   image: pageOgImages.home,
   imageAlt: "Nationwide Engineering Plans — civil, structural, and MEP permit plans",
 });
-
-export const metadata: Metadata = {
-  title: pageMetadata.home.title,
-  description: pageMetadata.home.description,
-  alternates: {
-    canonical: "/",
-  },
-  ...og,
-};
 
 export default function HomePage() {
   const homeVideo = heroVideoForPath("/");

@@ -11,12 +11,6 @@ export const servicesPageImages = {
 /** Muted loop MP4 in /public; poster above shows while loading / if video unsupported */
 export const servicesHeroVideoSrc = "/assets/video/services-hero.mp4";
 
-export const servicesHero = {
-  title: "Civil, structural & MEP—permit plans, nationwide",
-  subtitle:
-    "Our core is permit submittal: basemaps and civil sheets, structural framing and calcs, MEP design and coordination—packaged for your AHJ. Expand each section for deliverables, or contact us for a scope that fits your job.",
-} as const;
-
 export const servicesAccordionHeadings = {
   fullScope: "Full scope services",
   specialty: "Specialty services",

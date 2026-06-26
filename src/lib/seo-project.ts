@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import type { Project } from "@/types/project";
+import { buildPageMetadata } from "@/lib/page-seo";
 
 const MAX = 160;
 
@@ -30,4 +32,14 @@ export function metaDescriptionForProject(project: Project): string {
 
   const fromBody = clip(project.description, restRoom);
   return normalizeSpaces(`${headNorm} ${fromBody}`);
+}
+
+export function buildProjectDetailMetadata(project: Project, slug: string): Metadata {
+  return buildPageMetadata({
+    title: project.title,
+    description: metaDescriptionForProject(project),
+    path: `/projects/${slug}`,
+    image: project.coverImage.src,
+    imageAlt: project.title,
+  });
 }

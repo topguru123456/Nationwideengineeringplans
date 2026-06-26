@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { OfficeMapEmbed } from "@/components/contact/OfficeMapEmbed";
 import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { siteConfig } from "@/config/site";
+import { pageMetadata } from "@/config/page-metadata";
 
 const wa = `https://wa.me/${siteConfig.contact.whatsappDigits}`;
 const officePhones = [siteConfig.contact.phones.hq, siteConfig.contact.phones.ny] as const;
@@ -100,15 +101,11 @@ export function ContactSection() {
   return (
     <div className="bg-[#f6f8fb]">
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--color-ink-faint)]">
-          Contact
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[var(--header-black)] sm:text-4xl">
-          Let's scope your project properly
+        <h1 className="text-3xl font-semibold tracking-tight text-[var(--header-black)] sm:text-4xl">
+          {pageMetadata.contact.h1}
         </h1>
         <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[var(--color-ink-muted)] sm:text-base">
-          Share your project type, jurisdiction, and timeline. We return with a clear next-step recommendation, likely
-          services, and the best meeting path for permit planning.
+          {pageMetadata.contact.intro}
         </p>
       </section>
 

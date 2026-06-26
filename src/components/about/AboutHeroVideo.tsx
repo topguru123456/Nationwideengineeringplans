@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { aboutHero, aboutHeroVideoSrc, aboutPageImages } from "@/config/about-page";
+import { aboutHeroVideoSrc, aboutPageImages } from "@/config/about-page";
+import { pageMetadata } from "@/config/page-metadata";
 import { HeroVideoLayer } from "@/components/ui/HeroVideoLayer";
 
 export function AboutHeroVideo() {
@@ -41,7 +42,7 @@ export function AboutHeroVideo() {
             Nationwide practice
           </p>
           <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.85)] sm:text-5xl md:text-6xl">
-            {aboutHero.title}
+            {pageMetadata.about.h1}
           </h1>
         </div>
       </div>

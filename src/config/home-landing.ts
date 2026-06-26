@@ -37,9 +37,6 @@ export const homeHeroDisciplines = [
 ] as const;
 
 export const homeHeroCopy = {
-  eyebrow: "Nationwide Engineering Plans",
-  headline:
-    "Civil, structural, and MEP plans for permit review, built to match how your jurisdiction works",
   supportPoints: [
     "Licensed in all 50 states",
     "Residential and light commercial: civil, structural, and MEP in one coordinated set",

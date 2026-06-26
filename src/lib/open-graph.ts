@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { fullDocumentTitle } from "@/lib/page-seo";
 import { siteConfig } from "@/config/site";
 
 type PageOpenGraphInput = {
-  /** Page title segment — layout template appends site name for document title */
+  /** Page title segment — combined with site name for social cards */
   title: string;
   description: string;
   path: string;
@@ -10,7 +11,7 @@ type PageOpenGraphInput = {
   imageAlt?: string;
 };
 
-/** Shared Open Graph + Twitter card fields for static marketing routes. */
+/** @deprecated Prefer `buildPageMetadata` from `@/lib/page-seo`. */
 export function pageOpenGraph({
   title,
   description,
@@ -18,7 +19,7 @@ export function pageOpenGraph({
   image,
   imageAlt,
 }: PageOpenGraphInput): Pick<Metadata, "openGraph" | "twitter"> {
-  const ogTitle = `${title} | ${siteConfig.name}`;
+  const ogTitle = fullDocumentTitle(title);
   const alt = imageAlt ?? siteConfig.brand.logoAlt;
   return {
     openGraph: {
@@ -28,6 +29,7 @@ export function pageOpenGraph({
       images: [{ url: image, alt }],
     },
     twitter: {
+      card: "summary_large_image",
       title: ogTitle,
       description,
       images: [image],

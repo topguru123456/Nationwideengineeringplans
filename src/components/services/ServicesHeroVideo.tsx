@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { servicesHero, servicesHeroVideoSrc, servicesPageImages } from "@/config/services-page";
+import { servicesHeroVideoSrc, servicesPageImages } from "@/config/services-page";
+import { pageMetadata } from "@/config/page-metadata";
 import { HeroVideoLayer } from "@/components/ui/HeroVideoLayer";
 
 export function ServicesHeroVideo() {
@@ -33,10 +34,10 @@ export function ServicesHeroVideo() {
             What we deliver
           </p>
           <h1 className="font-display mt-4 text-balance text-3xl font-semibold leading-tight tracking-tight text-white drop-shadow-[0_4px_32px_rgba(0,0,0,0.95)] sm:text-4xl md:text-[2.65rem]">
-            {servicesHero.title}
+            {pageMetadata.services.h1}
           </h1>
           <p className="mt-5 text-base leading-relaxed text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.92)] sm:text-lg">
-            {servicesHero.subtitle}
+            {pageMetadata.services.intro}
           </p>
         </div>
       </div>

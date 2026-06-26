@@ -13,22 +13,15 @@ import {
 } from "@/config/services-page";
 import { FeaturedProjectLinks } from "@/components/projects/FeaturedProjectLinks";
 import { pageMetadata, pageOgImages } from "@/config/page-metadata";
-import { pageOpenGraph } from "@/lib/open-graph";
+import { buildPageMetadata } from "@/lib/page-seo";
 
-const og = pageOpenGraph({
+export const metadata: Metadata = buildPageMetadata({
   title: pageMetadata.services.title,
   description: pageMetadata.services.description,
   path: "/services",
   image: pageOgImages.services,
   imageAlt: "Residential engineering and permit plan services",
 });
-
-export const metadata: Metadata = {
-  title: pageMetadata.services.title,
-  description: pageMetadata.services.description,
-  alternates: { canonical: "/services" },
-  ...og,
-};
 
 type CtaStyle = "primary" | "light" | "outline";
 

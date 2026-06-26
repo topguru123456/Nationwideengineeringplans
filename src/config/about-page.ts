@@ -16,10 +16,6 @@ export const aboutPageImages = {
   cta: "/assets/images/about/cta.jpg",
 } as const;
 
-export const aboutHero = {
-  title: "About us",
-} as const;
-
 export const aboutWhoWeAre = {
   eyebrow: "Who we are",
   headline: "Civil, structural, and MEP permit plans—fully coordinated for streamlined submittal.",
