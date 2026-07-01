@@ -17,33 +17,55 @@ export const aboutPageImages = {
 
 const teamPhoto = (file: string) => `/assets/images/about/photos/${file}` as const;
 
+export type AboutTeamMember = {
+  name: string;
+  title: string;
+  image: string;
+  imageAlt: string;
+  email: string;
+  phoneDisplay: string;
+  phoneTel: string;
+};
+
 /** Team headshots — filenames match `public/assets/images/about/photos/`. */
-export const aboutTeamMembers = [
+export const aboutTeamMembers: readonly AboutTeamMember[] = [
   {
     name: "Jonathan Martin, PE",
     title: "Principal engineer",
     image: teamPhoto("Jonathan Martin.webp"),
     imageAlt: "Jonathan Martin, PE — principal engineer at Nationwide Engineering Plans",
+    email: siteConfig.contact.email,
+    phoneDisplay: siteConfig.contact.phones.hq.display,
+    phoneTel: `tel:+${siteConfig.contact.phones.hq.digits}`,
   },
   {
-    name: "David Bowie",
-    title: "Structural engineering lead",
-    image: teamPhoto("David Bowie.webp"),
-    imageAlt: "David Bowie — structural engineering lead at Nationwide Engineering Plans",
+    name: "Joseph Miller",
+    title: "Engineering lead, New York office",
+    image: teamPhoto("Joseph Miller .webp"),
+    imageAlt: "Joseph Miller — engineering lead, New York office at Nationwide Engineering Plans",
+    email: "joseph.nationwideengineering@gmail.com",
+    phoneDisplay: siteConfig.contact.phones.ny.display,
+    phoneTel: `tel:+${siteConfig.contact.phones.ny.digits}`,
   },
   {
     name: "Oleksii Datsko",
-    title: "Civil engineering lead",
+    title: "Architectural drafter",
     image: teamPhoto("Oleksii Datsko.jpg"),
-    imageAlt: "Oleksii Datsko — civil engineering lead at Nationwide Engineering Plans",
+    imageAlt: "Oleksii Datsko — architectural drafter at Nationwide Engineering Plans",
+    email: "salraygranata@gmail.com",
+    phoneDisplay: "+380 96 910 7658",
+    phoneTel: "tel:+380969107658",
   },
   {
-    name: "Robert Niro",
-    title: "MEP engineering lead",
-    image: teamPhoto("Robert Niro.webp"),
-    imageAlt: "Robert Niro — MEP engineering lead at Nationwide Engineering Plans",
+    name: "Kris Simonsen",
+    title: "Engineering coordination",
+    image: teamPhoto("Kris Simonsen.webp"),
+    imageAlt: "Kris Simonsen — engineering coordination at Nationwide Engineering Plans",
+    email: "simonsenkristopher@gmail.com",
+    phoneDisplay: "(231) 413-8238",
+    phoneTel: "tel:+12314138238",
   },
-] as const;
+];
 
 export const aboutWhoWeAre = {
   eyebrow: "Who we are",
@@ -74,7 +96,7 @@ export const aboutTeam = {
   eyebrow: "Our team",
   headline: "Licensed engineers behind every stamped set",
   body:
-    "Principals and discipline leads stay on your job from kickoff through plan check—civil, structural, and MEP coordinated under one roof.",
+    "Principals, engineers, and drafters stay on your job from kickoff through plan check—reach the right person directly when you need an answer.",
   skills: [
     { label: "Plan review readiness", pct: 92 },
     { label: "Code & energy coordination", pct: 88 },
