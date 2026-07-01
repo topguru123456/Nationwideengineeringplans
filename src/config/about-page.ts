@@ -11,10 +11,39 @@ export const aboutPageImages = {
   hero: "/assets/images/about/hero.jpg",
   whoWeAre: "/assets/images/about/who-we-are.jpg",
   valuesInterior: "/assets/images/about/values-interior.jpg",
-  team: "/assets/images/about/team.jpg",
   process: "/assets/images/about/process.jpg",
   cta: "/assets/images/about/cta.jpg",
 } as const;
+
+const teamPhoto = (file: string) => `/assets/images/about/photos/${file}` as const;
+
+/** Team headshots — filenames match `public/assets/images/about/photos/`. */
+export const aboutTeamMembers = [
+  {
+    name: "Jonathan Martin, PE",
+    title: "Principal engineer",
+    image: teamPhoto("Jonathan Martin.webp"),
+    imageAlt: "Jonathan Martin, PE — principal engineer at Nationwide Engineering Plans",
+  },
+  {
+    name: "David Bowie",
+    title: "Structural engineering lead",
+    image: teamPhoto("David Bowie.webp"),
+    imageAlt: "David Bowie — structural engineering lead at Nationwide Engineering Plans",
+  },
+  {
+    name: "Oleksii Datsko",
+    title: "Civil engineering lead",
+    image: teamPhoto("Oleksii Datsko.jpg"),
+    imageAlt: "Oleksii Datsko — civil engineering lead at Nationwide Engineering Plans",
+  },
+  {
+    name: "Robert Niro",
+    title: "MEP engineering lead",
+    image: teamPhoto("Robert Niro.webp"),
+    imageAlt: "Robert Niro — MEP engineering lead at Nationwide Engineering Plans",
+  },
+] as const;
 
 export const aboutWhoWeAre = {
   eyebrow: "Who we are",
@@ -43,9 +72,9 @@ export const aboutValues = {
 
 export const aboutTeam = {
   eyebrow: "Our team",
-  headline: "Experienced professionals behind every package",
+  headline: "Licensed engineers behind every stamped set",
   body:
-    "Multidiscipline projects need people who talk to each other before the sheets hit the portal. Our leads coordinate structure, envelope, and systems so redlines do not become surprises on site.",
+    "Principals and discipline leads stay on your job from kickoff through plan check—civil, structural, and MEP coordinated under one roof.",
   skills: [
     { label: "Plan review readiness", pct: 92 },
     { label: "Code & energy coordination", pct: 88 },

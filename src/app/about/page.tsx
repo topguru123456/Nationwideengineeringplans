@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AboutHeroVideo } from "@/components/about/AboutHeroVideo";
+import { AboutTeamRoster } from "@/components/about/AboutTeamRoster";
 import { VideoObjectJsonLd } from "@/components/seo/VideoObjectJsonLd";
 import { Reveal } from "@/components/ui/Reveal";
 import { heroVideoForPath } from "@/config/hero-videos";
@@ -160,26 +161,48 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team + skills */}
-      <section className="relative min-h-[420px] w-full sm:min-h-[480px]">
-        <Image
-          src={aboutPageImages.team}
-          alt=""
-          fill
-          className="object-cover object-[center_30%]"
-          sizes="100vw"
-          quality={75}
-          aria-hidden
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/92 via-[#0f2744]/75 to-black/25" />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-          <Reveal delayMs={40}>
-            <div className="max-w-lg rounded-2xl border border-white/15 bg-black/50 p-8 shadow-2xl backdrop-blur-md sm:p-10">
+      {/* Team roster + skills */}
+      <section className="border-b border-stone-200 bg-[#faf8f5] py-14 sm:py-20 md:py-24">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <Reveal delayMs={0}>
+            <div className="max-w-2xl">
               <p className={`text-xs font-bold uppercase tracking-[0.2em] ${red} sm:text-sm`}>{aboutTeam.eyebrow}</p>
-              <h2 className="font-display mt-3 text-2xl font-semibold leading-tight text-white sm:text-3xl md:text-4xl">
+              <h2 className="font-display mt-3 text-3xl font-semibold leading-tight tracking-tight text-neutral-900 sm:text-4xl">
                 {aboutTeam.headline}
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-white/80 sm:text-base">{aboutTeam.body}</p>
+              <p className="mt-4 text-base leading-relaxed text-neutral-600 sm:text-lg">{aboutTeam.body}</p>
+            </div>
+          </Reveal>
+          <div className="mt-12 lg:mt-14">
+            <AboutTeamRoster />
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#0f1729] py-14 text-white sm:py-16 md:py-20">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage: `repeating-linear-gradient(
+              -12deg,
+              transparent,
+              transparent 24px,
+              rgba(230,57,70,0.35) 24px,
+              rgba(230,57,70,0.35) 25px
+            )`,
+          }}
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+          <Reveal delayMs={40}>
+            <div className="mx-auto max-w-lg rounded-2xl border border-white/15 bg-black/40 p-8 shadow-2xl backdrop-blur-md sm:p-10 lg:mx-0 lg:max-w-md">
+              <p className={`text-xs font-bold uppercase tracking-[0.2em] ${red} sm:text-sm`}>How we work</p>
+              <h2 className="font-display mt-3 text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                Discipline strengths
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-white/80 sm:text-base">
+                Every package is reviewed for plan-check readiness, code alignment, and clear communication with your team.
+              </p>
               <div className="mt-10 space-y-6">
                 {aboutTeam.skills.map((s, i) => (
                   <Reveal key={s.label} delayMs={120 + i * 55}>
