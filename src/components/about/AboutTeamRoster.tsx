@@ -57,6 +57,16 @@ export function AboutTeamRoster() {
                   <ContactLine href={member.phoneTel} className="font-semibold tabular-nums text-[#0f2744]">
                     {member.phoneDisplay}
                   </ContactLine>
+                  {member.address ? (
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(member.address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block pt-1 text-[12px] leading-relaxed text-neutral-500 transition hover:text-[var(--brand-red)] sm:text-[13px]"
+                    >
+                      {member.address}
+                    </a>
+                  ) : null}
                 </div>
               </figcaption>
             </figure>

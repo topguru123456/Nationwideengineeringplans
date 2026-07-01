@@ -25,6 +25,8 @@ export type AboutTeamMember = {
   email: string;
   phoneDisplay: string;
   phoneTel: string;
+  /** Optional office / mailing address shown on the team card */
+  address?: string;
 };
 
 /** Team headshots — filenames match `public/assets/images/about/photos/`. */
@@ -40,12 +42,13 @@ export const aboutTeamMembers: readonly AboutTeamMember[] = [
   },
   {
     name: "Joseph Miller",
-    title: "Engineering lead, New York office",
+    title: "Architect",
     image: teamPhoto("Joseph Miller .webp"),
-    imageAlt: "Joseph Miller — engineering lead, New York office at Nationwide Engineering Plans",
+    imageAlt: "Joseph Miller — architect at Nationwide Engineering Plans",
     email: "joseph.nationwideengineering@gmail.com",
     phoneDisplay: siteConfig.contact.phones.ny.display,
     phoneTel: `tel:+${siteConfig.contact.phones.ny.digits}`,
+    address: "56 Majestic Ave, San Francisco, CA 94112, USA",
   },
   {
     name: "Oleksii Datsko",
@@ -55,6 +58,7 @@ export const aboutTeamMembers: readonly AboutTeamMember[] = [
     email: "salraygranata@gmail.com",
     phoneDisplay: "+380 96 910 7658",
     phoneTel: "tel:+380969107658",
+    address: "Street Hliserna, Building 28, Zaporizhzhia 69011, Ukraine",
   },
   {
     name: "Kris Simonsen",
@@ -64,6 +68,7 @@ export const aboutTeamMembers: readonly AboutTeamMember[] = [
     email: "simonsenkristopher@gmail.com",
     phoneDisplay: "(231) 413-8238",
     phoneTel: "tel:+12314138238",
+    address: "1738 Dexter Avenue North, Seattle, WA 98109, USA",
   },
 ];
 
