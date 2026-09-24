@@ -82,16 +82,23 @@ export function SiteHeader() {
           style={{ top: "calc(var(--site-preheader-h, 0px) + 5rem)" }}
         >
           <nav className="flex flex-col gap-1 px-4 py-6" aria-label="Mobile main">
-            {headerNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-lg px-4 py-3.5 text-base font-semibold text-[var(--color-ink)] active:bg-neutral-100"
-                onClick={() => setMobileOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {headerNav.map((item) => {
+              const isContact = item.href === "/contact";
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={
+                    isContact
+                      ? "mt-2 rounded-lg border border-[var(--brand-red)] px-4 py-3.5 text-center text-base font-semibold text-[var(--brand-red)] active:bg-[var(--brand-red)] active:text-white"
+                      : "rounded-lg px-4 py-3.5 text-base font-semibold text-[var(--color-ink)] active:bg-neutral-100"
+                  }
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </>
@@ -122,13 +129,13 @@ export function SiteHeader() {
       </div>
 
       <header className="border-b border-black/[0.06] bg-white/95 shadow-[0_1px_0_rgba(0,0,0,0.04)] backdrop-blur-md">
-        <div className={`relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 ${HEADER_BAR}`}>
-          <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
+        <div className={`mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:gap-6 sm:px-6 ${HEADER_BAR}`}>
+          <div className="flex min-w-0 shrink-0 items-center gap-3 sm:gap-4">
             <LogoWordmark />
             {tagline ? (
               <>
                 <span className="hidden h-11 w-px shrink-0 bg-black/10 lg:block" aria-hidden />
-                <p className="hidden max-w-[300px] text-sm font-semibold leading-snug text-[var(--color-ink-muted)] xl:block">
+                <p className="hidden max-w-[280px] text-sm font-semibold leading-snug text-[var(--color-ink-muted)] xl:block">
                   {tagline}
                 </p>
               </>
@@ -136,50 +143,55 @@ export function SiteHeader() {
           </div>
 
           <nav
-            className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-x-0.5 text-[15px] font-semibold text-[var(--color-ink)] md:flex lg:gap-x-1 lg:text-base"
+            className="ml-auto hidden items-center gap-x-0.5 text-[15px] font-semibold text-[var(--color-ink)] md:flex lg:gap-x-1 lg:text-base"
             aria-label="Main"
           >
-            {headerNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 transition-colors hover:bg-neutral-100 hover:text-neutral-900 lg:px-3.5"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {headerNav.map((item) => {
+              const isContact = item.href === "/contact";
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={
+                    isContact
+                      ? "ml-2 shrink-0 whitespace-nowrap border border-[var(--brand-red)] px-3.5 py-2 text-[var(--brand-red)] transition-colors hover:bg-[var(--brand-red)] hover:text-white lg:ml-3 lg:px-4"
+                      : "shrink-0 whitespace-nowrap rounded-md px-2.5 py-2 transition-colors hover:bg-neutral-100 hover:text-neutral-900 lg:px-3.5"
+                  }
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
-          <div className="flex w-10 shrink-0 justify-end sm:w-11 md:w-12">
-            <button
-              type="button"
-              className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-neutral-300 bg-white text-neutral-800 md:hidden"
-              aria-expanded={mobileOpen}
-              aria-controls="site-mobile-nav"
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
-              onClick={() => setMobileOpen((o) => !o)}
-            >
-              {mobileOpen ? (
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path
-                    d="M6 6l12 12M18 6L6 18"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              ) : (
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path
-                    d="M4 7h16M4 12h16M4 17h16"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              )}
-            </button>
-          </div>
+          <button
+            type="button"
+            className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-md border border-neutral-300 bg-white text-neutral-800 md:hidden"
+            aria-expanded={mobileOpen}
+            aria-controls="site-mobile-nav"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            onClick={() => setMobileOpen((o) => !o)}
+          >
+            {mobileOpen ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path
+                  d="M6 6l12 12M18 6L6 18"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path
+                  d="M4 7h16M4 12h16M4 17h16"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            )}
+          </button>
         </div>
       </header>
 
