@@ -31,7 +31,29 @@ export function contactConfirmationSubject(): string {
   return `We received your inquiry — ${siteConfig.name}`;
 }
 
-export function contactConfirmationPlainText(fullName: string): string {
+export type InquiryRecap = {
+  projectType: string;
+  services: readonly string[];
+  jurisdiction?: string;
+};
+
+function recapPlain(recap: InquiryRecap | undefined): string[] {
+  if (!recap) return [];
+  return [
+    "What we received:",
+    `Project type: ${recap.projectType}`,
+    ...(recap.jurisdiction?.trim()
+      ? [`Location / jurisdiction: ${recap.jurisdiction.trim()}`]
+      : []),
+    "Engineering services:",
+    ...(recap.services.length > 0
+      ? recap.services.map((service) => `  - ${service}`)
+      : ["  Not specified"]),
+    "",
+  ];
+}
+
+export function contactConfirmationPlainText(fullName: string, recap?: InquiryRecap): string {
   const first = firstNameFromFullName(fullName);
   const { name, contact } = siteConfig;
   const { hq, ny } = contact.phones;
@@ -43,6 +65,7 @@ export function contactConfirmationPlainText(fullName: string): string {
     "",
     `Thank you for contacting ${name}. We received your message from our website contact form and a member of our team will review it shortly.`,
     "",
+    ...recapPlain(recap),
     "What happens next:",
     `- We typically reply by email. If you shared a phone number and a call is easier, we may reach out that way.`,
     `- Need to add photos, files, or more detail? Email ${contact.email} — that is our main inbox and the clearest place to send updates.`,
@@ -61,7 +84,36 @@ export function contactConfirmationPlainText(fullName: string): string {
   ].join("\n");
 }
 
-export function contactConfirmationHtml(fullName: string): string {
+function recapHtml(recap: InquiryRecap | undefined): string {
+  if (!recap) return "";
+  const services =
+    recap.services.length > 0
+      ? recap.services
+          .map(
+            (service) =>
+              `<li style="margin:0 0 4px 0;font-size:14px;line-height:1.45;color:${MUTED};">${escapeHtml(service)}</li>`,
+          )
+          .join("")
+      : `<li style="margin:0;font-size:14px;line-height:1.45;color:${MUTED};">Not specified</li>`;
+  const jurisdiction = recap.jurisdiction?.trim()
+    ? `<p style="margin:0 0 8px 0;font-size:14px;line-height:1.5;color:${MUTED};"><span style="color:${BRAND_NAVY};font-weight:600;">Location:</span> ${escapeHtml(recap.jurisdiction.trim())}</p>`
+    : "";
+
+  return `
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 18px 0;background-color:#f7f9fb;border:1px solid ${BORDER};border-radius:10px;">
+      <tr>
+        <td style="padding:14px 16px;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
+          <p style="margin:0 0 8px 0;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;font-weight:700;color:${BRAND_NAVY};">What we received</p>
+          <p style="margin:0 0 8px 0;font-size:14px;line-height:1.5;color:${MUTED};"><span style="color:${BRAND_NAVY};font-weight:600;">Project type:</span> ${escapeHtml(recap.projectType)}</p>
+          ${jurisdiction}
+          <p style="margin:0 0 6px 0;font-size:14px;line-height:1.5;color:${BRAND_NAVY};font-weight:600;">Engineering services</p>
+          <ul style="margin:0;padding:0 0 0 18px;">${services}</ul>
+        </td>
+      </tr>
+    </table>`;
+}
+
+export function contactConfirmationHtml(fullName: string, recap?: InquiryRecap): string {
   const first = escapeHtml(firstNameFromFullName(fullName));
   const { name, brand, contact } = siteConfig;
   const { hq, ny } = contact.phones;
@@ -101,6 +153,7 @@ export function contactConfirmationHtml(fullName: string): string {
               <p style="margin:0 0 14px 0;font-size:15px;line-height:1.6;color:${MUTED};">
                 Thank you for contacting <strong style="color:${BRAND_NAVY};">${company}</strong>. We received your message from our website contact form and will review it shortly.
               </p>
+              ${recapHtml(recap)}
               <p style="margin:0 0 8px 0;font-size:15px;line-height:1.6;color:${BRAND_NAVY};font-weight:600;">
                 What happens next
               </p>

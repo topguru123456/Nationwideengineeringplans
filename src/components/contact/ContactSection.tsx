@@ -6,6 +6,7 @@ import { OfficeMapEmbed } from "@/components/contact/OfficeMapEmbed";
 import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { siteConfig } from "@/config/site";
 import { pageMetadata } from "@/config/page-metadata";
+import { ENGINEERING_SERVICES, PROJECT_TYPES, type EngineeringService } from "@/config/contact-form";
 
 const wa = `https://wa.me/${siteConfig.contact.whatsappDigits}`;
 const officePhones = [siteConfig.contact.phones.hq, siteConfig.contact.phones.ny] as const;
@@ -20,6 +21,7 @@ export function ContactSection() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [projectType, setProjectType] = useState("");
+  const [services, setServices] = useState<EngineeringService[]>([]);
   const [jurisdiction, setJurisdiction] = useState("");
   const [message, setMessage] = useState("");
   const [website, setWebsite] = useState("");
@@ -36,7 +38,8 @@ export function ContactSection() {
 
     if (name.trim().length < 2) next.name = "Please enter your full name.";
     if (!emailOk) next.email = "Please enter a valid email address.";
-    if (!projectType.trim()) next.projectType = "Please select project type.";
+    if (!projectType.trim()) next.projectType = "Please select a project type.";
+    if (services.length === 0) next.services = "Select at least one engineering service.";
     if (!phoneOk) next.phone = "Phone format looks invalid.";
     if (message.trim() && message.trim().length < 10) {
       next.message = "Add a bit more detail (at least 10 characters) or leave it blank.";
@@ -64,6 +67,7 @@ export function ContactSection() {
           email,
           phone,
           projectType,
+          services,
           jurisdiction,
           message,
           website,
@@ -86,6 +90,7 @@ export function ContactSection() {
       setEmail("");
       setPhone("");
       setProjectType("");
+      setServices([]);
       setJurisdiction("");
       setMessage("");
       setWebsite("");
@@ -171,21 +176,79 @@ export function ContactSection() {
                 name="projectType"
                 value={projectType}
                 onChange={(e) => setProjectType(e.target.value)}
-                className="h-11 rounded-lg border border-[var(--color-border)] bg-white px-3 text-sm outline-none transition focus:border-[var(--brand-red)] focus:ring-2 focus:ring-[var(--brand-red)]/20"
+                className="h-11 w-full rounded-lg border border-[var(--color-border)] bg-white px-3 text-sm outline-none transition focus:border-[var(--brand-red)] focus:ring-2 focus:ring-[var(--brand-red)]/20"
               >
                 <option value="" disabled>
                   Select project type
                 </option>
-                <option>Custom home</option>
-                <option>Residential addition / remodel</option>
-                <option>Commercial tenant improvement</option>
-                <option>Site / civil support</option>
-                <option>Other</option>
+                {PROJECT_TYPES.map((type) => (
+                  <option key={type} value={type}>
+                    {type}
+                  </option>
+                ))}
               </select>
               {errors.projectType ? (
                 <span className="text-xs text-[var(--brand-red)]">{errors.projectType}</span>
               ) : null}
             </label>
+            <fieldset className="sm:col-span-2 rounded-xl border border-[var(--color-border)] bg-[#f8fafc] p-4 sm:p-5">
+              <legend className="px-1 text-sm font-semibold text-[var(--color-ink)]">
+                Engineering services needed
+              </legend>
+              <p className="mt-1 text-xs leading-relaxed text-[var(--color-ink-muted)] sm:text-sm">
+                Select all that apply. If you are unsure, choose “Not Sure — Please Advise.”
+              </p>
+              <div className="mt-3 flex items-center justify-between gap-3">
+                <p className="text-xs font-medium text-[var(--color-ink-faint)]">
+                  {services.length === 0
+                    ? "None selected"
+                    : `${services.length} selected`}
+                </p>
+                {services.length > 0 ? (
+                  <button
+                    type="button"
+                    className="text-xs font-semibold text-[var(--brand-red)] hover:underline"
+                    onClick={() => setServices([])}
+                  >
+                    Clear
+                  </button>
+                ) : null}
+              </div>
+              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                {ENGINEERING_SERVICES.map((service) => {
+                  const checked = services.includes(service);
+                  return (
+                    <label
+                      key={service}
+                      className={`flex cursor-pointer items-start gap-2.5 rounded-lg border px-3 py-2.5 text-left text-[13px] leading-snug transition sm:text-sm ${
+                        checked
+                          ? "border-[var(--brand-red)] bg-white text-[var(--header-black)] shadow-[0_0_0_1px_var(--brand-red)]"
+                          : "border-transparent bg-white text-[var(--color-ink)] hover:border-[var(--color-border)]"
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        name="services"
+                        value={service}
+                        checked={checked}
+                        onChange={() =>
+                          setServices((current) =>
+                            checked
+                              ? current.filter((item) => item !== service)
+                              : [...current, service],
+                          )
+                        }
+                        className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--brand-red)]"
+                      />
+                      <span>{service}</span>
+                    </label>
+                  );
+                })}
+              </div>
+              {errors.services ? (
+                <p className="mt-2 text-xs text-[var(--brand-red)]">{errors.services}</p>
+              ) : null}
+            </fieldset>
             <label className="sm:col-span-2 grid gap-1.5 text-sm font-medium text-[var(--color-ink)]">
               Location / jurisdiction (optional)
               <input

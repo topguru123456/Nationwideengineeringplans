@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { isProjectType, normalizeEngineeringServices } from "@/config/contact-form";
 import {
   contactConfirmationHtml,
   contactConfirmationPlainText,
@@ -11,6 +12,7 @@ type ContactPayload = {
   email?: string;
   phone?: string;
   projectType?: string;
+  services?: unknown;
   jurisdiction?: string;
   message?: string;
   website?: string; // honeypot
@@ -91,10 +93,12 @@ function validate(payload: ContactPayload): Record<string, string> {
   const phone = clean(payload.phone);
   const projectType = clean(payload.projectType);
   const message = clean(payload.message);
+  const services = normalizeEngineeringServices(payload.services);
 
   if (name.length < 2) errors.name = "Name is required.";
   if (!EMAIL_RE.test(email)) errors.email = "Valid email is required.";
-  if (!projectType) errors.projectType = "Project type is required.";
+  if (!isProjectType(projectType)) errors.projectType = "Please select a project type.";
+  if (services.length === 0) errors.services = "Select at least one engineering service.";
   if (phone && !PHONE_RE.test(phone)) errors.phone = "Phone format looks invalid.";
   if (message && message.length < 10) errors.message = "Message must be at least 10 characters if provided.";
   if (message.length > MAX_MESSAGE_LENGTH) {
@@ -151,6 +155,11 @@ export async function POST(request: Request) {
   const projectType = clean(body.projectType);
   const jurisdiction = clean(body.jurisdiction);
   const message = clean(body.message);
+  const services = normalizeEngineeringServices(body.services);
+  const servicesText = services.join("\n- ");
+  const servicesHtml = services
+    .map((service) => `<li>${escapeHtml(service)}</li>`)
+    .join("");
 
   const lines = [
     `Name: ${name}`,
@@ -159,10 +168,14 @@ export async function POST(request: Request) {
     `Project type: ${projectType}`,
     `Location / jurisdiction: ${jurisdiction || "Not provided"}`,
     "",
+    "Engineering services:",
+    services.length ? `- ${servicesText}` : "Not provided",
+    "",
     "What do you need:",
     message || "Not provided",
   ];
   const escapedMessage = escapeHtml(message || "Not provided").replace(/\n/g, "<br/>");
+  const recap = { projectType, services, jurisdiction };
 
   try {
     const notifyResult = await resend.emails.send({
@@ -178,6 +191,8 @@ export async function POST(request: Request) {
         <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
         <p><strong>Project type:</strong> ${escapeHtml(projectType)}</p>
         <p><strong>Location / jurisdiction:</strong> ${escapeHtml(jurisdiction || "Not provided")}</p>
+        <p><strong>Engineering services:</strong></p>
+        <ul>${servicesHtml}</ul>
         <p><strong>What do you need:</strong><br/>${escapedMessage}</p>
       `,
     });
@@ -193,8 +208,8 @@ export async function POST(request: Request) {
       to: [email],
       replyTo: to,
       subject: contactConfirmationSubject(),
-      text: contactConfirmationPlainText(name),
-      html: contactConfirmationHtml(name),
+      text: contactConfirmationPlainText(name, recap),
+      html: contactConfirmationHtml(name, recap),
     });
     if ((confirmResult as { error?: unknown }).error) {
       throw new Error(
