@@ -60,7 +60,7 @@ export const siteConfig = {
     whatsappLabel: "WhatsApp",
     whatsappDisplay: "(503) 344-8867",
     whatsappDigits: "15033448867",
-    calendlyUrl: "https://calendly.com/jonathan-barnes-pe/discussion-meeting",
+    calendlyUrl: "https://calendly.com/jonathan-nationwideengineeringplans/30min",
   },
   address: {
     street: "3482 SW US Veterans Hospital Rd",
