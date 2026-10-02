@@ -314,7 +314,12 @@ export function ContactSection() {
                 <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">
                   Phone
                 </span>
-                <OfficePhoneLinks phones={officePhones} variant="stacked" className="mt-2" />
+                <a
+                  className="mt-1 inline-block font-semibold text-[var(--color-ink)] hover:text-[var(--brand-red)]"
+                  href={`tel:+${contact.phones.hq.digits}`}
+                >
+                  {contact.phones.hq.display}
+                </a>
               </li>
               <li>
                 <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">
@@ -362,7 +367,7 @@ export function ContactSection() {
       <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:pb-20">
         <h2 className="text-lg font-semibold tracking-tight text-[var(--header-black)]">Office location</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--color-ink-muted)] sm:text-[15px]">
-          Oregon headquarters — nationwide permit plan coordination from Portland, OR.
+          Nationwide permit plan coordination.
         </p>
         <div className="mt-5">
           <OfficeMapEmbed />

@@ -14,7 +14,7 @@ export function HomeContactTeaser() {
               href="/contact"
               className="font-semibold underline underline-offset-4 hover:text-neutral-900"
             >
-              contact our Oregon office
+              contact our office
             </Link>
             {" "}— we reply with next steps, not an auto-reply.
           </p>
