@@ -26,14 +26,6 @@ const schemaContactPoints = [
     availableLanguage: "English",
     description: `${officePhones.hq.label} (${officePhones.hq.region})`,
   },
-  {
-    "@type": "ContactPoint",
-    telephone: `+${officePhones.ny.digits}`,
-    contactType: "customer service",
-    areaServed: "US",
-    availableLanguage: "English",
-    description: `${officePhones.ny.label} (${officePhones.ny.region})`,
-  },
 ];
 
 const postalAddress = {

@@ -9,7 +9,7 @@ import { pageMetadata } from "@/config/page-metadata";
 import { ENGINEERING_SERVICES, PROJECT_TYPES, type EngineeringService } from "@/config/contact-form";
 
 const wa = `https://wa.me/${siteConfig.contact.whatsappDigits}`;
-const officePhones = [siteConfig.contact.phones.hq, siteConfig.contact.phones.ny] as const;
+const officePhones = [siteConfig.contact.phones.hq] as const;
 const MAX_MESSAGE_LENGTH = 4000;
 
 type FormErrors = Record<string, string>;

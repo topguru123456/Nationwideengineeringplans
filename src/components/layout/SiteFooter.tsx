@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { OfficePhoneLinks } from "@/components/contact/OfficePhoneLinks";
 import { headerNav, siteConfig } from "@/config/site";
 
 const iconMuted = "text-neutral-500";
@@ -15,6 +14,20 @@ function IconMail({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+    </svg>
+  );
+}
+
+function IconPin({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <circle cx="12" cy="10" r="2.2" stroke="currentColor" strokeWidth="1.6" />
     </svg>
   );
 }
@@ -43,8 +56,8 @@ function IconWhatsApp({ className }: { className?: string }) {
 const COPYRIGHT_YEAR = 2026;
 
 export function SiteFooter() {
-  const { contact, name, brand } = siteConfig;
-  const officePhones = [contact.phones.hq, contact.phones.ny] as const;
+  const { contact, name, brand, address } = siteConfig;
+  const phone = contact.phones.hq;
   const wa = `https://wa.me/${contact.whatsappDigits}`;
 
   return (
@@ -114,15 +127,21 @@ export function SiteFooter() {
                     </a>
                   </li>
                   <li>
-                    <div className="flex items-start gap-2.5 text-neutral-800">
+                    <p className="flex items-start gap-2.5 text-neutral-800">
+                      <IconPin className={`mt-0.5 shrink-0 ${iconMuted}`} />
+                      <span className="font-semibold">
+                        {address.city}, {address.region}
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <a
+                      href={`tel:+${phone.digits}`}
+                      className="flex items-start gap-2.5 text-neutral-800 transition hover:text-neutral-950"
+                    >
                       <IconPhone className={`mt-0.5 shrink-0 ${iconMuted}`} />
-                      <OfficePhoneLinks
-                        phones={officePhones}
-                        variant="stacked"
-                        className="!mt-0 space-y-2.5"
-                        linkClassName="text-neutral-800 hover:text-neutral-950"
-                      />
-                    </div>
+                      <span className="font-semibold">{phone.display}</span>
+                    </a>
                   </li>
                   <li>
                     <a
