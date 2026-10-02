@@ -28,7 +28,7 @@ function IconMailTiny({ className }: { className?: string }) {
 export function SiteHeader() {
   const tagline = siteConfig.brand.headerTagline?.trim();
   const { contact } = siteConfig;
-  const officePhones = [contact.phones.hq, contact.phones.ny] as const;
+  const officePhones = [contact.phones.hq] as const;
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mounted, setMounted] = useState(false);

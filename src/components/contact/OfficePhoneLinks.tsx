@@ -2,7 +2,7 @@ import { telHref, type OfficePhone } from "@/lib/officePhones";
 
 type Props = {
   phones: readonly OfficePhone[];
-  /** Header utility bar — compact, dotted format with OR / NY tags */
+  /** Header utility bar — compact dotted number with a phone icon */
   variant?: "header" | "stacked" | "inline";
   className?: string;
   linkClassName?: string;
@@ -26,9 +26,15 @@ export function OfficePhoneLinks({
               href={telHref(phone)}
               className={`inline-flex items-center gap-2 text-[12px] font-semibold tracking-wide text-white/95 transition hover:text-white sm:text-[13px] ${linkClassName}`}
             >
-              <span className="text-[10px] font-bold uppercase tracking-wider text-white/50 sm:text-[11px]">
-                {i === 0 ? "OR" : "NY"}
-              </span>
+              <svg className="shrink-0 text-white" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path
+                  d="M6.5 3h3l1.5 4.5-2 1.5c1.2 2.4 3.6 4.8 6 6l1.5-2L21 14v3a2 2 0 01-2.2 2A17 17 0 013 5.2 2 2 0 015 3z"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="sr-only">{phone.label}: </span>
               <span className="tabular-nums">{phone.displayDotted}</span>
             </a>
           </span>
